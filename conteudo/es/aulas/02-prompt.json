@@ -1,0 +1,351 @@
+{
+  "slug": "prompt",
+  "num": 2,
+  "menu": "Prompt",
+  "titulo": "Anatomía del prompt de video: sujeto, acción, cámara, luz y sonido",
+  "titulo_curto": "Anatomía del prompt",
+  "minutos": 17,
+  "lead": "El prompt de video es la línea del desglose de planos escrita para la máquina. Quién es, qué hace, dónde, cómo lo ve la cámara, qué luz y qué se oye. Desde que el sonido empezó a salir junto con la imagen, también entra en el prompt, en una frase aparte.",
+  "objetivo": "escribir el prompt de un plano en siete partes, con el sonido en una frase aparte y lo que hay que evitar descrito sin \"no\".",
+  "competencias": [
+    "escrever-prompt-de-video",
+    "descrever-som-no-prompt",
+    "usar-prompt-negativo"
+  ],
+  "aprende": [
+    {
+      "t": "Las siete partes de un prompt de video y su orden"
+    },
+    {
+      "t": "Cambiar el verbo parado por un verbo vivo"
+    },
+    {
+      "t": "Poner sonido y diálogo en el prompt como lo entiende el generador"
+    },
+    {
+      "t": "Describir lo que quieres evitar sin usar \"no\""
+    }
+  ],
+  "hero_alt": "Mesa de dirección oscura vista desde arriba, con un cuaderno cerrado, auriculares de estudio, una claqueta y un cronómetro bajo una lámpara fría.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Las siete partes del prompt",
+      "sub": "No todo prompt usa todas, pero cada una responde una pregunta. Haz clic en cada parte.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Sujeto",
+          "sub": "quién o qué",
+          "icone": "usuario",
+          "detalhe": "El foco del plano, con un detalle concreto. \"Una panadera de 58 años, moño con pañuelo, delantal azul marino\" en lugar de \"una mujer\". El personaje sale de la ficha del curso 0."
+        },
+        {
+          "titulo": "Acción",
+          "sub": "verbo vivo",
+          "icone": "video",
+          "forte": true,
+          "detalhe": "Lo que pasa ahora, con un verbo que cuenta una historia: \"amasa la masa\", \"abre la puerta del horno\". Los verbos parados (\"de pie\", \"posando\", \"mirando a la cámara\") hacen que el generador invente el resto."
+        },
+        {
+          "titulo": "Escenario",
+          "sub": "dónde y cuándo",
+          "icone": "camadas",
+          "detalhe": "Lugar y hora con uno o dos detalles que solo tiene ese lugar: \"panadería de barrio a las 4:50, azulejo blanco, calle oscura afuera\"."
+        },
+        {
+          "titulo": "Cámara",
+          "sub": "del curso 0",
+          "icone": "video",
+          "detalhe": "Tamaño, ángulo y un movimiento, en los términos del curso 0. Aquí no inventas: copias de la línea del desglose de planos."
+        },
+        {
+          "titulo": "Luz",
+          "sub": "tarjeta de look",
+          "icone": "sol",
+          "detalhe": "La tarjeta de look del curso 0, igual en todos los prompts de la escena. Es lo que hace que los planos parezcan de la misma película."
+        },
+        {
+          "titulo": "Sonido",
+          "sub": "frase aparte",
+          "icone": "megafone",
+          "detalhe": "Ambiente, efecto y diálogo, en frases separadas de la imagen. El diálogo va en el formato \"quién dice: texto\"."
+        },
+        {
+          "titulo": "Evitar",
+          "sub": "sin \"no\"",
+          "icone": "x",
+          "detalhe": "Lo que no quieres ver, descrito como cosa: \"texto en pantalla, marca de agua\". La guía de Google desaconseja escribir \"no muestres\"."
+        }
+      ],
+      "legenda": "Orden práctico: primero lo que se ve (sujeto, acción, escenario), después cómo se ve (cámara, luz) y por último lo que se oye."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Escribiendo, parte por parte",
+      "sub": "El ejemplo es el plano 4 de \"La primera hornada\": la puerta del horno se abre y sube el vapor.",
+      "passos": [
+        {
+          "titulo": "Sujeto y acción concretos",
+          "sub": "verbo vivo",
+          "texto": [
+            "Empieza por lo que un espectador entendería en un segundo: quién, haciendo qué, dónde. Cambia el adjetivo genérico por un detalle que solo existe en esa escena.",
+            "El verbo vivo carga la historia: \"la puerta de hierro se abre despacio y el vapor sube contra la luz\" dice más que \"un horno en una panadería\"."
+          ],
+          "exemplo": {
+            "rot": "Antes → después",
+            "texto": "\"horno de panadería\" → \"la puerta de hierro de un horno de solera se abre despacio y el vapor sube contra la luz\""
+          }
+        },
+        {
+          "titulo": "La cámara y la luz vienen listas",
+          "sub": "del desglose de planos y del look",
+          "texto": [
+            "El tamaño, el ángulo y el movimiento están en la línea del plano en tu desglose de planos. La luz está en la tarjeta de look. Copia, no reescribas: eso es lo que mantiene la escena coherente.",
+            "Si todavía no tienes esos archivos, haz antes las clases 2 a 4 y 7 del curso 0."
+          ],
+          "exemplo": {
+            "rot": "Del desglose de planos",
+            "texto": "4 | primer plano | cámara baja | dolly in | 4 s → \"Primer plano, cámara baja, dolly in lento.\""
+          }
+        },
+        {
+          "titulo": "Sonido y diálogo",
+          "sub": "frase aparte",
+          "texto": [
+            "La guía oficial de prompt de video de Google (Veo y Gemini Omni Flash, actualizada el 15/10/2026) recomienda decir claramente que quieres audio y describirlo en frases separadas: efectos, ambiente y diálogo.",
+            "La guía, en inglés, escribe quién habla, \"says:\" y el texto. En español, este curso usa \"quién dice: texto\". Una frase corta cabe en el plano; un párrafo no."
+          ],
+          "exemplo": {
+            "rot": "Sonido del plano 7",
+            "texto": "Tres golpes en la puerta de hierro. La panadera dice: ¡Ya voy! Al fondo, la radio baja."
+          }
+        },
+        {
+          "titulo": "Evitar y tamaño",
+          "sub": "sin \"no\"",
+          "texto": [
+            "En el campo de prompt negativo, enumera lo que no quieres como cosas: \"texto en pantalla, marca de agua, personas al fondo\". La misma guía desaconseja las instrucciones con \"no\", como \"no muestres texto\".",
+            "Sobre el tamaño ideal del prompt no hay consenso: las fuentes van de 10 a 150 palabras. Empieza completo y recorta lo que el generador ignora."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "La ficha de prompt que la página verifica y el pedido para el asistente de IA para juntar todo en un texto corrido.",
+      "blocos": [
+        {
+          "rot": "prompt.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Sujeto: <quién o qué, con detalle de la ficha>\nAcción: <qué sucede, con verbo vivo>\nEscenario: <dónde y cuándo, con un detalle solo de ese lugar>\nCámara: <tamaño, ángulo y un movimiento, del desglose de planos>\nLuz: <tu tarjeta de look>\nSonido: <ambiente, efecto y diálogo en el formato \"quién dice: texto\">\nEvitar: <cosas que no quieres ver, sin \"no\">\nPrompt: <las partes de arriba en un texto corrido, con el sonido en frase separada>"
+        },
+        {
+          "rot": "Pedido al asistente de IA (juntar el prompt)",
+          "icone": "chat",
+          "conteudo": "Eres asistente de dirección. Junta las partes de abajo en un prompt de video corrido, en español, para un generador de video con audio.\nReglas:\n- empieza por la cámara y el sujeto, después la acción, el escenario y la luz;\n- describe el sonido en frases separadas, al final; diálogo en el formato \"quién dice: texto\";\n- no agregues personaje, objeto ni lugar que no esté en las partes;\n- devuelve también la lista \"Evitar\" solo con sustantivos, sin la palabra \"no\".\nPartes:\n<pega aquí las líneas Sujeto, Acción, Escenario, Cámara, Luz y Sonido>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Verifica tu prompt",
+      "sub": "Pega el prompt.txt (o carga el archivo). La página verifica las ocho líneas y si el texto trae un tamaño de plano y un movimiento con los términos de las clases 2 y 3 del curso 0 (plano general, close, dolly in, cámara fija, cámara en mano…).",
+      "arquivo": "prompt.txt",
+      "rot": "Pega aquí tu prompt.txt (una línea por parte):",
+      "modelo": "Sujeto: ...\nAcción: ...\nEscenario: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 3,
+          "campos": [
+            "Sujeto",
+            "Acción",
+            "Escenario",
+            "Cámara",
+            "Luz",
+            "Sonido",
+            "Evitar",
+            "Prompt"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "un tamaño de plano",
+              "termos": [
+                "plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot / plano general / plano de establecimiento / gran plano general",
+                "plano aberto / wide shot / plano abierto",
+                "plano americano / medium wide shot / cowboy shot / medium-long shot / medium long shot",
+                "plano médio / medium shot / plano medio / mid shot",
+                "meio primeiro plano / close médio / medium close-up / plano medio corto",
+                "close / close-up / primeiro plano / plano fechado / closeup / primer plano / plano cerrado",
+                "plano detalhe / extreme close-up / macro / plano detalle / detail shot / macro shot"
+              ]
+            },
+            {
+              "rot": "un movimiento de cámara",
+              "termos": [
+                "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
+                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly out / pull-out / afastamento lento / alejamiento lento",
+                "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
+                "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
+                "tilt / tilt up / tilt down",
+                "grua / crane / pedestal up / pedestal down / crane shot / grúa",
+                "órbita / orbit / arc shot / orbit shot",
+                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "zoom in / zoom out / crash zoom",
+                "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
+                "whip pan / chicote / swish pan / latigazo",
+                "drone / plano aéreo / aerial shot"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: prompt con {n} partes",
+      "exemplo": "Sujeto: la puerta de hierro de un horno de ladrillo en una panadería de barrio\nAcción: la puerta se abre despacio y el vapor sube contra la luz\nEscenario: panadería pequeña a las 4:50, azulejo blanco, calle oscura afuera\nCámara: close, cámara baja, dolly in lento\nLuz: low-key, luz lateral del horno, vapor en el haz; calle fría y oscura\nSonido: chirrido de la puerta del horno y siseo del vapor; radio baja al fondo\nEvitar: texto en pantalla, marca de agua, personas al fondo\nPrompt: Close, cámara baja: en una panadería de barrio a las 4:50, la puerta de hierro de un horno de ladrillo se abre despacio y el vapor sube contra la luz lateral del horno. Dolly in lento. Low-key, azulejo blanco, calle fría y oscura por la vitrina. Sonido: chirrido de la puerta del horno y siseo del vapor. Al fondo, una radio baja.",
+      "exemplo_errado": "Sujeto: un horno\nAcción: abriéndose\nEscenario: panadería\nCámara: close, cámara baja\nLuz: bonita\nPrompt: horno de panadería abriéndose, cinematográfico, no muestres texto"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Opcional: revisar en la terminal",
+      "sub": "Solo para quien ya usa terminal. Descarga el curso de GitHub y ejecútalo en su carpeta: las reglas son las mismas de la página. Para tu archivo, cambia <code>--exemplo</code> por su nombre (<code>prompt.txt</code>); sale 0 cuando pasa.",
+      "blocos": [
+        {
+          "rot": "Terminal (en la carpeta del curso)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py prompt --exemplo; echo \"saída: $?\"\npython3 conferir.py prompt --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Salida capturada (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py prompt --exemplo; echo \"saída: $?\"\nOK: prompt con 8 partes\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Ejemplo con error (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py prompt --errado; echo \"saída: $?\"\nAún no. Lo que falta:\n - Falta la línea Sonido: con la descripción (al menos 3 letras).\n - Falta la línea Evitar: con la descripción (al menos 3 letras).\n - Falta citar un movimiento de cámara.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Un plano de tu desglose de planos, de preferencia el que tiene un sonido destacado.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Prompt · un plano en ocho líneas",
+          "min": "20 min",
+          "texto": "Elige un plano de tu desglose de planos. Completa el prompt.txt con el modelo: cámara copiada del desglose de planos, luz copiada de la tarjeta de look, sonido en frase separada. Si quieres, pide al asistente de IA que junte el texto corrido y revísalo. Pégalo en \"Verifica tu prompt\" y descarga el archivo a la carpeta del proyecto.",
+          "pronto": "la página responde <code>OK: prompt con 8 partes</code> y el prompt.txt está en la carpeta del proyecto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Evitar · reescribir sin \"no\"",
+          "min": "10 min",
+          "texto": "Lee la línea Evitar y la línea Prompt. Cambia toda frase con \"no\" o \"sin\" (\"no muestres texto\", \"sin personas\") por cosas en lista (\"texto en pantalla, personas al fondo\") y verifica de nuevo.",
+          "pronto": "la página sigue respondiendo <code>OK: prompt con 8 partes</code> y la palabra \"no\" no aparece en la línea Evitar."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Qué acción deja menos para que el generador invente?",
+          "opcoes": [
+            "Una panadera de pie en la panadería, mirando a la cámara.",
+            "Una panadera posando junto al horno de la panadería.",
+            "Una panadera bonita en una panadería cinematográfica.",
+            "La panadera saca la primera hornada con la pala de madera."
+          ],
+          "certa": 3,
+          "explica": "El verbo vivo cuenta lo que pasa y limita la elección del generador. \"De pie\", \"posando\" y adjetivos como \"bonita\" o \"cinematográfica\" no dicen nada que la máquina pueda ejecutar.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Cómo recomienda la guía oficial de Google poner el sonido en el prompt?",
+          "opcoes": [
+            "Decir que quieres audio y describirlo en frases separadas de la imagen.",
+            "Escribir el sonido entre corchetes al comienzo del prompt.",
+            "Dejar el sonido totalmente fuera del prompt y agregar todo después, en el montaje.",
+            "Usar solo la palabra \"cinematic sound\" al final del prompt."
+          ],
+          "certa": 0,
+          "explica": "La guía pide dejar claro que quieres audio y describir efectos, ambiente y diálogo en frases propias. Separar el sonido también facilita cambiar solo eso en un nuevo intento.",
+          "ref": "passos"
+        },
+        {
+          "p": "No quieres texto en pantalla. ¿Qué escribes en el campo de prompt negativo?",
+          "opcoes": [
+            "\"No muestres ningún texto en pantalla, por favor.\"",
+            "\"texto en pantalla, letrero, subtítulo\"",
+            "\"Sin texto, sin letras y sin nada escrito.\"",
+            "\"Evita por completo cualquier tipo de texto.\""
+          ],
+          "certa": 1,
+          "explica": "La guía recomienda describir lo que no quieres como una cosa, sin \"no\" ni \"sin\": el propio campo ya dice que es para evitar. Escribir \"no muestres\" es justamente lo que desaconseja.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿De dónde vienen la cámara y la luz del prompt de un plano?",
+          "opcoes": [
+            "De la sugerencia automática que hace el generador después del primer intento.",
+            "De un prompt listo copiado de otro creador que hizo algo parecido.",
+            "De la línea del plano en el desglose de planos y de la tarjeta de look de la escena.",
+            "Del estilo de un director famoso citado por su nombre en el prompt."
+          ],
+          "certa": 2,
+          "explica": "La cámara y la luz se decidieron en el curso 0, para toda la escena. Copiar del desglose de planos y del look mantiene los planos coherentes. Citar a un director por su nombre imita el trabajo de una persona real; describe los ingredientes del look.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "Siete partes",
+          "texto": "Sujeto, acción, escenario, cámara, luz, sonido y evitar. Después, el texto corrido."
+        },
+        {
+          "t": "Sonido separado",
+          "texto": "Ambiente, efecto y diálogo en frases propias; el diálogo como \"quien dice: texto\"."
+        },
+        {
+          "t": "Evitar sin \"no\"",
+          "texto": "Enumera cosas en el campo negativo, como recomienda la guía de Google."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Guía oficial de prompt de video de Google (Veo y Gemini Omni Flash)",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Curso 0 · Luz, color y atmósfera: la tarjeta de look",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/es/aulas/luz/"
+        },
+        {
+          "t": "Curso 2 · Producción: sonido, voz y banda sonora a fondo",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/es/"
+        }
+      ]
+    }
+  ]
+}

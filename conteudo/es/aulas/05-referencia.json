@@ -1,0 +1,325 @@
+{
+  "slug": "referencia",
+  "num": 5,
+  "menu": "Referencia",
+  "titulo": "Consistencia por referencia: personaje, objeto y estilo entre planos",
+  "titulo_curto": "Consistencia por referencia",
+  "minutos": 18,
+  "lead": "Uno de los errores más visibles en el video con IA es el personaje que cambia de rostro entre un plano y otro. Los generadores de 2026 aceptan imágenes de referencia, cada uno con un nombre y un límite. El método es el mismo en todos: imagen de referencia, descripción bloqueada, look fijo y último fotograma heredado.",
+  "objetivo": "vincular cada plano a las imágenes de referencia y al bloqueo de descripción que mantienen al mismo personaje y el mismo look.",
+  "competencias": [
+    "preparar-referencias",
+    "travar-descricao",
+    "manter-continuidade"
+  ],
+  "aprende": [
+    {
+      "t": "Qué imágenes de referencia preparar a partir de la ficha del curso 0"
+    },
+    {
+      "t": "Cómo llama cada generador a la referencia en oct/2026"
+    },
+    {
+      "t": "El bloqueo: las mismas palabras en todos los prompts"
+    },
+    {
+      "t": "Los límites éticos de usar referencia"
+    }
+  ],
+  "hero_alt": "Tablero de referencias fijado en una pared oscura de set: delantal azul marino en un colgador, pala de madera gastada, pañuelo gris y fotos de objetos.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Cuatro bloqueos que sostienen la continuidad",
+      "sub": "De la ficha al plano verificado. Haz clic en cada etapa.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Ficha",
+          "sub": "del curso 0",
+          "icone": "arquivo",
+          "detalhe": "La ficha de Doña Lia (o de tu personaje): rostro, cabello, vestuario, objeto, ambiente y la línea \"Nunca cambia\"."
+        },
+        {
+          "titulo": "Imágenes",
+          "sub": "de referencia",
+          "icone": "camadas",
+          "forte": true,
+          "detalhe": "Frente, perfil y cuerpo entero del personaje, el objeto principal y el lugar. Fondo limpio, luz uniforme, siempre el mismo vestuario."
+        },
+        {
+          "titulo": "Bloqueo",
+          "sub": "mismas palabras",
+          "icone": "cadeado",
+          "detalhe": "La línea \"Nunca cambia\" de la ficha, repetida palabra por palabra en todos los prompts. Cambiar \"delantal azul marino\" por \"delantal oscuro\" ya deja espacio para que el generador varíe."
+        },
+        {
+          "titulo": "Look",
+          "sub": "prompt base",
+          "icone": "sol",
+          "detalhe": "El prompt base del lookbook (clase 3), igual en todos los planos. El personaje correcto con otra luz sigue pareciendo otra película."
+        },
+        {
+          "titulo": "Herencia",
+          "sub": "último fotograma",
+          "icone": "seta",
+          "detalhe": "Cuando la acción continúa, el último fotograma del plano anterior entra como primer fotograma o referencia del siguiente (clase 4)."
+        },
+        {
+          "titulo": "Verificar",
+          "sub": "lado a lado",
+          "icone": "lupa",
+          "detalhe": "Pon los clips lado a lado y mira la línea \"Nunca cambia\": pañuelo, anteojos, delantal, pala. Si algo cambió, genera de nuevo ese plano."
+        }
+      ],
+      "legenda": "Ningún bloqueo basta por sí solo. Una referencia sin bloqueo de texto varía; un bloqueo sin referencia también."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "La referencia en la práctica",
+      "sub": "El ejemplo continúa con Doña Lia, personaje ficticio del curso 0.",
+      "passos": [
+        {
+          "titulo": "Las imágenes de referencia",
+          "sub": "una hoja de personaje",
+          "texto": [
+            "Genera, a partir de la ficha, tres imágenes del personaje: de frente, de perfil y de cuerpo entero, con fondo neutro y el vestuario completo. Suma el objeto que aparece en primer plano y el lugar vacío.",
+            "Ponles nombres claros a los archivos (lia-frente, lia-perfil, pa-de-madeira). Por ese nombre la lista de referencias conecta cada plano."
+          ]
+        },
+        {
+          "titulo": "Cada generador, un nombre",
+          "sub": "ejemplos con fecha (oct/2026)",
+          "texto": [
+            "Veo 3.1: hasta 3 imágenes de referencia en la función \"Ingredients\". Seedance 2.5: hasta 30 imágenes, 10 videos y 10 audios. FLUX.2 [klein], abierto: edición con varias imágenes de referencia, útil para los stills.",
+            "Kling 3.0: los \"elements\" de personaje los reportan terceros, sin confirmación oficial. Los botones cambian de nombre; el concepto queda."
+          ],
+          "exemplo": {
+            "rot": "Fuentes",
+            "texto": "Blog de desarrolladores de Google (Veo 3.1); The Decoder, 01/08/2026 (Seedance 2.5); repositorio oficial de FLUX.2."
+          }
+        },
+        {
+          "titulo": "Elegir las referencias del plano",
+          "sub": "menos es más claro",
+          "texto": [
+            "Cada plano lleva solo las referencias de lo que aparece en él. Primer plano de la pala: la imagen de la pala. Plano medio de Doña Lia: su frente y, si cabe, el lugar.",
+            "Si el generador acepta pocas imágenes, elige según la línea \"Nunca cambia\": lo que el público reconocería primero."
+          ],
+          "exemplo": {
+            "rot": "Plano 7",
+            "texto": "ref: lia-perfil.png, ultimo-quadro-06.png | bloqueo: moño con pañuelo, gafas, delantal azul marino"
+          }
+        },
+        {
+          "titulo": "Hasta dónde llega la referencia",
+          "sub": "ética",
+          "texto": [
+            "La referencia es para un personaje ficticio, para ti mismo o para quien dio su consentimiento por escrito. El rostro de un actor, de una figura pública o de un cliente sin autorización, no.",
+            "Seedance 2.0 entró en polémica con estudios de cine precisamente por generar actores y personajes reales. Etiqueta, derechos de imagen y voz quedan en el curso 2."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "La lista de referencias que la página verifica y el pedido para generar la hoja del personaje.",
+      "blocos": [
+        {
+          "rot": "referencias.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Personaje: <nombre (ficticio) y de dónde viene la ficha>\nReferencias: <archivos de referencia, separados por coma>\nBloqueo: <la línea \"Nunca cambia\" de la ficha, palabra por palabra>\n<n> | <tamaño del plano> | ref: <archivos de este plano> | trava: <lo que debe aparecer igual en este plano> | <n> s\n<n> | <tamaño del plano> | ref: <archivos de este plano> | trava: <lo que debe aparecer igual en este plano> | <n> s"
+        },
+        {
+          "rot": "Pedido al generador de imágenes (hoja de personaje)",
+          "icone": "chat",
+          "conteudo": "Hoja de referencia de personaje ficticio, tres vistas lado a lado: de frente, de perfil y de cuerpo entero. Fondo gris neutro, luz uniforme y suave, la misma ropa en las tres.\nPersonaje: <pega aquí las líneas Edad, Rostro, Cabello, Cuerpo y Vestuario de tu ficha>\nSin texto, sin logotipo."
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Verifica tu lista de referencias",
+      "sub": "Pega el referencias.txt (o carga el archivo). La página verifica el formato: cada plano con ref: y trava: completos. Si el bloqueo repite la ficha palabra por palabra, eso lo verificas tú.",
+      "arquivo": "referencias.txt",
+      "rot": "Pega aquí tu referencias.txt (encabezado y una línea numerada por plano):",
+      "modelo": "Personaje: ...\nReferencias: ...\nTrava: ...\n1 | plano general | ref: ... | trava: ... | 4 s",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 3,
+          "campos": [
+            "Personaje",
+            "Referencias",
+            "Bloqueo"
+          ]
+        },
+        {
+          "tipo": "planos",
+          "min": 4,
+          "max": 10
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "la columna ref",
+              "min": 3,
+              "termos": [
+                "ref: / referência: / referencia: / referências: / referencias: / reference: / references:"
+              ]
+            },
+            {
+              "rot": "la columna bloqueo",
+              "min": 5,
+              "termos": [
+                "trava: / lock: / locked: / bloqueo: / traba: / fijo:"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} planos con referencia y bloqueo",
+      "exemplo": "Personaje: Doña Lia (ficticia), de la ficha.txt del curso 0\nReferencias: lia-frente.png, lia-perfil.png, lia-corpo.png, pa-de-madeira.png, padaria.png\nBloqueo: moño con pañuelo, anteojos, delantal azul marino, pala de madera, madrugada\n1 | plano general | ref: padaria.png | bloqueo: calle oscura, vitrina encendida, azulejo blanco | 4 s\n2 | plano abierto | ref: lia-corpo.png, padaria.png | bloqueo: moño con pañuelo, delantal azul marino | 4 s\n3 | plano medio | ref: lia-frente.png | bloqueo: moño con pañuelo, anteojos, delantal azul marino | 4 s\n5 | plano detalle | ref: pa-de-madeira.png | bloqueo: pala de madera | 3 s\n7 | plano medio | ref: lia-perfil.png, ultimo-quadro-06.png | bloqueo: moño con pañuelo, anteojos, delantal azul marino | 4 s\n8 | plano abierto | ref: lia-corpo.png, padaria.png | bloqueo: delantal azul marino, puerta de metal enrollable | 4 s",
+      "exemplo_errado": "Personaje: Doña Lia\nReferencias: lia.png\n1 | plano general | ref: padaria.png | 4 s\n2 | plano medio | ref: | bloqueo: moño, anteojos, delantal | 4 s\n3 | plano medio | bloqueo: igual | 4 s"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Opcional: revisar en la terminal",
+      "sub": "Solo para quienes ya usan la terminal. Descarga el curso desde GitHub y ejecútalo en su carpeta: las reglas son las mismas de la página. Para tu archivo, cambia <code>--exemplo</code> por su nombre (<code>referencias.txt</code>); sale con 0 cuando pasa.",
+      "blocos": [
+        {
+          "rot": "Terminal (en la carpeta del curso)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py referencia --exemplo; echo \"saída: $?\"\npython3 conferir.py referencia --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Salida capturada (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py referencia --exemplo; echo \"saída: $?\"\nOK: 6 planos con referencia y bloqueo\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Ejemplo con error (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py referencia --errado; echo \"saída: $?\"\nAún no. Lo que falta:\n - Falta la línea Bloqueo: con la descripción (al menos 3 letras).\n - Encontré 3 planos numerados; el pedido es de 4 a 10. Empieza cada plano con el número (1 | ...).\n - Plano 1: falta la columna bloqueo.\n - Plano 2: falta la columna ref.\n - Plano 3: falta la columna ref.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Usa la ficha.txt y el desglose de planos del curso 0. Personaje ficticio, o tú mismo.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Lista · referencia y bloqueo por plano",
+          "min": "20 min",
+          "texto": "Escribe el referencias.txt: el encabezado con el personaje, los archivos y el bloqueo; después una línea por plano en que el personaje o el objeto aparece, con ref: y bloqueo:. Pégalo en \"Verifica tu lista de referencias\" y descarga el archivo a la carpeta del proyecto.",
+          "pronto": "la página responde <code>OK: [n] planos con referencia y bloqueo</code>, con al menos 4 planos, y el referencias.txt está en la carpeta del proyecto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Hoja · las tres vistas del personaje",
+          "min": "25 min",
+          "texto": "Usa el pedido de la hoja de personaje en el generador de imágenes que tengas. Separa las tres vistas en archivos con los nombres de tu línea Referencias.",
+          "pronto": "los archivos de frente, perfil y cuerpo entero están en la carpeta del proyecto con los mismos nombres citados en la línea Referencias del referencias.txt."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Por qué repetir \"delantal azul marino\" palabra por palabra en todos los prompts?",
+          "opcoes": [
+            "Porque el generador cobra menos por palabras repetidas.",
+            "Porque la imagen de referencia solo funciona con descripción en inglés.",
+            "Porque palabras diferentes dejan espacio para que el generador varíe el vestuario.",
+            "Porque el prompt queda más largo y, con más palabras, el generador presta más atención."
+          ],
+          "certa": 2,
+          "explica": "El bloqueo de texto trabaja junto con la imagen: \"delantal oscuro\" en un plano y \"delantal azul\" en otro son pedidos diferentes. Mismas palabras, mismo pedido.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿Cuántas imágenes de referencia acepta Veo 3.1 en el recurso \"Ingredients\", según Google?",
+          "opcoes": [
+            "Hasta 3 imágenes.",
+            "Hasta 9 imágenes.",
+            "Hasta 30 imágenes.",
+            "No acepta imagen de referencia."
+          ],
+          "certa": 0,
+          "explica": "Hasta 3 en Veo 3.1. Las 30 imágenes son de Seedance 2.5. El número de referencias cambia de un generador a otro y de una versión a otra: verifícalo con la fecha.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Qué referencias debe llevar el close de la pala de madera?",
+          "opcoes": [
+            "Todas las imágenes del proyecto, para que el generador tenga más contexto.",
+            "La imagen de la pala, porque es lo que aparece en el plano.",
+            "La imagen del rostro de Doña Lia, porque ella es la protagonista.",
+            "Ninguna, porque un objeto no necesita continuidad."
+          ],
+          "certa": 1,
+          "explica": "Cada plano lleva solo la referencia de lo que aparece en él. Demasiadas referencias confunden y pueden poner en el cuadro lo que no debería estar ahí.",
+          "ref": "passos"
+        },
+        {
+          "p": "Un cliente pide un anuncio con el rostro de un actor famoso como referencia. ¿Qué recomienda la clase?",
+          "opcoes": [
+            "Usarlo, siempre que el video sea corto y salga sin la marca del generador.",
+            "Usarlo, porque el generador aceptó la imagen sin bloquearla.",
+            "Usarlo solo en el borrador y cambiarlo después, si alguien reclama.",
+            "No usarlo sin autorización por escrito de la persona."
+          ],
+          "certa": 3,
+          "explica": "La referencia es para un personaje ficticio, para ti o para quien lo autorizó. Que el generador acepte la imagen no autoriza nada. Derechos de imagen y etiqueta están en el curso 2.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "Cuatro bloqueos",
+          "texto": "Imagen de referencia, bloqueo de texto, look fijo y último fotograma heredado."
+        },
+        {
+          "t": "Solo lo que aparece",
+          "texto": "Cada plano lleva la referencia de lo que está en él, con el nombre del archivo."
+        },
+        {
+          "t": "Con consentimiento",
+          "texto": "Personaje ficticio, tú mismo o alguien que lo autorizó. Nunca el rostro de otra persona."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Curso 0 · La ficha que sostiene la consistencia",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/es/aulas/ficha/"
+        },
+        {
+          "t": "Veo 3.1: Ingredients, primer y último fotograma (Google)",
+          "href": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"
+        },
+        {
+          "t": "Curso 2 · Producción: ética, etiqueta y derecho de imagen",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/es/"
+        }
+      ]
+    }
+  ]
+}

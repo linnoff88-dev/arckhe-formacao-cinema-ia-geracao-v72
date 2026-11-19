@@ -1,0 +1,325 @@
+{
+  "slug": "referencia",
+  "num": 5,
+  "menu": "Referência",
+  "titulo": "Consistência por referência: personagem, objeto e estilo entre planos",
+  "titulo_curto": "Consistência por referência",
+  "minutos": 18,
+  "lead": "Um dos erros mais visíveis em vídeo com IA é o personagem que muda de rosto entre um plano e outro. Os geradores de 2026 aceitam imagens de referência, cada um com um nome e um limite. O método é o mesmo em todos: imagem de referência, descrição travada, look fixo e último quadro herdado.",
+  "objetivo": "ligar cada plano às imagens de referência e à trava de descrição que seguram o mesmo personagem e o mesmo look.",
+  "competencias": [
+    "preparar-referencias",
+    "travar-descricao",
+    "manter-continuidade"
+  ],
+  "aprende": [
+    {
+      "t": "Que imagens de referência preparar a partir da ficha do curso 0"
+    },
+    {
+      "t": "Como cada gerador chama a referência em out/2026"
+    },
+    {
+      "t": "A trava: as mesmas palavras em todos os prompts"
+    },
+    {
+      "t": "Os limites éticos de usar referência"
+    }
+  ],
+  "hero_alt": "Quadro de referências preso numa parede escura de set: avental azul-marinho num cabide, pá de madeira gasta, lenço cinza e fotos de objetos.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Quatro travas que seguram a continuidade",
+      "sub": "Da ficha ao plano conferido. Clique em cada etapa.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Ficha",
+          "sub": "do curso 0",
+          "icone": "arquivo",
+          "detalhe": "A ficha da Dona Lia (ou do seu personagem): rosto, cabelo, figurino, objeto, ambiente e a linha \"Nunca muda\"."
+        },
+        {
+          "titulo": "Imagens",
+          "sub": "de referência",
+          "icone": "camadas",
+          "forte": true,
+          "detalhe": "Frente, perfil e corpo inteiro do personagem, o objeto principal e o lugar. Fundo limpo, luz uniforme, sempre o mesmo figurino."
+        },
+        {
+          "titulo": "Trava",
+          "sub": "mesmas palavras",
+          "icone": "cadeado",
+          "detalhe": "A linha \"Nunca muda\" da ficha, repetida palavra por palavra em todos os prompts. Trocar \"avental azul-marinho\" por \"avental escuro\" já abre espaço para o gerador variar."
+        },
+        {
+          "titulo": "Look",
+          "sub": "prompt-base",
+          "icone": "sol",
+          "detalhe": "O prompt-base do lookbook (aula 3), igual em todos os planos. Personagem certo com luz diferente ainda parece outro filme."
+        },
+        {
+          "titulo": "Herança",
+          "sub": "último quadro",
+          "icone": "seta",
+          "detalhe": "Quando a ação continua, o último quadro do plano anterior entra como primeiro quadro ou referência do próximo (aula 4)."
+        },
+        {
+          "titulo": "Conferir",
+          "sub": "lado a lado",
+          "icone": "lupa",
+          "detalhe": "Ponha os clipes lado a lado e olhe a linha \"Nunca muda\": lenço, óculos, avental, pá. Se algo mudou, gere de novo aquele plano."
+        }
+      ],
+      "legenda": "Nenhuma trava sozinha basta. Referência sem trava de texto varia; trava sem referência também."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Referência na prática",
+      "sub": "O exemplo continua com a Dona Lia, personagem fictícia do curso 0.",
+      "passos": [
+        {
+          "titulo": "As imagens de referência",
+          "sub": "uma folha de personagem",
+          "texto": [
+            "Gere, a partir da ficha, três imagens do personagem: de frente, de perfil e de corpo inteiro, com fundo neutro e o figurino completo. Some o objeto que aparece em close e o lugar vazio.",
+            "Dê nomes claros aos arquivos (lia-frente, lia-perfil, pa-de-madeira). É por esse nome que a lista de referências liga cada plano."
+          ]
+        },
+        {
+          "titulo": "Cada gerador, um nome",
+          "sub": "exemplos datados (out/2026)",
+          "texto": [
+            "Veo 3.1: até 3 imagens de referência no recurso \"Ingredients\". Seedance 2.5: até 30 imagens, 10 vídeos e 10 áudios. FLUX.2 [klein], aberto: edição com várias imagens de referência, útil para os stills.",
+            "Kling 3.0: os \"elements\" de personagem são relatados por terceiros, sem confirmação oficial. Os botões mudam de nome; o conceito fica."
+          ],
+          "exemplo": {
+            "rot": "Fontes",
+            "texto": "Blog de desenvolvedores do Google (Veo 3.1); The Decoder, 01/08/2026 (Seedance 2.5); repositório oficial do FLUX.2."
+          }
+        },
+        {
+          "titulo": "Escolher as referências do plano",
+          "sub": "menos é mais claro",
+          "texto": [
+            "Cada plano leva só as referências do que aparece nele. Close da pá: a imagem da pá. Plano médio da Dona Lia: frente dela e, se couber, o lugar.",
+            "Se o gerador aceita poucas imagens, escolha pela linha \"Nunca muda\": o que o público reconheceria primeiro."
+          ],
+          "exemplo": {
+            "rot": "Plano 7",
+            "texto": "ref: lia-perfil.png, ultimo-quadro-06.png | trava: coque com lenço, óculos, avental azul-marinho"
+          }
+        },
+        {
+          "titulo": "Até onde a referência vai",
+          "sub": "ética",
+          "texto": [
+            "Referência é para personagem fictício, para você mesmo ou para quem deu consentimento por escrito. Rosto de ator, de pessoa pública ou de cliente sem autorização, não.",
+            "O Seedance 2.0 entrou em polêmica com estúdios de cinema justamente por gerar atores e personagens reais. Rótulo, direito de imagem e voz ficam no curso 2."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "A lista de referências que a página confere e o pedido para gerar a folha do personagem.",
+      "blocos": [
+        {
+          "rot": "referencias.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Personagem: <nome (fictício) e de onde vem a ficha>\nReferências: <arquivos de referência, separados por vírgula>\nTrava: <a linha \"Nunca muda\" da ficha, palavra por palavra>\n<n> | <tamanho do plano> | ref: <arquivos deste plano> | trava: <o que tem de aparecer igual neste plano> | <n> s\n<n> | <tamanho do plano> | ref: <arquivos deste plano> | trava: <o que tem de aparecer igual neste plano> | <n> s"
+        },
+        {
+          "rot": "Pedido ao gerador de imagem (folha de personagem)",
+          "icone": "chat",
+          "conteudo": "Folha de referência de personagem fictício, três vistas lado a lado: de frente, de perfil e de corpo inteiro. Fundo cinza neutro, luz uniforme e suave, mesma roupa nas três.\nPersonagem: <cole aqui as linhas Idade, Rosto, Cabelo, Corpo e Figurino da sua ficha>\nSem texto, sem logotipo."
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira a sua lista de referências",
+      "sub": "Cole o referencias.txt (ou carregue o arquivo). A página confere o formato: cada plano com ref: e trava: preenchidas. Se a trava repete a ficha palavra por palavra, quem confere é você.",
+      "arquivo": "referencias.txt",
+      "rot": "Cole aqui o seu referencias.txt (cabeçalho e uma linha numerada por plano):",
+      "modelo": "Personagem: ...\nReferências: ...\nTrava: ...\n1 | plano geral | ref: ... | trava: ... | 4 s",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 3,
+          "campos": [
+            "Personagem",
+            "Referências",
+            "Trava"
+          ]
+        },
+        {
+          "tipo": "planos",
+          "min": 4,
+          "max": 10
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "a coluna ref",
+              "min": 3,
+              "termos": [
+                "ref: / referência: / referencia: / referências: / referencias: / reference: / references:"
+              ]
+            },
+            {
+              "rot": "a coluna trava",
+              "min": 5,
+              "termos": [
+                "trava: / lock: / locked: / bloqueo: / traba: / fijo:"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} planos com referência e trava",
+      "exemplo": "Personagem: Dona Lia (fictícia), da ficha.txt do curso 0\nReferências: lia-frente.png, lia-perfil.png, lia-corpo.png, pa-de-madeira.png, padaria.png\nTrava: coque com lenço, óculos, avental azul-marinho, pá de madeira, madrugada\n1 | plano geral | ref: padaria.png | trava: rua escura, vitrine acesa, azulejo branco | 4 s\n2 | plano aberto | ref: lia-corpo.png, padaria.png | trava: coque com lenço, avental azul-marinho | 4 s\n3 | plano médio | ref: lia-frente.png | trava: coque com lenço, óculos, avental azul-marinho | 4 s\n5 | plano detalhe | ref: pa-de-madeira.png | trava: pá de madeira | 3 s\n7 | plano médio | ref: lia-perfil.png, ultimo-quadro-06.png | trava: coque com lenço, óculos, avental azul-marinho | 4 s\n8 | plano aberto | ref: lia-corpo.png, padaria.png | trava: avental azul-marinho, porta de ferro de enrolar | 4 s",
+      "exemplo_errado": "Personagem: Dona Lia\nReferências: lia.png\n1 | plano geral | ref: padaria.png | 4 s\n2 | plano médio | ref: | trava: coque, óculos, avental | 4 s\n3 | plano médio | trava: igual | 4 s"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Opcional: conferir no terminal",
+      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras são as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>referencias.txt</code>); sai 0 quando passa.",
+      "blocos": [
+        {
+          "rot": "Terminal (na pasta do curso)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py referencia --exemplo; echo \"saída: $?\"\npython3 conferir.py referencia --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Saída capturada (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py referencia --exemplo; echo \"saída: $?\"\nOK: 6 planos com referência e trava\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Exemplo com erro (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py referencia --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Trava: com a descrição (pelo menos 3 letras).\n - Achei 3 planos numerados; o pedido é de 4 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna trava.\n - Plano 2: falta a coluna ref.\n - Plano 3: falta a coluna ref.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "Use a ficha.txt e a decupagem do curso 0. Personagem fictício, ou você mesmo.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Lista · referência e trava por plano",
+          "min": "20 min",
+          "texto": "Escreva o referencias.txt: o cabeçalho com o personagem, os arquivos e a trava; depois uma linha por plano em que o personagem ou o objeto aparece, com ref: e trava:. Cole em \"Confira a sua lista de referências\" e baixe o arquivo para a pasta do projeto.",
+          "pronto": "a página responde <code>OK: [n] planos com referência e trava</code>, com pelo menos 4 planos, e o referencias.txt está na pasta do projeto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Folha · as três vistas do personagem",
+          "min": "25 min",
+          "texto": "Use o pedido da folha de personagem no gerador de imagem que você tiver. Separe as três vistas em arquivos com os nomes da sua linha Referências.",
+          "pronto": "os arquivos de frente, perfil e corpo inteiro estão na pasta do projeto com os mesmos nomes citados na linha Referências do referencias.txt."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "perguntas": [
+        {
+          "p": "Por que repetir \"avental azul-marinho\" palavra por palavra em todos os prompts?",
+          "opcoes": [
+            "Porque o gerador cobra menos por palavras repetidas.",
+            "Porque a imagem de referência só funciona com descrição em inglês.",
+            "Porque palavras diferentes abrem espaço para o gerador variar o figurino.",
+            "Porque o prompt fica mais longo e, com mais palavras, o gerador presta mais atenção."
+          ],
+          "certa": 2,
+          "explica": "A trava de texto trabalha junto com a imagem: \"avental escuro\" num plano e \"avental azul\" no outro são pedidos diferentes. Mesmas palavras, mesmo pedido.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Quantas imagens de referência o Veo 3.1 aceita no recurso \"Ingredients\", segundo o Google?",
+          "opcoes": [
+            "Até 3 imagens.",
+            "Até 9 imagens.",
+            "Até 30 imagens.",
+            "Não aceita imagem de referência."
+          ],
+          "certa": 0,
+          "explica": "Até 3 no Veo 3.1. As 30 imagens são do Seedance 2.5. Número de referência muda de gerador para gerador e de versão para versão: confira com a data.",
+          "ref": "passos"
+        },
+        {
+          "p": "O close da pá de madeira deve levar quais referências?",
+          "opcoes": [
+            "Todas as imagens do projeto, para o gerador ter mais contexto.",
+            "A imagem da pá, porque é o que aparece no plano.",
+            "A imagem do rosto da Dona Lia, porque ela é a protagonista.",
+            "Nenhuma, porque objeto não precisa de continuidade."
+          ],
+          "certa": 1,
+          "explica": "Cada plano leva só a referência do que aparece nele. Referências demais confundem e podem pôr no quadro o que não devia estar lá.",
+          "ref": "passos"
+        },
+        {
+          "p": "Um cliente pede um anúncio com o rosto de um ator famoso como referência. O que a aula recomenda?",
+          "opcoes": [
+            "Usar, desde que o vídeo seja curto e saia sem a marca do gerador.",
+            "Usar, porque o gerador aceitou a imagem sem bloquear.",
+            "Usar só no rascunho e trocar depois, se alguém reclamar.",
+            "Não usar sem autorização por escrito da pessoa."
+          ],
+          "certa": 3,
+          "explica": "Referência é para personagem fictício, para você ou para quem autorizou. O gerador aceitar a imagem não autoriza nada. Direito de imagem e rótulo estão no curso 2.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "Quatro travas",
+          "texto": "Imagem de referência, trava de texto, look fixo e último quadro herdado."
+        },
+        {
+          "t": "Só o que aparece",
+          "texto": "Cada plano leva a referência do que está nele, com o nome do arquivo."
+        },
+        {
+          "t": "Com consentimento",
+          "texto": "Personagem fictício, você mesmo ou quem autorizou. Nunca rosto alheio."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Curso 0 · A ficha que segura a consistência",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/aulas/ficha/"
+        },
+        {
+          "t": "Veo 3.1: Ingredients, primeiro e último quadro (Google)",
+          "href": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"
+        },
+        {
+          "t": "Curso 2 · Produção: ética, rótulo e direito de imagem",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"
+        }
+      ]
+    }
+  ]
+}

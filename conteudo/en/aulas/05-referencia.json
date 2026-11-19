@@ -1,0 +1,325 @@
+{
+  "slug": "referencia",
+  "num": 5,
+  "menu": "Reference",
+  "titulo": "Consistency by reference: character, object and style across shots",
+  "titulo_curto": "Consistency by reference",
+  "minutos": 18,
+  "lead": "One of the most visible mistakes in AI video is the character whose face changes from one shot to the next. The 2026 generators accept reference images, each with its own name and limit. The method is the same in all of them: reference image, locked description, fixed look and inherited last frame.",
+  "objetivo": "tie each shot to the reference images and the description lock that hold the same character and the same look.",
+  "competencias": [
+    "preparar-referencias",
+    "travar-descricao",
+    "manter-continuidade"
+  ],
+  "aprende": [
+    {
+      "t": "Which reference images to prepare from the course 0 character sheet"
+    },
+    {
+      "t": "What each generator calls the reference as of Oct/2026"
+    },
+    {
+      "t": "The lock: the same words in every prompt"
+    },
+    {
+      "t": "The ethical limits of using references"
+    }
+  ],
+  "hero_alt": "Reference board pinned to a dark set wall: a navy apron on a hanger, a worn wooden shovel, a gray scarf and photos of objects.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Four locks that hold continuity",
+      "sub": "From the character sheet to the checked shot. Click each step.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Character sheet",
+          "sub": "from course 0",
+          "icone": "arquivo",
+          "detalhe": "The character sheet for Dona Lia (or your own character): face, hair, wardrobe, object, setting and the \"Never changes\" line."
+        },
+        {
+          "titulo": "Images",
+          "sub": "of reference",
+          "icone": "camadas",
+          "forte": true,
+          "detalhe": "Front, profile and full body of the character, the main object and the place. Clean background, even light, always the same wardrobe."
+        },
+        {
+          "titulo": "Lock",
+          "sub": "same words",
+          "icone": "cadeado",
+          "detalhe": "The \"Never changes\" line from the character sheet, repeated word for word in every prompt. Swapping \"navy-blue apron\" for \"dark apron\" already leaves room for the generator to vary."
+        },
+        {
+          "titulo": "Look",
+          "sub": "base prompt",
+          "icone": "sol",
+          "detalhe": "The lookbook's base prompt (lesson 3), the same in every shot. The right character with different light still looks like another film."
+        },
+        {
+          "titulo": "Inheritance",
+          "sub": "last frame",
+          "icone": "seta",
+          "detalhe": "When the action continues, the last frame of the previous shot goes in as the first frame or reference of the next one (lesson 4)."
+        },
+        {
+          "titulo": "Check",
+          "sub": "side by side",
+          "icone": "lupa",
+          "detalhe": "Put the clips side by side and look at the \"Never changes\" line: scarf, glasses, apron, shovel. If something changed, generate that shot again."
+        }
+      ],
+      "legenda": "No single lock is enough on its own. A reference without a text lock varies; a lock without a reference does too."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Reference in practice",
+      "sub": "The example continues with Dona Lia, the fictional character from course 0.",
+      "passos": [
+        {
+          "titulo": "The reference images",
+          "sub": "a character sheet",
+          "texto": [
+            "From the character sheet, generate three images of the character: front view, side view and full body, with a neutral background and the complete costume. Add the object that appears in close-up and the empty location.",
+            "Give the files clear names (lia-frente, lia-perfil, pa-de-madeira). That name is how the reference list links each shot."
+          ]
+        },
+        {
+          "titulo": "Each generator, a name",
+          "sub": "dated examples (Oct/2026)",
+          "texto": [
+            "Veo 3.1: up to 3 reference images in the \"Ingredients\" feature. Seedance 2.5: up to 30 images, 10 videos and 10 audio files. FLUX.2 [klein], open: editing with multiple reference images, useful for the stills.",
+            "Kling 3.0: the character \"elements\" are reported by third parties, with no official confirmation. The buttons change names; the concept stays."
+          ],
+          "exemplo": {
+            "rot": "Sources",
+            "texto": "Google developer blog (Veo 3.1); The Decoder, 08/01/2026 (Seedance 2.5); official FLUX.2 repository."
+          }
+        },
+        {
+          "titulo": "Choosing the references for the shot",
+          "sub": "less is clearer",
+          "texto": [
+            "Each shot gets only the references for what appears in it. Close-up of the shovel: the shovel image. Medium shot of Dona Lia: her front view and, if it fits, the location.",
+            "If the generator accepts only a few images, choose by the \"Never changes\" line: what the audience would recognize first."
+          ],
+          "exemplo": {
+            "rot": "Shot 7",
+            "texto": "ref: lia-perfil.png, ultimo-quadro-06.png | lock: bun with headscarf, glasses, navy blue apron"
+          }
+        },
+        {
+          "titulo": "How far the reference goes",
+          "sub": "ethics",
+          "texto": [
+            "References are for a fictional character, for yourself, or for someone who gave written consent. The face of an actor, a public figure or a client without authorization, no.",
+            "Seedance 2.0 stirred up controversy with film studios precisely for generating real actors and characters. Labeling, image rights and voice are covered in course 2."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The reference list that the page checks and the request to generate the character sheet.",
+      "blocos": [
+        {
+          "rot": "referencias.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Character: <name (fictional) and where the character sheet comes from>\nReferences: <reference files, separated by commas>\nLock: <the \"Never changes\" line from the character sheet, word for word>\n<n> | <shot size> | ref: <files for this shot> | trava: <what has to appear the same in this shot> | <n> s\n<n> | <shot size> | ref: <files for this shot> | trava: <what has to appear the same in this shot> | <n> s"
+        },
+        {
+          "rot": "Request to the image generator (character sheet)",
+          "icone": "chat",
+          "conteudo": "Fictional character reference sheet, three views side by side: front, side and full body. Neutral gray background, soft even light, same clothes in all three.\nCharacter: <paste here the Age, Face, Hair, Body and Costume lines from your character sheet>\nNo text, no logo."
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your reference list",
+      "sub": "Paste the referencias.txt (or upload the file). The page checks the format: each shot with ref: and trava: filled in. Whether the lock repeats the character sheet word for word is for you to check.",
+      "arquivo": "referencias.txt",
+      "rot": "Paste your referencias.txt here (header and one numbered line per shot):",
+      "modelo": "Character: ...\nReferences: ...\nLock: ...\n1 | wide shot | ref: ... | lock: ... | 4 s",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 3,
+          "campos": [
+            "Character",
+            "References",
+            "Lock"
+          ]
+        },
+        {
+          "tipo": "planos",
+          "min": 4,
+          "max": 10
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "the ref column",
+              "min": 3,
+              "termos": [
+                "ref: / referência: / referencia: / referências: / referencias: / reference: / references:"
+              ]
+            },
+            {
+              "rot": "the lock column",
+              "min": 5,
+              "termos": [
+                "trava: / lock: / locked: / bloqueo: / traba: / fijo:"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} shots with reference and lock",
+      "exemplo": "Character: Dona Lia (fictional), from the course 0 ficha.txt\nReferences: lia-frente.png, lia-perfil.png, lia-corpo.png, pa-de-madeira.png, padaria.png\nLock: hair bun with scarf, glasses, navy-blue apron, wooden peel, before dawn\n1 | wide shot | ref: padaria.png | lock: dark street, lit shop window, white tile | 4 s\n2 | long shot | ref: lia-corpo.png, padaria.png | lock: hair bun with scarf, navy-blue apron | 4 s\n3 | medium shot | ref: lia-frente.png | lock: hair bun with scarf, glasses, navy-blue apron | 4 s\n5 | detail shot | ref: pa-de-madeira.png | lock: wooden peel | 3 s\n7 | medium shot | ref: lia-perfil.png, ultimo-quadro-06.png | lock: hair bun with scarf, glasses, navy-blue apron | 4 s\n8 | long shot | ref: lia-corpo.png, padaria.png | lock: navy-blue apron, rolling iron door | 4 s",
+      "exemplo_errado": "Character: Dona Lia\nReferences: lia.png\n1 | wide shot | ref: padaria.png | 4 s\n2 | medium shot | ref: | lock: hair bun, glasses, apron | 4 s\n3 | medium shot | lock: same | 4 s"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Optional: check in the terminal",
+      "sub": "Only for people who already use a terminal. Download the course from GitHub and run it in its folder: the rules are the same as on the page. For your own file, swap <code>--exemplo</code> for its name (<code>referencias.txt</code>); it exits with 0 when it passes.",
+      "blocos": [
+        {
+          "rot": "Terminal (in the course folder)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py referencia --exemplo; echo \"saída: $?\"\npython3 conferir.py referencia --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Captured output (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py referencia --exemplo; echo \"saída: $?\"\nOK: 6 planos com referência e trava\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Example with an error (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py referencia --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Trava: com a descrição (pelo menos 3 letras).\n - Achei 3 planos numerados; o pedido é de 4 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna trava.\n - Plano 2: falta a coluna ref.\n - Plano 3: falta a coluna ref.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Use the ficha.txt and the shot list from course 0. A fictional character, or yourself.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "List · reference and lock per shot",
+          "min": "20 min",
+          "texto": "Write the referencias.txt: the header with the character, the files and the lock; then one line per shot where the character or the object appears, with ref: and lock:. Paste it into \"Check your reference list\" and download the file into the project folder.",
+          "pronto": "the page answers <code>OK: [n] shots with reference and lock</code>, with at least 4 shots, and the referencias.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "Sheet · the character's three views",
+          "min": "25 min",
+          "texto": "Use the character sheet prompt in whatever image generator you have. Split the three views into files named as in your References line.",
+          "pronto": "the front, profile and full-body files are in the project folder with the same names listed in the References line of referencias.txt."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "Why repeat \"navy-blue apron\" word for word in every prompt?",
+          "opcoes": [
+            "Because the generator charges less for repeated words.",
+            "Because the reference image only works with a description in English.",
+            "Because different words leave room for the generator to vary the costume.",
+            "Because the prompt gets longer, and with more words the generator pays more attention."
+          ],
+          "certa": 2,
+          "explica": "The text lock works together with the image: \"dark apron\" in one shot and \"blue apron\" in another are different requests. Same words, same request.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "How many reference images does Veo 3.1 accept in the \"Ingredients\" feature, according to Google?",
+          "opcoes": [
+            "Up to 3 images.",
+            "Up to 9 images.",
+            "Up to 30 images.",
+            "It doesn't accept reference images."
+          ],
+          "certa": 0,
+          "explica": "Up to 3 on Veo 3.1. The 30 images are Seedance 2.5. The number of references changes from generator to generator and from version to version: check it against the date.",
+          "ref": "passos"
+        },
+        {
+          "p": "Which references should the wooden peel close-up use?",
+          "opcoes": [
+            "All the images in the project, so the generator has more context.",
+            "The peel image, because that is what appears in the shot.",
+            "Dona Lia's face image, because she is the protagonist.",
+            "None, because objects don't need continuity."
+          ],
+          "certa": 1,
+          "explica": "Each shot carries only the reference of what appears in it. Too many references confuse the generator and can put in the frame what shouldn't be there.",
+          "ref": "passos"
+        },
+        {
+          "p": "A client asks for an ad using a famous actor's face as a reference. What does the lesson recommend?",
+          "opcoes": [
+            "Use it, as long as the video is short and comes out without the generator's watermark.",
+            "Use it, because the generator accepted the image without blocking it.",
+            "Use it only in the draft and swap it later if someone complains.",
+            "Don't use it without the person's written permission."
+          ],
+          "certa": 3,
+          "explica": "A reference is for a fictional character, for yourself, or for someone who gave permission. The generator accepting the image doesn't authorize anything. Image rights and labeling are in course 2.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "Four locks",
+          "texto": "Reference image, text lock, fixed look, and inherited last frame."
+        },
+        {
+          "t": "Only what appears",
+          "texto": "Each shot carries the reference of what's in it, with the file name."
+        },
+        {
+          "t": "With consent",
+          "texto": "Fictional character, yourself, or someone who gave permission. Never someone else's face."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Course 0 · The character sheet that holds consistency",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/aulas/ficha/"
+        },
+        {
+          "t": "Veo 3.1: Ingredients, first and last frame (Google)",
+          "href": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"
+        },
+        {
+          "t": "Course 2 · Production: ethics, labeling, and image rights",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+        }
+      ]
+    }
+  ]
+}

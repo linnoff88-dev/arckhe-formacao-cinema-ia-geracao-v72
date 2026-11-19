@@ -1,0 +1,456 @@
+{
+  "slug": "lista-prompts",
+  "num": 8,
+  "menu": "List",
+  "titulo": "Your prompt generator: from storyboard to prompt list with an agent",
+  "titulo_curto": "Prompt list",
+  "minutos": 20,
+  "lead": "Writing eight prompts by hand, with the same look and the same lock, is tiring and leaves room for mistakes. An AI assistant with clear rules drafts the whole list from the storyboard in course 0. You review it, the page checks it, and the list goes to any generator.",
+  "objetivo": "turn the storyboard from course 0 into a prompt list, one per shot, with an AI assistant, and check it on the page.",
+  "competencias": [
+    "montar-pedido-em-camadas",
+    "gerar-lista-de-prompts",
+    "revisar-saida-do-agente"
+  ],
+  "aprende": [
+    {
+      "t": "Why let an AI assistant draft the list"
+    },
+    {
+      "t": "The request in six layers: role, input, output, vocabulary, rules and limits"
+    },
+    {
+      "t": "Review what the assistant made up before you generate"
+    },
+    {
+      "t": "Put everything the course produced into a plan with dates"
+    }
+  ],
+  "hero_alt": "Dark production desk with a stack of index cards, a pencil storyboard sheet and a closed notebook under cold side light.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From storyboard to checked list",
+      "sub": "The assistant drafts; you decide. Click each step.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Input",
+          "sub": "3 files",
+          "icone": "pasta",
+          "detalhe": "storyboard.txt (course 0, lesson 8), lookbook.txt (lesson 3) and referencias.txt (lesson 5). All in text, in the project folder."
+        },
+        {
+          "titulo": "Request",
+          "sub": "6 layers",
+          "icone": "camadas",
+          "forte": true,
+          "detalhe": "Role, input, output format, vocabulary, rules and limits. This is what makes the assistant always return the same format."
+        },
+        {
+          "titulo": "Assistant",
+          "sub": "from your subscription",
+          "icone": "chat",
+          "detalhe": "The top model in your AI subscription, in the chat you already use. No terminal or program needed."
+        },
+        {
+          "titulo": "List",
+          "sub": "prompts.txt",
+          "icone": "lista",
+          "detalhe": "One line per shot: number, duration, size, movement, prompt and sound. Header with the base prompt and the lock."
+        },
+        {
+          "titulo": "Check",
+          "sub": "page + you",
+          "icone": "lupa",
+          "detalhe": "The page checks format, movement, sound and the total of seconds. You check whether the assistant made up a character, place or object."
+        },
+        {
+          "titulo": "Generator",
+          "sub": "any one",
+          "icone": "play",
+          "detalhe": "Each line becomes one generation, in the generator you chose in lesson 1. The list stays in the folder: switch generators without redoing it."
+        }
+      ],
+      "legenda": "The assistant speeds up the draft; the direction is still yours. Every line passes through your eyes before you spend credits."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Building your prompt generator",
+      "sub": "The example turns the 30-second storyboard of \"The first batch\" into a list.",
+      "passos": [
+        {
+          "titulo": "Why an assistant",
+          "sub": "same rules, every time",
+          "texto": [
+            "Eight shots call for eight prompts with the same base prompt and the same lock, word for word. By hand, one forgotten comma changes the look of a shot.",
+            "A request with fixed rules makes the assistant repeat what has to stay the same and change only what changes. You swap the storyboard and reuse the request."
+          ]
+        },
+        {
+          "titulo": "The six layers of the request",
+          "sub": "role to limits",
+          "texto": [
+            "Role (who it is), input (the pasted files), output format (the exact line), vocabulary (the camera terms from course 0), rules (copy the base prompt and lock, sound in a separate sentence) and limits (what to do when information is missing).",
+            "The limits layer is the one that protects you most: instead of making things up, the assistant writes \"FALTA:\" and what was missing."
+          ]
+        },
+        {
+          "titulo": "Review the output",
+          "sub": "what the page can't see",
+          "texto": [
+            "The page checks format and numbers. You read looking for what wasn't in the storyboard: an extra character, a new object, a swapped line of dialogue.",
+            "Found something made up? Don't just fix the line: add the missing rule to the request, so it doesn't come back with the next storyboard."
+          ]
+        },
+        {
+          "titulo": "From file to generator",
+          "sub": "portable",
+          "texto": [
+            "To generate, paste the base prompt, the lock, and the shot line, and attach the references for that shot. If the generator wants a different way of writing, adjust the line, not the list.",
+            "The list, the storyboard, the lookbook, and the references stay in the folder. If the generator changes or shuts down, you take everything to another one."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The layered request and the list format",
+      "sub": "Paste the request into your AI assistant's chat from your subscription, with the three files at the end.",
+      "blocos": [
+        {
+          "rot": "Request to the AI assistant (prompt writer)",
+          "icone": "chat",
+          "conteudo": "ROLE: You are a directing assistant and you write video prompts for generators with audio.\nINPUT: a storyboard (one line per shot), a lookbook, and a list of references, pasted at the end.\nOUTPUT: first the lines \"Scene:\", \"Base prompt:\" and \"Lock:\"; then one line per shot, in this format:\nn | duration | shot size | movement | prompt: <camera, subject, action, setting> | sound: <ambience, effect, dialogue as someone saying: text>\nVOCABULARY: size, angle, and movement only with the terms from the storyboard (wide shot, close-up, high camera, dolly in, static camera...).\nRULES:\n- copy the Base prompt from the lookbook and the Lock from the references word for word;\n- one movement per shot, the same as in the storyboard;\n- sound in its own sentence, after \"sound:\";\n- do not mention a director, film, brand, or real person.\nLIMITS: do not invent a character, place, object, or line of dialogue that is not in the input. If something is missing, write \"MISSING:\" and what was missing.\nStoryboard:\n<paste the storyboard.txt here>\nLookbook:\n<paste the lookbook.txt here>\nReferences:\n<paste the referencias.txt here>"
+        },
+        {
+          "rot": "prompts.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Scene: <name> (<duration> s)\nBase prompt: <from lookbook.txt, word for word>\nLock: <from referencias.txt, word for word>\n<n> | <n> s | <shot size> | <one movement> | prompt: <camera, subject, action, setting> | sound: <ambience, effect, dialogue>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your prompt list",
+      "sub": "Paste the prompts.txt that the assistant returned and you reviewed. Test it first with the two examples.",
+      "arquivo": "prompts.txt",
+      "rot": "Paste your prompts.txt here (header and one numbered line per shot):",
+      "modelo": "Scene: ...\nBase prompt: ...\nLock: ...\n1 | 4 s | wide shot | static camera | prompt: ... | sound: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 3,
+          "campos": [
+            "Scene",
+            "Base prompt",
+            "Lock"
+          ]
+        },
+        {
+          "tipo": "planos",
+          "min": 6,
+          "max": 10
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "shot size",
+              "variar": 3,
+              "termos": [
+                "plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot / plano general / plano de establecimiento / gran plano general",
+                "plano aberto / wide shot / plano abierto",
+                "plano americano / medium wide shot / cowboy shot / medium-long shot / medium long shot",
+                "plano médio / medium shot / plano medio / mid shot",
+                "meio primeiro plano / close médio / medium close-up / plano medio corto",
+                "close / close-up / primeiro plano / plano fechado / closeup / primer plano / plano cerrado",
+                "plano detalhe / extreme close-up / macro / plano detalle / detail shot / macro shot"
+              ]
+            },
+            {
+              "rot": "movement",
+              "um_so": true,
+              "termos": [
+                "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
+                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly out / pull-out / afastamento lento / alejamiento lento",
+                "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
+                "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
+                "tilt / tilt up / tilt down",
+                "grua / crane / pedestal up / pedestal down / crane shot / grúa",
+                "órbita / orbit / arc shot / orbit shot",
+                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "zoom in / zoom out / crash zoom",
+                "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
+                "whip pan / chicote / swish pan / latigazo",
+                "drone / plano aéreo / aerial shot"
+              ]
+            },
+            {
+              "rot": "the prompt column",
+              "min": 30,
+              "termos": [
+                "prompt:"
+              ]
+            },
+            {
+              "rot": "the sound column",
+              "min": 3,
+              "termos": [
+                "som: / áudio: / sound: / audio: / sonido:"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "duracao",
+          "min": 24,
+          "max": 36
+        }
+      ],
+      "ok": "OK: {n} prompts ready · {s} s",
+      "exemplo": "Scene: The first batch (30 s)\nBase prompt: cinematic photograph in a neighborhood bakery at 4:50 a.m., 35 mm, low-key with side light from the oven, white tile, night-blue street through the shop window, fine film grain, 16:9\nLock: hair in a bun with a headscarf, glasses, navy-blue apron, wooden peel, early morning\n1 | 4 s | wide shot | static camera | prompt: Wide shot from a high camera of a neighborhood street still dark; only the bakery window is lit. | sound: wind, a dog far away\n2 | 4 s | wide shot | lateral tracking shot | prompt: Wide shot: Dona Lia turns on the bakery lights and ties her navy-blue apron. | sound: light switch, low radio\n3 | 4 s | medium shot | static camera | prompt: Medium shot at eye level: Dona Lia kneads the dough on the wooden counter. | sound: dough slapping on the table\n4 | 4 s | close-up | dolly in | prompt: Close-up from a low camera: the iron oven door opens slowly and the steam rises against the light. | sound: creaking oven, hissing steam\n5 | 3 s | detail shot | tilt | prompt: Overhead detail shot: the worn wooden peel takes the first batch out of the oven. | sound: bread crust crackling\n6 | 3 s | close-up | static camera | prompt: Close-up at eye level: Dona Lia tastes a piece of bread and closes her eyes. | sound: only the radio, very low\n7 | 4 s | medium shot | handheld camera | prompt: Over-the-shoulder medium shot: knocks on the iron door; Dona Lia checks the clock and smiles. | sound: three knocks; the baker says: Coming!\n8 | 4 s | wide shot | dolly out | prompt: Wide shot: Dona Lia rolls up the iron shutter and the first customer walks in. | sound: iron shutter going up, door bell",
+      "exemplo_errado": "Scene: The first batch\nBase prompt: cinematic\n1 | 4 s | wide shot | static camera | prompt: dark street | sound: wind\n2 | 4 s | wide shot | static camera | prompt: bakery interior, in the style of a famous director\n3 | 4 s | wide shot | dolly in with zoom in | prompt: Dona Lia and her grandson knead the dough together on the counter. | sound: radio\n4 | 4 s | wide shot | static camera | prompt: the oven opens and the steam rises against the oven's side light. | sound:"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Optional: check in the terminal",
+      "sub": "Only for people who already use a terminal. Download the course from GitHub and run it in its folder: the rules are the same as on the page. For your own file, swap <code>--exemplo</code> for its name (<code>prompts.txt</code>); it exits with 0 when it passes.",
+      "blocos": [
+        {
+          "rot": "Terminal (in the course folder)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py lista-prompts --exemplo; echo \"saída: $?\"\npython3 conferir.py lista-prompts --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Captured output (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py lista-prompts --exemplo; echo \"saída: $?\"\nOK: 8 prompts prontos · 30 s\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Example with an error (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py lista-prompts --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Trava: com a descrição (pelo menos 3 letras).\n - Achei 4 planos numerados; o pedido é de 6 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna prompt.\n - Plano 2: falta a coluna som.\n - Plano 3: 2 escolhas de movimento; fique com uma só.\n - Plano 4: falta a coluna som.\n - Só 1 tipo(s) diferente(s) de tamanho do plano nos planos; varie para pelo menos 3.\n - Os planos somam 16 s; o pedido é de 24 a 36 s.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Use the storyboard from course 0 and the files from lessons 3 and 5. Without them, use the ones from \"The first batch\".",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "List · your scene in prompts",
+          "min": "30 min",
+          "texto": "Paste the layered request into your AI assistant's chat from your subscription, with the storyboard, the lookbook, and the references at the end. Review the answer looking for invention and \"MISSING:\". Paste it into \"Check your prompt list\" and download the prompts.txt to the project folder.",
+          "pronto": "the page answers <code>OK: [n] prompts ready · [s] s</code>, with the total between 24 and 36 s, and the prompts.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "New rule · what the assistant made up",
+          "min": "15 min",
+          "texto": "Compare the list with the storyboard and write down, at the end of the request, one rule for each invention you corrected. Save the request as pedido-prompts.txt for the next storyboard.",
+          "pronto": "the pedido-prompts.txt is in the project folder and has at least one more rule than the lesson's request, or the note \"no invention found\" with the date."
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "The course map",
+      "sub": "Four steps that take you from the storyboard to the prompt list. Click an exercise to see the \"done when\".",
+      "degraus": [
+        {
+          "aula": "geradores",
+          "icone": "lupa",
+          "quando": "Lesson 1",
+          "titulo": "Choose",
+          "sub": "a generator per shot",
+          "saida": "escolha.txt and geradores-out-2026.txt.",
+          "passo": "What each shot needs and which generator fits, with the date it was checked."
+        },
+        {
+          "aula": "imagem-chave",
+          "icone": "sol",
+          "quando": "Lessons 2 and 3",
+          "titulo": "Prompt and still",
+          "sub": "anatomy and lookbook",
+          "saida": "prompt.txt, lookbook.txt, and the stills.",
+          "passo": "The prompt in seven parts and the locked look in a base prompt, proven on the stills."
+        },
+        {
+          "aula": "referencia",
+          "icone": "cadeado",
+          "quando": "Lessons 4 to 7",
+          "titulo": "Clip and continuity",
+          "sub": "movement and reference",
+          "saida": "checked clips, referencias.txt, multishot.txt, and maquina.txt.",
+          "passo": "From still to clip, with the same character across shots, in close-up or wide."
+        },
+        {
+          "aula": "lista-prompts",
+          "icone": "lista",
+          "quando": "Lesson 8",
+          "titulo": "List",
+          "sub": "scene prompts",
+          "saida": "prompts.txt checked.",
+          "passo": "The whole scene as prompts, ready for any generator."
+        }
+      ],
+      "resultado": {
+        "titulo": "By the end of the course",
+        "texto": "A folder with your choice, lookbook, stills, clips, references and the prompt list for your scene.",
+        "total": "8 deliverables"
+      },
+      "rolagem_fim": {
+        "titulo": "The whole course",
+        "texto": "Four steps, each with its deliverable checked by the page. This lesson's list gathers them all."
+      },
+      "legenda": "Suggested order: each step uses what the previous one decided."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Build your plan with dates",
+      "sub": "Pick when you start and how much time you have each week. The plan lists the exercises from all eight lessons.",
+      "curso": "Generation: images and video with AI",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Lesson 1 · Choosing a generator",
+          "aula": "geradores"
+        },
+        {
+          "titulo": "Lesson 2 · Seven-part prompt",
+          "aula": "prompt"
+        },
+        {
+          "titulo": "Lesson 3 · Lookbook and stills",
+          "aula": "imagem-chave"
+        },
+        {
+          "titulo": "Lesson 4 · Clip from the still",
+          "aula": "movimento"
+        },
+        {
+          "titulo": "Lesson 5 · Reference and lock",
+          "aula": "referencia"
+        },
+        {
+          "titulo": "Lesson 6 · Multishot",
+          "aula": "multishot"
+        },
+        {
+          "titulo": "Lesson 7 · Machine sheet",
+          "aula": "aberto"
+        },
+        {
+          "titulo": "Lesson 8 · Prompt list",
+          "aula": "lista-prompts"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Generation: AI image and video",
+        "inicio": "Start",
+        "ritmo": "Pace",
+        "termino": "Expected finish",
+        "ate": "by",
+        "pronto": "done when",
+        "semanas": "weeks",
+        "travou": "## What got stuck and the rule I created",
+        "h": "h per week",
+        "exs": "exercises"
+      }
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "Which layer of the request does the most to keep the assistant from making things up?",
+          "opcoes": [
+            "The role, because it defines who the assistant is.",
+            "The vocabulary, because it limits the camera words.",
+            "The output format, because it fixes exactly the line each shot has to follow.",
+            "The limits, which say to write \"FALTA:\" instead of making things up."
+          ],
+          "certa": 3,
+          "explica": "If you don't say what to do when information is missing, the assistant fills the gap with something plausible. With \"FALTA:\", the gap shows up so you can decide.",
+          "ref": "passos"
+        },
+        {
+          "p": "The list passed the page's check, but shot 3 has a grandson of Dona Lia who isn't in the storyboard. What do you do?",
+          "opcoes": [
+            "Take the grandson out of the line and add a rule to the request.",
+            "Keep it, because the page accepted the list.",
+            "Switch to another AI assistant and ask again.",
+            "Delete all of shot 3 from the list."
+          ],
+          "certa": 0,
+          "explica": "The page checks format and numbers, not content. Made-up details get fixed in the line and become a rule in the request, so they don't come back in the next storyboard.",
+          "ref": "passos"
+        },
+        {
+          "p": "Why copy the base prompt and the lock word for word into every line?",
+          "opcoes": [
+            "Because the generator only accepts prompts of the same length.",
+            "Because the same text asks for the same look and the same character.",
+            "Because the page only checks lines that match each other.",
+            "That way the assistant uses less of your subscription."
+          ],
+          "certa": 1,
+          "explica": "It's the continuity from lessons 3 and 5, carried over into the list: whatever must be the same in every shot goes in the same. Only the camera, the action, and the sound change from line to line.",
+          "ref": "codigo"
+        },
+        {
+          "p": "The generator you were using shut down. What do you need to redo?",
+          "opcoes": [
+            "Everything, starting from the storyboard from course 0.",
+            "The stills and the references, which got stuck inside the platform that shut down.",
+            "Only the generations: the list, lookbook, and references are in your folder.",
+            "The prompt list, because each generator has its own format."
+          ],
+          "certa": 2,
+          "explica": "That's why everything is a text and image file in your folder, outside the platform: it's what the Sora case taught. Adjusting how you write for another generator is small next to redoing the scene.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "Request in six layers",
+          "texto": "Role, input, output, vocabulary, rules, and limits; the request can be reused."
+        },
+        {
+          "t": "Review is yours",
+          "texto": "The page checks the format; you check for made-up details and turn each one into a rule."
+        },
+        {
+          "t": "Portable list",
+          "texto": "Base prompt, lock, and one line per shot, ready for any generator."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Next: Course 2 · Production: from script to finished film",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+        },
+        {
+          "t": "Course 0 · Your storyboard: the input for this lesson",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/aulas/storyboard/"
+        }
+      ]
+    }
+  ]
+}

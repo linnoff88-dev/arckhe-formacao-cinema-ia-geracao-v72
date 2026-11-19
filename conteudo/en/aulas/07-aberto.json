@@ -1,0 +1,309 @@
+{
+  "slug": "aberto",
+  "num": 7,
+  "menu": "Open",
+  "titulo": "The open path: ComfyUI with LTX and Wan 2.2, VRAM and license",
+  "titulo_curto": "Open path",
+  "minutos": 18,
+  "lead": "An open model runs on your machine, with no credit per generation and no need for a platform to stay online. In return, it asks for a graphics card with memory, free disk space and a read of the license. This lesson helps you decide whether your machine can run it and which model and template to use in ComfyUI.",
+  "objetivo": "decide whether your machine can run open video, pick a model and license, and record the official template you will use.",
+  "competencias": [
+    "avaliar-maquina",
+    "ler-licenca-de-modelo",
+    "usar-template-comfyui"
+  ],
+  "aprende": [
+    {
+      "t": "What ComfyUI is and why it uses nodes"
+    },
+    {
+      "t": "How much VRAM and disk each model needs, per the official documentation"
+    },
+    {
+      "t": "Apache 2.0, community license and non-commercial: the difference"
+    },
+    {
+      "t": "The official Wan 2.2 and LTX-2.5 templates"
+    }
+  ],
+  "hero_alt": "A dark workstation with a glass-sided computer showing a large graphics card and a monitor with a node editor connected by lines.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From computer to open clip",
+      "sub": "Five decisions, in this order. Click each one.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Machine",
+          "sub": "VRAM and disk",
+          "icone": "chip",
+          "detalhe": "How much memory the graphics card has (VRAM) and how much disk is free. On Windows: Task Manager, Performance tab, GPU, \"Dedicated GPU memory\"."
+        },
+        {
+          "titulo": "Model",
+          "sub": "what fits",
+          "icone": "camadas",
+          "detalhe": "Wan 2.2 5B fits in 8 GB of VRAM with ComfyUI's memory offloading. LTX-2.5 needs 32 GB or more and 100 GB of disk, according to the LTX documentation."
+        },
+        {
+          "titulo": "License",
+          "sub": "what it can do",
+          "icone": "escudo",
+          "forte": true,
+          "detalhe": "Wan 2.2: Apache 2.0. LTX-2.x: community license, free below US$ 10 million in annual revenue. Read the license before using it in paid work."
+        },
+        {
+          "titulo": "Template",
+          "sub": "official",
+          "icone": "lista",
+          "detalhe": "ComfyUI comes with ready-made workflows (templates) for each model: text-to-video, image-to-video, first and last frame. Start with one of them."
+        },
+        {
+          "titulo": "Clip",
+          "sub": "checked",
+          "icone": "play",
+          "detalhe": "The result is a file like any other: check it with the clip checker from lesson 4."
+        }
+      ],
+      "legenda": "If your machine can't run it, nothing is lost: the same still, the same prompt and the same list work for a closed generator."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "ComfyUI, models and licenses",
+      "sub": "Numbers from the official documentation, checked on 10/19/2026.",
+      "passos": [
+        {
+          "titulo": "What ComfyUI is",
+          "sub": "nodes instead of buttons",
+          "texto": [
+            "A free program, with a window, that builds the generation as boxes connected by lines (nodes): load model, write prompt, load image, generate, save. Each box does one thing.",
+            "You don't have to build it from scratch: the official templates come ready, and the download-models button fetches the files that are missing."
+          ]
+        },
+        {
+          "titulo": "How much your machine can handle",
+          "sub": "VRAM and disk",
+          "texto": [
+            "Wan 2.2 5B (text and image to video): fits in 8 GB of VRAM with ComfyUI's memory offloading, according to the ComfyUI documentation. The 14B has image-to-video and first and last frame templates.",
+            "LTX-2.5: the documentation asks for a CUDA-compatible card, 32 GB or more of VRAM and 100 GB free; there are smaller files (INT8) for cards with less memory."
+          ],
+          "exemplo": {
+            "rot": "Sources",
+            "texto": "docs.comfy.org (Wan 2.2) and docs.ltx.io (ComfyUI with LTX), checked on 10/19/2026."
+          }
+        },
+        {
+          "titulo": "Read the license",
+          "sub": "open doesn't mean free for everything",
+          "texto": [
+            "Apache 2.0 (Wan 2.2, FLUX.2 [klein] 4B): commercial use allowed. LTX-2.x community license: commercial use free below US$ 10 million in revenue per year; above that, a paid license; passing on fine-tunes may require a paid license.",
+            "Non-commercial (FLUX.2 [klein] 9B): research and personal use. INEMA content is free, but your work may not be: check before you start."
+          ]
+        },
+        {
+          "titulo": "Templates and the LTX notice",
+          "sub": "the rewritten prompt",
+          "texto": [
+            "The LTX-2.5 templates come with a \"prompt enhancer\" (Prompt Enhance) turned on by default, which rewrites your text before generating. To use exactly the prompt from lesson 2, turn this option off.",
+            "The LTX-2.5 first and last frame template skips the upscaling step; the text and image-to-video ones use two steps."
+          ],
+          "exemplo": {
+            "rot": "Source",
+            "texto": "docs.ltx.io, \"Using ComfyUI with LTX\" (checked on 10/19/2026)."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy",
+      "sub": "The sheet for your machine, which the page checks.",
+      "blocos": [
+        {
+          "rot": "maquina.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "GPU: <your graphics card, or \"none compatible\">\nVRAM: <the card's dedicated memory, in GB>\nFree disk: <free GB on the disk where ComfyUI will go>\nModel: <Wan 2.2 5B, Wan 2.2 14B, LTX-2.5... or \"none, I stay with closed\">\nLicense: <Apache 2.0, LTX-2.x community license, non-commercial>\nTemplate: <name of the official template you will open>\nUse: <what you will generate on open and what stays on closed>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your machine sheet",
+      "sub": "Paste the maquina.txt (or load the file). The page checks the seven fields and whether the license was cited.",
+      "arquivo": "maquina.txt",
+      "rot": "Paste your maquina.txt here (one line per field):",
+      "modelo": "GPU: ...\nVRAM: ...\nFree disk: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 2,
+          "campos": [
+            "GPU",
+            "VRAM",
+            "Free disk",
+            "Model",
+            "License",
+            "Template",
+            "Use"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "the license type (Apache 2.0, community or non-commercial)",
+              "termos": [
+                "apache / licença comunitária / licenca comunitaria / community license / licencia comunitaria / não comercial / nao comercial / non-commercial / noncommercial / no comercial"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: machine sheet with {n} fields",
+      "exemplo": "GPU: NVIDIA graphics card with 12 GB\nVRAM: 12 GB\nFree disk: 150 GB\nModel: Wan 2.2 5B, which fits in 8 GB with ComfyUI's memory offloading\nLicense: Apache 2.0, commercial use allowed\nTemplate: Wan 2.2 5B, text and image to video (official ComfyUI template)\nUse: rehearse shots 1 and 4 on open before generating the final version on closed",
+      "exemplo_errado": "GPU: the laptop's\nVRAM: ?\nModel: LTX-2.5\nLicense: it's open, so anything goes\nUse: everything"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Optional: check in the terminal",
+      "sub": "Only for people who already use a terminal. Download the course from GitHub and run it in its folder: the rules are the same as the page. For your own file, replace <code>--exemplo</code> with its name (<code>maquina.txt</code>); it exits 0 when it passes.",
+      "blocos": [
+        {
+          "rot": "Terminal (in the course folder)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py aberto --exemplo; echo \"saída: $?\"\npython3 conferir.py aberto --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Captured output (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py aberto --exemplo; echo \"saída: $?\"\nOK: ficha da máquina com 7 campos\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Example with an error (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py aberto --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha VRAM: com a descrição (pelo menos 2 letras).\n - Falta a linha Disco livre: com a descrição (pelo menos 2 letras).\n - Falta a linha Template: com a descrição (pelo menos 2 letras).\n - Falta citar o tipo de licença (Apache 2.0, comunitária ou não comercial).\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Without a compatible card, practice 1 still counts the same: recording \"none\" is also a decision.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Sheet · your machine and the model",
+          "min": "15 min",
+          "texto": "Find out your machine's VRAM and free disk space. Pick the model that fits (or \"none, I'm staying with closed\"), read its license, and note the official template. Paste the maquina.txt into \"Check your machine sheet\" and download the file.",
+          "pronto": "the page replies <code>OK: machine sheet with 7 fields</code> and the maquina.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "Optional · a clip in the open",
+          "min": "45 min",
+          "texto": "If your machine can run it: install ComfyUI, open the image-to-video template for the model you chose, load a still from lesson 3, and use the motion prompt from lesson 4. Save it in 16:9 and check it in lesson 4.",
+          "pronto": "the checker from lesson 4 replies <code>OK: [s] s · [w]×[h] · 16:9</code> for the clip generated in ComfyUI."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "Your card has 8 GB of VRAM. According to the official documentation, which video model from the lesson fits?",
+          "opcoes": [
+            "LTX-2.5 in the standard version, with the files in BF16.",
+            "Any open model, because ComfyUI shrinks everything down.",
+            "Wan 2.2 5B, with ComfyUI's memory offloading.",
+            "None: open video only runs on a server."
+          ],
+          "certa": 2,
+          "explica": "The ComfyUI documentation says Wan 2.2 5B fits in 8 GB with offloading. The LTX one asks for 32 GB or more for the standard setup.",
+          "ref": "passos"
+        },
+        {
+          "p": "What does the LTX-2.x community license allow?",
+          "opcoes": [
+            "Commercial use at no cost below US$ 10 million in annual revenue.",
+            "Personal use only, with no paid work at all.",
+            "Any use, with no revenue limit at all, exactly like the Apache 2.0 license.",
+            "Academic research only, with prior authorization."
+          ],
+          "certa": 0,
+          "explica": "Below US$ 10 million a year, commercial use is free; above that, a paid license. It's different from Apache 2.0 (no cap) and from non-commercial (no paid work).",
+          "ref": "passos"
+        },
+        {
+          "p": "In the LTX-2.5 template, the video came out different from your prompt. What should you check first?",
+          "opcoes": [
+            "Whether the disk has at least 100 GB free.",
+            "Whether the prompt enhancer (Prompt Enhance) is turned on.",
+            "Whether the license was accepted on Hugging Face.",
+            "Whether the graphics card is the newest on the market."
+          ],
+          "certa": 1,
+          "explica": "The official templates come with the prompt enhancer turned on by default, and it rewrites your text. Turn it off to use the prompt from lesson 2 as is.",
+          "ref": "passos"
+        },
+        {
+          "p": "Your machine has no compatible card. What happens to the course work?",
+          "opcoes": [
+            "You have to buy a new graphics card to be able to finish the course.",
+            "You lose the stills and prompts made so far.",
+            "The page's checker stops working.",
+            "Nothing is lost: the still, the prompt, and the list work for a closed generator."
+          ],
+          "certa": 3,
+          "explica": "Everything you did is in portable files. The open path is an option, not a requirement; recording \"none\" on the sheet is also a decision.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "VRAM decides",
+          "texto": "Wan 2.2 5B in 8 GB with offloading; LTX-2.5 asks for 32 GB or more and 100 GB of disk."
+        },
+        {
+          "t": "License read",
+          "texto": "Apache 2.0, community with a revenue cap, or non-commercial."
+        },
+        {
+          "t": "Official template",
+          "texto": "Start with the ready-made one; in LTX, turn off the prompt enhancer so you can use your own."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "ComfyUI: download",
+          "href": "https://www.comfy.org/download"
+        },
+        {
+          "t": "Wan 2.2 on ComfyUI (official documentation)",
+          "href": "https://docs.comfy.org/tutorials/video/wan/wan2_2"
+        },
+        {
+          "t": "LTX on ComfyUI (official documentation)",
+          "href": "https://docs.ltx.io/open-source-model/integration-tools/comfy-ui"
+        },
+        {
+          "t": "LTX-2.5 on Hugging Face (weights and license)",
+          "href": "https://huggingface.co/Lightricks/LTX-2.5"
+        }
+      ]
+    }
+  ]
+}

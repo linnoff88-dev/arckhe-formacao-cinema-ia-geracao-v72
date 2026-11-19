@@ -1,0 +1,298 @@
+{
+  "slug": "movimento",
+  "num": 4,
+  "menu": "Movimento",
+  "titulo": "Da imagem ao movimento: imagem-para-vídeo e primeiro/último quadro",
+  "titulo_curto": "Imagem para vídeo",
+  "minutos": 19,
+  "lead": "Com o still aprovado, o gerador já sabe quem, onde e com que luz. O prompt agora só diz o que muda: o movimento da câmera, a ação e o som. Com primeiro e último quadro, você também decide onde o plano termina. E antes de seguir, a página confere o clipe.",
+  "objetivo": "animar um still aprovado com um prompt só de movimento e conferir o clipe na página antes de seguir.",
+  "competencias": [
+    "animar-imagem",
+    "usar-primeiro-e-ultimo-quadro",
+    "conferir-clipe"
+  ],
+  "aprende": [
+    {
+      "t": "O que vai no prompt quando a imagem já existe"
+    },
+    {
+      "t": "Primeiro e último quadro: quando usar e onde existe em out/2026"
+    },
+    {
+      "t": "Emendar planos pelo último quadro do anterior"
+    },
+    {
+      "t": "Conferir duração, tamanho e proporção do clipe na página"
+    }
+  ],
+  "hero_alt": "Câmera de cinema sem marca sobre um carrinho em trilhos de travelling, num set escuro que reproduz a bancada de uma padaria com farinha.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do still ao clipe conferido",
+      "sub": "Seis passos. Clique em cada um.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Still",
+          "sub": "aprovado na aula 3",
+          "icone": "check",
+          "detalhe": "O quadro que você aprovou, com o número do plano no nome. Ele carrega personagem, lugar, paleta e luz."
+        },
+        {
+          "titulo": "Movimento",
+          "sub": "prompt curto",
+          "icone": "video",
+          "forte": true,
+          "detalhe": "Só o que muda: o movimento de câmera da decupagem, a ação do plano e o som. A cena já está na imagem; redescrever pode fazer o gerador mudar o que você aprovou."
+        },
+        {
+          "titulo": "Quadros",
+          "sub": "primeiro e último",
+          "icone": "camadas",
+          "detalhe": "Primeiro quadro = o still. Último quadro (opcional) = onde o plano tem de terminar, por exemplo a pá já fora do forno."
+        },
+        {
+          "titulo": "Duração e som",
+          "sub": "da decupagem",
+          "icone": "relogio",
+          "detalhe": "A duração do plano na decupagem e a coluna de som. Peça um pouco mais que o necessário: a sobra se corta na montagem (curso 2)."
+        },
+        {
+          "titulo": "Clipe",
+          "sub": "MP4 16:9",
+          "icone": "play",
+          "detalhe": "Baixe o clipe com o número do plano: plano-04.mp4. Guarde na pasta do projeto, junto do still."
+        },
+        {
+          "titulo": "Conferir",
+          "sub": "na página",
+          "icone": "lupa",
+          "detalhe": "A página lê duração, largura, altura e proporção do arquivo no seu navegador, sem enviar nada, e responde OK ou o que falta."
+        }
+      ],
+      "legenda": "Se o clipe muda o personagem ou a luz, volte ao prompt de movimento: provavelmente ele está redescrevendo a cena."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Animando a partir da imagem",
+      "sub": "O exemplo é o plano 4 da \"A primeira fornada\": close, câmera baixa, dolly in, 4 s.",
+      "passos": [
+        {
+          "titulo": "Prompt só de movimento",
+          "sub": "a imagem já diz o resto",
+          "texto": [
+            "No modo imagem-para-vídeo, o still é o ponto de partida. Escreva o movimento de câmera, a ação que acontece e o som, nada mais.",
+            "Se o resultado sai parado, nomeie o movimento e a velocidade (\"dolly in lento\"). Se sai caótico, tire ações: uma por plano."
+          ],
+          "exemplo": {
+            "rot": "Prompt de movimento do plano 4",
+            "texto": "Dolly in lento. A porta do forno abre e o vapor sobe contra a luz. Som: rangido da porta e chiado do vapor."
+          }
+        },
+        {
+          "titulo": "Primeiro e último quadro",
+          "sub": "onde começa, onde termina",
+          "texto": [
+            "Com dois quadros, o gerador cria o caminho entre eles. Serve para ação com fim certo: a pá entra vazia e sai com o pão.",
+            "Em out/2026 existe no Veo 3.1 e no Ray3 Modify da Luma; no caminho aberto, há templates oficiais de primeiro e último quadro para Wan 2.2 e LTX-2.5 no ComfyUI (aula 7)."
+          ],
+          "exemplo": {
+            "rot": "Fontes",
+            "texto": "Blog de desenvolvedores do Google (Veo 3.1); TechCrunch, 18/12/2025 (Ray3 Modify); documentação do ComfyUI e do LTX (consultadas em 19/10/2026)."
+          }
+        },
+        {
+          "titulo": "Emendar pelo último quadro",
+          "sub": "continuidade",
+          "texto": [
+            "Quando a ação continua no plano seguinte, use o último quadro do clipe anterior como primeiro quadro do próximo. A luz e a posição das coisas passam junto.",
+            "Para tirar o último quadro: pause o clipe no fim e exporte o quadro no seu editor. Quem usa terminal tem o comando no bloco abaixo."
+          ]
+        },
+        {
+          "titulo": "Conferir antes de seguir",
+          "sub": "o que a página mede",
+          "texto": [
+            "Duração dentro do pedido, largura de pelo menos 1280 pixels e proporção 16:9, igual à cena. Clipe vertical ou quadrado no meio de uma cena 16:9 vira barra preta na montagem.",
+            "O que a página não mede, você olha: o personagem é o mesmo? o movimento é o que você pediu? Se não, gere de novo antes de passar ao próximo plano."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "A ficha do plano animado e, para quem usa terminal, o comando que tira o último quadro.",
+      "blocos": [
+        {
+          "rot": "movimento.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Plano: <número e linha da decupagem>\nPrimeiro quadro: <arquivo do still aprovado>\nÚltimo quadro: <arquivo, ou \"nenhum\">\nPrompt de movimento: <movimento de câmera. ação. som.>\nDuração pedida: <segundos>\nGerador: <nome e versão (out/2026)>\nClipe: <plano-NN.mp4>"
+        },
+        {
+          "rot": "Terminal (opcional): último quadro de um clipe",
+          "icone": "terminal",
+          "conteudo": "ffmpeg -v error -y -sseof -0.1 -i plano-03.mp4 -frames:v 1 ultimo-quadro-03.png"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira o seu clipe",
+      "sub": "Primeiro, o ensaio: os dois exemplos são clipes feitos a partir de uma foto, sem gerador. Depois, escolha o seu.",
+      "arquivo": "plano-04.mp4",
+      "rot": "Escolha o clipe do seu plano. Ele é lido aqui no navegador: nada é enviado.",
+      "regras": [
+        {
+          "tipo": "video",
+          "min": 3,
+          "max": 15,
+          "proporcao": "16:9",
+          "largura_min": 1280
+        }
+      ],
+      "ok": "OK: {s} s · {w}×{h} · {p}",
+      "video_ok": "assets/clipes/ensaio-plano-04.webm",
+      "video_erro": "assets/clipes/ensaio-erro.webm"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Opcional: conferir no terminal",
+      "sub": "Só para quem já usa terminal e tem o ffmpeg instalado (o <code>ffprobe</code> lê o vídeo). Baixe o curso do GitHub e rode na pasta dele: as regras são as mesmas da página. Para o seu clipe, troque <code>--exemplo</code> pelo nome dele (<code>plano-04.mp4</code>); sai 0 quando passa.",
+      "blocos": [
+        {
+          "rot": "Terminal (na pasta do curso)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py movimento --exemplo; echo \"saída: $?\"\npython3 conferir.py movimento --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Saída capturada (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py movimento --exemplo; echo \"saída: $?\"\nOK: 6,0 s · 1280×720 · 16:9\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Exemplo com erro (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py movimento --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - O vídeo tem 2,0 s; o pedido é de 3 a 15 s.\n - O vídeo é 720×720 (1:1); o pedido é 16:9.\n - O vídeo tem 720 px de largura; o mínimo é 1280 px.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "Gerar é com a ferramenta que você tiver. O ensaio vem primeiro e não gasta nada.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Ensaio · os dois clipes de exemplo",
+          "min": "5 min",
+          "texto": "Em \"Confira o seu clipe\", clique em \"Exemplo que passa\" e depois em \"Exemplo com erro\". Leia o que a página diz do segundo: é o tipo de recado que você vai ver se o seu clipe sair no formato errado.",
+          "pronto": "a página responde <code>OK: 6,0 s · 1280×720 · 16:9</code> para o exemplo que passa e, para o exemplo com erro, lista duração, proporção e largura."
+        },
+        {
+          "id": "e2",
+          "titulo": "Clipe · um plano a partir do still",
+          "min": "30 min",
+          "texto": "Escolha um still aprovado da aula 3. Preencha o movimento.txt, gere o clipe em 16:9 no gerador que você tiver (fechado ou aberto) e baixe com o número do plano. Escolha o arquivo em \"Confira o seu clipe\".",
+          "pronto": "a página responde <code>OK: [s] s · [w]×[h] · 16:9</code> para o seu clipe, com duração entre 3 e 15 s, e o clipe e o movimento.txt estão na pasta do projeto."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "perguntas": [
+        {
+          "p": "O que escrever no prompt quando o still já existe?",
+          "opcoes": [
+            "A descrição completa da cena, para o gerador não esquecer nada.",
+            "O movimento de câmera, a ação do plano e o som.",
+            "Só o nome do estilo visual, porque o resto vem da imagem.",
+            "Nada: o gerador anima a imagem sozinho, sem prompt."
+          ],
+          "certa": 1,
+          "explica": "Personagem, lugar e luz já estão na imagem. O prompt diz o que muda. Redescrever a cena pode levar o gerador a alterar o que você aprovou no still.",
+          "ref": "passos"
+        },
+        {
+          "p": "Quando o primeiro e o último quadro ajudam mais?",
+          "opcoes": [
+            "Quando a ação tem um fim certo, como a pá saindo com o pão.",
+            "Quando o plano é de câmera parada sem nenhuma ação.",
+            "Quando você quer que o gerador invente sozinho o final do plano, sem nenhuma pista.",
+            "Só em planos com mais de um minuto de duração."
+          ],
+          "certa": 0,
+          "explica": "Com início e fim dados, o gerador cria só o caminho entre eles. É o jeito de garantir onde o plano termina, o que importa para emendar com o plano seguinte.",
+          "ref": "passos"
+        },
+        {
+          "p": "A página respondeu que o seu clipe é 9:16, numa cena toda em 16:9. O que fazer?",
+          "opcoes": [
+            "Nada: a montagem estica o clipe vertical para 16:9.",
+            "Mudar a cena inteira para 9:16 por causa de um plano.",
+            "Cortar o clipe pela metade para virar horizontal.",
+            "Gerar de novo pedindo 16:9, igual aos outros planos."
+          ],
+          "certa": 3,
+          "explica": "Um plano vertical numa cena horizontal vira barras pretas ou um corte que perde a imagem. A proporção é decisão da cena (lookbook); o clipe tem de segui-la.",
+          "ref": "conferidor"
+        },
+        {
+          "p": "O que a página NÃO consegue conferir no seu clipe?",
+          "opcoes": [
+            "A duração em segundos.",
+            "A largura e a altura em pixels.",
+            "Se o personagem é o mesmo do still.",
+            "A proporção do quadro."
+          ],
+          "certa": 2,
+          "explica": "A página lê os números do arquivo: duração, tamanho e proporção. Se o personagem mudou ou se o movimento é o pedido, quem confere é você, olhando o clipe antes de seguir.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "A imagem já diz",
+          "texto": "No prompt de movimento vai só o que muda: câmera, ação e som."
+        },
+        {
+          "t": "Dois quadros, um caminho",
+          "texto": "Primeiro e último quadro garantem onde o plano termina e ajudam a emendar."
+        },
+        {
+          "t": "Confira antes de seguir",
+          "texto": "Duração, 1280 px e 16:9 pela página; personagem e movimento pelo seu olho."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Wan 2.2 no ComfyUI: templates oficiais, incluindo primeiro e último quadro",
+          "href": "https://docs.comfy.org/tutorials/video/wan/wan2_2"
+        },
+        {
+          "t": "Luma Ray3 Modify com quadros inicial e final (TechCrunch)",
+          "href": "https://techcrunch.com/2025/12/18/luma-releases-a-new-ai-model-that-lets-users-generate-a-video-from-a-start-and-end-frame"
+        },
+        {
+          "t": "Curso 0 · A câmera como verbo: um movimento por plano",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/aulas/camera/"
+        }
+      ]
+    }
+  ]
+}

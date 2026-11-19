@@ -1,0 +1,298 @@
+{
+  "slug": "movimento",
+  "num": 4,
+  "menu": "Movimiento",
+  "titulo": "De la imagen al movimiento: imagen a video y primer/último fotograma",
+  "titulo_curto": "Imagen a video",
+  "minutos": 19,
+  "lead": "Con el still aprobado, el generador ya sabe quién, dónde y con qué luz. El prompt ahora solo dice lo que cambia: el movimiento de la cámara, la acción y el sonido. Con primer y último fotograma, también decides dónde termina el plano. Y antes de seguir, la página verifica el clip.",
+  "objetivo": "animar un still aprobado con un prompt solo de movimiento y verificar el clip en la página antes de seguir.",
+  "competencias": [
+    "animar-imagem",
+    "usar-primeiro-e-ultimo-quadro",
+    "conferir-clipe"
+  ],
+  "aprende": [
+    {
+      "t": "Qué va en el prompt cuando la imagen ya existe"
+    },
+    {
+      "t": "Primer y último fotograma: cuándo usarlos y dónde existe en out/2026"
+    },
+    {
+      "t": "Empalmar planos con el último fotograma del anterior"
+    },
+    {
+      "t": "Verificar la duración, el tamaño y la proporción del clip en la página"
+    }
+  ],
+  "hero_alt": "Cámara de cine sin marca sobre un carrito en rieles de travelling, en un set oscuro que reproduce la mesa de trabajo de una panadería con harina.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Del still al clip verificado",
+      "sub": "Seis pasos. Haz clic en cada uno.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Still",
+          "sub": "aprobado en la clase 3",
+          "icone": "check",
+          "detalhe": "El cuadro que aprobaste, con el número del plano en el nombre. Lleva personaje, lugar, paleta y luz."
+        },
+        {
+          "titulo": "Movimiento",
+          "sub": "prompt corto",
+          "icone": "video",
+          "forte": true,
+          "detalhe": "Solo lo que cambia: el movimiento de cámara del desglose de planos, la acción del plano y el sonido. La escena ya está en la imagen; describirla de nuevo puede hacer que el generador cambie lo que aprobaste."
+        },
+        {
+          "titulo": "Fotogramas",
+          "sub": "primero y último",
+          "icone": "camadas",
+          "detalhe": "Primer fotograma = el still. Último fotograma (opcional) = dónde debe terminar el plano, por ejemplo la pala ya fuera del horno."
+        },
+        {
+          "titulo": "Duración y sonido",
+          "sub": "del desglose de planos",
+          "icone": "relogio",
+          "detalhe": "La duración del plano en el desglose de planos y la columna de sonido. Pide un poco más de lo necesario: lo que sobra se corta en el montaje (curso 2)."
+        },
+        {
+          "titulo": "Clip",
+          "sub": "MP4 16:9",
+          "icone": "play",
+          "detalhe": "Descarga el clip con el número del plano: plano-04.mp4. Guárdalo en la carpeta del proyecto, junto al still."
+        },
+        {
+          "titulo": "Verificar",
+          "sub": "en la página",
+          "icone": "lupa",
+          "detalhe": "La página lee la duración, el ancho, el alto y la proporción del archivo en tu navegador, sin enviar nada, y responde OK o lo que falta."
+        }
+      ],
+      "legenda": "Si el clip cambia el personaje o la luz, vuelve al prompt de movimiento: probablemente está describiendo la escena de nuevo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Animando a partir de la imagen",
+      "sub": "El ejemplo es el plano 4 de \"La primera hornada\": primer plano, cámara baja, dolly in, 4 s.",
+      "passos": [
+        {
+          "titulo": "Prompt solo de movimiento",
+          "sub": "la imagen ya dice el resto",
+          "texto": [
+            "En el modo imagen a video, el still es el punto de partida. Escribe el movimiento de cámara, la acción que ocurre y el sonido, nada más.",
+            "Si el resultado sale quieto, nombra el movimiento y la velocidad (\"dolly in lento\"). Si sale caótico, quita acciones: una por plano."
+          ],
+          "exemplo": {
+            "rot": "Prompt de movimiento del plano 4",
+            "texto": "Dolly in lento. La puerta del horno se abre y el vapor sube a contraluz. Sonido: chirrido de la puerta y siseo del vapor."
+          }
+        },
+        {
+          "titulo": "Primer y último fotograma",
+          "sub": "dónde empieza, dónde termina",
+          "texto": [
+            "Con dos fotogramas, el generador crea el camino entre ellos. Sirve para una acción con final definido: la pala entra vacía y sale con el pan.",
+            "En oct/2026 existe en Veo 3.1 y en Ray3 Modify de Luma; en el camino abierto, hay plantillas oficiales de primer y último fotograma para Wan 2.2 y LTX-2.5 en ComfyUI (clase 7)."
+          ],
+          "exemplo": {
+            "rot": "Fuentes",
+            "texto": "Blog de desarrolladores de Google (Veo 3.1); TechCrunch, 18/12/2025 (Ray3 Modify); documentación de ComfyUI y de LTX (consultadas el 19/10/2026)."
+          }
+        },
+        {
+          "titulo": "Empalmar por el último fotograma",
+          "sub": "continuidad",
+          "texto": [
+            "Cuando la acción continúa en el plano siguiente, usa el último fotograma del clip anterior como primer fotograma del siguiente. La luz y la posición de las cosas pasan juntas.",
+            "Para sacar el último fotograma: pausa el clip al final y exporta el fotograma en tu editor. Quien usa terminal tiene el comando en el bloque de abajo."
+          ]
+        },
+        {
+          "titulo": "Verificar antes de seguir",
+          "sub": "lo que mide la página",
+          "texto": [
+            "Duración dentro de lo pedido, ancho de al menos 1280 píxeles y proporción 16:9, igual que la escena. Un clip vertical o cuadrado en medio de una escena 16:9 se convierte en barra negra en el montaje.",
+            "Lo que la página no mide, lo miras tú: ¿el personaje es el mismo? ¿el movimiento es el que pediste? Si no, genera de nuevo antes de pasar al siguiente plano."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "La ficha del plano animado y, para quien usa terminal, el comando que saca el último fotograma.",
+      "blocos": [
+        {
+          "rot": "movimento.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Plano: <número y línea del desglose de planos>\nPrimer fotograma: <archivo del still aprobado>\nÚltimo fotograma: <archivo, o \"nenhum\">\nPrompt de movimiento: <movimiento de cámara. acción. sonido.>\nDuración pedida: <segundos>\nGenerador: <nombre y versión (oct/2026)>\nClip: <plano-NN.mp4>"
+        },
+        {
+          "rot": "Terminal (opcional): último fotograma de un clip",
+          "icone": "terminal",
+          "conteudo": "ffmpeg -v error -y -sseof -0.1 -i plano-03.mp4 -frames:v 1 ultimo-quadro-03.png"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Verifica tu clip",
+      "sub": "Primero, el ensayo: los dos ejemplos son clips hechos a partir de una foto, sin generador. Después, elige el tuyo.",
+      "arquivo": "plano-04.mp4",
+      "rot": "Elige el clip de tu plano. Se lee aquí en el navegador: no se envía nada.",
+      "regras": [
+        {
+          "tipo": "video",
+          "min": 3,
+          "max": 15,
+          "proporcao": "16:9",
+          "largura_min": 1280
+        }
+      ],
+      "ok": "OK: {s} s · {w}×{h} · {p}",
+      "video_ok": "assets/clipes/ensaio-plano-04.webm",
+      "video_erro": "assets/clipes/ensaio-erro.webm"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Opcional: revisar en la terminal",
+      "sub": "Solo para quien ya usa terminal y tiene ffmpeg instalado (<code>ffprobe</code> lee el video). Descarga el curso de GitHub y ejecútalo en su carpeta: las reglas son las mismas de la página. Para tu clip, cambia <code>--exemplo</code> por su nombre (<code>plano-04.mp4</code>); sale 0 cuando pasa.",
+      "blocos": [
+        {
+          "rot": "Terminal (en la carpeta del curso)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py movimento --exemplo; echo \"saída: $?\"\npython3 conferir.py movimento --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Salida capturada (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py movimento --exemplo; echo \"saída: $?\"\nOK: 6,0 s · 1280×720 · 16:9\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Ejemplo con error (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py movimento --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - O vídeo tem 2,0 s; o pedido é de 3 a 15 s.\n - O vídeo é 720×720 (1:1); o pedido é 16:9.\n - O vídeo tem 720 px de largura; o mínimo é 1280 px.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Generar es con la herramienta que tengas. El ensayo va primero y no gasta nada.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Ensayo · los dos clips de ejemplo",
+          "min": "5 min",
+          "texto": "En \"Verifica tu clip\", haz clic en \"Exemplo que passa\" y después en \"Exemplo com erro\". Lee lo que dice la página del segundo: es el tipo de aviso que verás si tu clip sale en el formato equivocado.",
+          "pronto": "la página responde <code>OK: 6,0 s · 1280×720 · 16:9</code> para el ejemplo que pasa y, para el ejemplo con error, lista duración, proporción y ancho."
+        },
+        {
+          "id": "e2",
+          "titulo": "Clip · un plano a partir del still",
+          "min": "30 min",
+          "texto": "Elige un still aprobado de la clase 3. Completa el movimento.txt, genera el clip en 16:9 en el generador que tengas (cerrado o abierto) y descárgalo con el número del plano. Elige el archivo en \"Verifica tu clip\".",
+          "pronto": "la página responde <code>OK: [s] s · [w]×[h] · 16:9</code> para tu clip, con duración entre 3 y 15 s, y el clip y el movimento.txt están en la carpeta del proyecto."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Qué escribir en el prompt cuando el still ya existe?",
+          "opcoes": [
+            "La descripción completa de la escena, para que el generador no olvide nada.",
+            "El movimiento de cámara, la acción del plano y el sonido.",
+            "Solo el nombre del estilo visual, porque el resto viene de la imagen.",
+            "Nada: el generador anima la imagen solo, sin prompt."
+          ],
+          "certa": 1,
+          "explica": "Personaje, lugar y luz ya están en la imagen. El prompt dice lo que cambia. Volver a describir la escena puede llevar al generador a alterar lo que aprobaste en el still.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Cuándo ayudan más el primer y el último fotograma?",
+          "opcoes": [
+            "Cuando la acción tiene un final definido, como la pala saliendo con el pan.",
+            "Cuando el plano es de cámara fija sin ninguna acción.",
+            "Cuando quieres que el generador invente por sí solo el final del plano, sin ninguna pista.",
+            "Solo en planos de más de un minuto de duración."
+          ],
+          "certa": 0,
+          "explica": "Con inicio y fin dados, el generador crea solo el camino entre ellos. Es la forma de asegurar dónde termina el plano, lo que importa para empalmar con el plano siguiente.",
+          "ref": "passos"
+        },
+        {
+          "p": "La página respondió que tu clip es 9:16, en una escena toda en 16:9. ¿Qué hacer?",
+          "opcoes": [
+            "Nada: el montaje estira el clip vertical a 16:9.",
+            "Cambiar toda la escena a 9:16 por causa de un plano.",
+            "Cortar el clip por la mitad para volverlo horizontal.",
+            "Generarlo de nuevo pidiendo 16:9, igual que los otros planos."
+          ],
+          "certa": 3,
+          "explica": "Un plano vertical en una escena horizontal se vuelve barras negras o un corte que pierde la imagen. La proporción es decisión de la escena (lookbook); el clip tiene que seguirla.",
+          "ref": "conferidor"
+        },
+        {
+          "p": "¿Qué NO puede verificar la página en tu clip?",
+          "opcoes": [
+            "La duración en segundos.",
+            "El ancho y el alto en píxeles.",
+            "Si el personaje es el mismo del still.",
+            "La proporción del cuadro."
+          ],
+          "certa": 2,
+          "explica": "La página lee los números del archivo: duración, tamaño y proporción. Si el personaje cambió o si el movimiento es el pedido, quien lo verifica eres tú, mirando el clip antes de seguir.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "La imagen ya lo dice",
+          "texto": "En el prompt de movimiento va solo lo que cambia: cámara, acción y sonido."
+        },
+        {
+          "t": "Dos fotogramas, un camino",
+          "texto": "Primer y último fotograma aseguran dónde termina el plano y ayudan a empalmar."
+        },
+        {
+          "t": "Verifica antes de seguir",
+          "texto": "Duración, 1280 px y 16:9 por la página; personaje y movimiento con tu ojo."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Wan 2.2 en ComfyUI: plantillas oficiales, incluyendo primer y último fotograma",
+          "href": "https://docs.comfy.org/tutorials/video/wan/wan2_2"
+        },
+        {
+          "t": "Luma Ray3 Modify con fotogramas inicial y final (TechCrunch)",
+          "href": "https://techcrunch.com/2025/12/18/luma-releases-a-new-ai-model-that-lets-users-generate-a-video-from-a-start-and-end-frame"
+        },
+        {
+          "t": "Curso 0 · La cámara como verbo: un movimiento por plano",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/es/aulas/camera/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "slug": "prompt",
+  "num": 2,
+  "menu": "Prompt",
+  "titulo": "Anatomy of a video prompt: subject, action, camera, light and sound",
+  "titulo_curto": "Anatomy of a prompt",
+  "minutos": 17,
+  "lead": "A video prompt is the shot-list line written for the machine. Who it is, what they do, where, how the camera sees it, what light, and what you hear. Now that sound comes out together with the image, it goes in the prompt too, in a separate sentence.",
+  "objetivo": "write the prompt for a shot in seven parts, with the sound in a separate sentence and what to avoid described without \"no\".",
+  "competencias": [
+    "escrever-prompt-de-video",
+    "descrever-som-no-prompt",
+    "usar-prompt-negativo"
+  ],
+  "aprende": [
+    {
+      "t": "The seven parts of a video prompt and their order"
+    },
+    {
+      "t": "Swap a still verb for a living verb"
+    },
+    {
+      "t": "Put sound and dialogue in the prompt the way the generator understands"
+    },
+    {
+      "t": "Describe what to avoid without using \"no\""
+    }
+  ],
+  "hero_alt": "A dark directing desk seen from above, with a closed notebook, studio headphones, a clapperboard and a stopwatch under a cool lamp.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The seven parts of the prompt",
+      "sub": "Not every prompt uses all of them, but each one answers a question. Tap each part.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Subject",
+          "sub": "who or what",
+          "icone": "usuario",
+          "detalhe": "The focus of the shot, with concrete detail. \"A 58-year-old baker, hair in a bun under a scarf, navy-blue apron\" instead of \"a woman\". The character comes from the character sheet in course 0."
+        },
+        {
+          "titulo": "Action",
+          "sub": "living verb",
+          "icone": "video",
+          "forte": true,
+          "detalhe": "What happens right now, with a verb that tells a story: \"kneads the dough\", \"opens the oven door\". Still verbs (\"standing\", \"posing\", \"looking at the camera\") leave the generator to invent the rest."
+        },
+        {
+          "titulo": "Setting",
+          "sub": "where and when",
+          "icone": "camadas",
+          "detalhe": "Place and time with one or two details that only this place has: \"neighborhood bakery at 4:50 a.m., white tiles, dark street outside\"."
+        },
+        {
+          "titulo": "Camera",
+          "sub": "from course 0",
+          "icone": "video",
+          "detalhe": "Size, angle and one movement, in the terms of course 0. You don't invent anything here: you copy it from the shot list line."
+        },
+        {
+          "titulo": "Light",
+          "sub": "look card",
+          "icone": "sol",
+          "detalhe": "The look card from course 0, the same in every prompt of the scene. It is what makes the shots look like they belong to the same film."
+        },
+        {
+          "titulo": "Sound",
+          "sub": "separate sentence",
+          "icone": "megafone",
+          "detalhe": "Ambience, effect and dialogue, in sentences separate from the image. Dialogue in the format \"who says: text\"."
+        },
+        {
+          "titulo": "Avoid",
+          "sub": "no \"no\"",
+          "icone": "x",
+          "detalhe": "What you don't want to see, described as a thing: \"on-screen text, watermark\". Google's guide advises against writing \"don't show\"."
+        }
+      ],
+      "legenda": "Practical order: what you see first (subject, action, setting), then how you see it (camera, light), then what you hear."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Writing it, part by part",
+      "sub": "The example is shot 4 of \"The first batch\": the oven door opens and the steam rises.",
+      "passos": [
+        {
+          "titulo": "Concrete subject and action",
+          "sub": "living verb",
+          "texto": [
+            "Start with what a viewer would understand in one second: who, doing what, where. Swap generic adjectives for detail that only exists in this scene.",
+            "A living verb carries the story: \"the iron door opens slowly and the steam rises against the light\" says more than \"an oven in a bakery\"."
+          ],
+          "exemplo": {
+            "rot": "Before → after",
+            "texto": "\"bakery oven\" → \"the iron door of a deck oven opens slowly and the steam rises against the light\""
+          }
+        },
+        {
+          "titulo": "Camera and light come ready-made",
+          "sub": "from the shot list and the look",
+          "texto": [
+            "Size, angle and movement are on the shot's line in your shot list. The light is on the look card. Copy, don't rewrite: that's what keeps the scene consistent.",
+            "If you don't have these files yet, do lessons 2 to 4 and 7 of course 0 first."
+          ],
+          "exemplo": {
+            "rot": "From the shot list",
+            "texto": "4 | close-up | low angle | dolly in | 4 s → \"Close-up, low angle, slow dolly in.\""
+          }
+        },
+        {
+          "titulo": "Sound and dialogue",
+          "sub": "separate sentence",
+          "texto": [
+            "Google's official video prompt guide (Veo and Gemini Omni Flash, updated on 10/15/2026) recommends saying clearly that you want audio and describing it in separate sentences: effects, ambient sound and dialogue.",
+            "The guide, in English, writes who speaks, \"says:\" and the text. In Portuguese, this course uses \"who says: text\". A short sentence fits in the shot; a paragraph doesn't."
+          ],
+          "exemplo": {
+            "rot": "Sound for shot 7",
+            "texto": "Three knocks on the iron door. The baker says: Coming! In the background, the radio, low."
+          }
+        },
+        {
+          "titulo": "Avoid and length",
+          "sub": "no \"no\"",
+          "texto": [
+            "In the negative prompt field, list what you don't want as things: \"on-screen text, watermark, people in the background\". The same guide advises against \"no\" instructions, like \"don't show text\".",
+            "There's no consensus on the ideal prompt length: sources range from 10 to 150 words. Start complete and cut what the generator ignores."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The prompt sheet that the page checks, and the request for the AI assistant to put everything into one flowing text.",
+      "blocos": [
+        {
+          "rot": "prompt.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Subject: <who or what, with detail from the character sheet>\nAction: <what happens, with a lively verb>\nSetting: <where and when, with one detail unique to that place>\nCamera: <size, angle and one movement, from the shot list>\nLight: <your look card>\nSound: <ambient sound, effect and dialogue in the format \"who says: text\">\nAvoid: <things you don't want to see, without \"no\">\nPrompt: <the parts above in one flowing text, with the sound in a separate sentence>"
+        },
+        {
+          "rot": "Request for the AI assistant (put the prompt together)",
+          "icone": "chat",
+          "conteudo": "You are a directing assistant. Put the parts below together into one flowing video prompt, in Portuguese, for a video generator with audio.\nRules:\n- start with the camera and the subject, then the action, the setting and the light;\n- describe the sound in separate sentences, at the end; dialogue in the format \"who says: text\";\n- do not add any character, object or place that is not in the parts;\n- also return the \"Avoid\" list with nouns only, without the word \"no\".\nParts:\n<paste here the lines Subject, Action, Setting, Camera, Light and Sound>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your prompt",
+      "sub": "Paste the prompt.txt (or upload the file). The page checks the eight lines and whether the text has a shot size and a movement using the terms from lessons 2 and 3 of course 0 (wide shot, close-up, dolly in, static shot, handheld…).",
+      "arquivo": "prompt.txt",
+      "rot": "Paste your prompt.txt here (one line per part):",
+      "modelo": "Subject: ...\nAction: ...\nSetting: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 3,
+          "campos": [
+            "Subject",
+            "Action",
+            "Setting",
+            "Camera",
+            "Light",
+            "Sound",
+            "Avoid",
+            "Prompt"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "a shot size",
+              "termos": [
+                "plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot / plano general / plano de establecimiento / gran plano general",
+                "plano aberto / wide shot / plano abierto",
+                "plano americano / medium wide shot / cowboy shot / medium-long shot / medium long shot",
+                "plano médio / medium shot / plano medio / mid shot",
+                "meio primeiro plano / close médio / medium close-up / plano medio corto",
+                "close / close-up / primeiro plano / plano fechado / closeup / primer plano / plano cerrado",
+                "plano detalhe / extreme close-up / macro / plano detalle / detail shot / macro shot"
+              ]
+            },
+            {
+              "rot": "a camera movement",
+              "termos": [
+                "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
+                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly out / pull-out / afastamento lento / alejamiento lento",
+                "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
+                "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
+                "tilt / tilt up / tilt down",
+                "grua / crane / pedestal up / pedestal down / crane shot / grúa",
+                "órbita / orbit / arc shot / orbit shot",
+                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "zoom in / zoom out / crash zoom",
+                "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
+                "whip pan / chicote / swish pan / latigazo",
+                "drone / plano aéreo / aerial shot"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: prompt with {n} parts",
+      "exemplo": "Subject: the iron door of a deck oven in a neighborhood bakery\nAction: the door slowly opens and steam rises against the light\nSetting: small bakery at 4:50 a.m., white tile, dark street outside\nCamera: close-up, low camera, slow dolly in\nLight: low-key, side light from the oven, steam in the beam; cold, dark street\nSound: creak of the oven door and hiss of steam; low radio in the background\nAvoid: on-screen text, watermark, people in the background\nPrompt: Close-up, low camera: in a neighborhood bakery at 4:50 a.m., the iron door of a deck oven slowly opens and steam rises against the oven's side light. Slow dolly in. Low-key, white tile, cold, dark street through the shop window. Sound: creak of the oven door and hiss of steam. In the background, a low radio.",
+      "exemplo_errado": "Subject: an oven\nAction: opening\nSetting: bakery\nCamera: close-up, low camera\nLight: beautiful\nPrompt: bakery oven opening, cinematic, do not show text"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Optional: check in the terminal",
+      "sub": "Only for people who already use a terminal. Download the course from GitHub and run it in its folder: the rules are the same as on the page. For your own file, replace <code>--exemplo</code> with its name (<code>prompt.txt</code>); it exits 0 when it passes.",
+      "blocos": [
+        {
+          "rot": "Terminal (in the course folder)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py prompt --exemplo; echo \"saída: $?\"\npython3 conferir.py prompt --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Captured output (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py prompt --exemplo; echo \"saída: $?\"\nOK: prompt com 8 partes\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Example with an error (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py prompt --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Som: com a descrição (pelo menos 3 letras).\n - Falta a linha Evitar: com a descrição (pelo menos 3 letras).\n - Falta citar um movimento de câmera.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "A shot from your shot list, preferably one with a striking sound.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Prompt · one shot in eight lines",
+          "min": "20 min",
+          "texto": "Pick a shot from your shot list. Fill in the prompt.txt using the template: camera copied from the shot list, light copied from the look card, sound in a separate sentence. If you like, ask the AI assistant to put the flowing text together, and review it. Paste it into \"Check your prompt\" and download the file to the project folder.",
+          "pronto": "the page answers <code>OK: prompt with 8 parts</code> and the prompt.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "Avoid · rewrite without \"no\"",
+          "min": "10 min",
+          "texto": "Read the Avoid line and the Prompt line. Replace every sentence with \"no\" or \"don't\" (\"don't show text\", \"no people\") with things listed out (\"on-screen text, people in the background\") and check again.",
+          "pronto": "the page keeps answering <code>OK: prompt with 8 parts</code> and the words \"no\" and \"don't\" do not appear in the Avoid line."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "Which action leaves the least for the generator to invent?",
+          "opcoes": [
+            "A baker standing in the bakery, looking at the camera.",
+            "A baker posing next to the bakery oven.",
+            "A good-looking baker in a cinematic bakery.",
+            "The baker takes out the first batch with the wooden peel."
+          ],
+          "certa": 3,
+          "explica": "Active verbs say what happens and narrow the generator's choices. \"Standing,\" \"posing,\" and adjectives like \"beautiful\" or \"cinematic\" say nothing the machine can act on.",
+          "ref": "passos"
+        },
+        {
+          "p": "How does Google's official guide recommend putting sound in the prompt?",
+          "opcoes": [
+            "Say you want audio and describe it in sentences separate from the image.",
+            "Write the sound in square brackets at the start of the prompt.",
+            "Leave sound out of the prompt completely and add everything later, in the edit.",
+            "Use only the words \"cinematic sound\" at the end of the prompt."
+          ],
+          "certa": 0,
+          "explica": "The guide says to make it clear you want audio and to describe effects, ambient sound, and dialogue in their own sentences. Keeping the sound separate also makes it easy to swap just that part on a new attempt.",
+          "ref": "passos"
+        },
+        {
+          "p": "You don't want any text on screen. What do you write in the negative prompt field?",
+          "opcoes": [
+            "\"Don't show any text on screen, please.\"",
+            "\"text on screen, signage, subtitles\"",
+            "\"No text, no letters, and nothing written.\"",
+            "\"Completely avoid any kind of text.\""
+          ],
+          "certa": 1,
+          "explica": "The guide recommends describing what you don't want as a thing, without \"don't\" or \"no\": the field itself already says it's for avoiding. Writing \"don't show\" is exactly what it advises against.",
+          "ref": "passos"
+        },
+        {
+          "p": "Where do the camera and light in a shot's prompt come from?",
+          "opcoes": [
+            "From the automatic suggestion the generator makes after the first attempt.",
+            "From a ready-made prompt copied from another creator who made something similar.",
+            "From the shot's line in the shot list and the scene's look card.",
+            "From the style of a famous director, named in the prompt."
+          ],
+          "certa": 2,
+          "explica": "Camera and light were decided in course 0, for the whole scene. Copying from the shot list and the look keeps the shots consistent. Naming a director imitates a real person's work; describe the ingredients of the look instead.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "Seven parts",
+          "texto": "Subject, action, setting, camera, light, sound, and avoid. Then, the running text."
+        },
+        {
+          "t": "Separate sound",
+          "texto": "Ambient sound, effect, and dialogue in their own sentences; dialogue as \"who says: text\"."
+        },
+        {
+          "t": "Avoid without \"don't\"",
+          "texto": "List things in the negative field, as Google's guide recommends."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Google's official video prompt guide (Veo and Gemini Omni Flash)",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Course 0 · Light, color, and atmosphere: the look card",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/aulas/luz/"
+        },
+        {
+          "t": "Course 2 · Production: sound, voice, and soundtrack in depth",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+        }
+      ]
+    }
+  ]
+}

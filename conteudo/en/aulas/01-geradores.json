@@ -1,0 +1,379 @@
+{
+  "slug": "geradores",
+  "num": 1,
+  "menu": "Generators",
+  "titulo": "The map of generators in Oct 2026 and how to choose",
+  "titulo_curto": "Generator map",
+  "minutos": 18,
+  "lead": "Video generators change versions every few months and sometimes disappear, like Sora. That's why the choice doesn't start with the ranking: it starts with what your shot asks for. Duration, dialogue, reference, and license decide; the dated table just shows who meets the need today.",
+  "objetivo": "choose the generator for each shot based on what it asks for (duration, dialogue, reference, license) and record the choice with the date.",
+  "competencias": [
+    "escolher-gerador",
+    "ler-versao-datada",
+    "manter-portabilidade"
+  ],
+  "aprende": [
+    {
+      "t": "The five questions that choose the generator for a shot"
+    },
+    {
+      "t": "What each major generator offers in Oct 2026, with source and date"
+    },
+    {
+      "t": "Why the Sora case teaches you to keep everything outside the platform"
+    },
+    {
+      "t": "Record the choice in a file that the page checks"
+    }
+  ],
+  "hero_alt": "Wall of a dark editing room with six monitors side by side, each showing a different version of the same street with a lit bakery window.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Five questions before choosing",
+      "sub": "The shot decides the generator, not the other way around. Click each question.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Duration",
+          "sub": "how many seconds",
+          "icone": "relogio",
+          "detalhe": "How long the shot lasts in your shot list. A 4 s shot fits in any generator; a 25 s sequence in a single generation narrows the choice (in Oct 2026, Seedance 2.5 reaches 30 s)."
+        },
+        {
+          "titulo": "Sound and dialogue",
+          "sub": "audio included?",
+          "icone": "megafone",
+          "detalhe": "If the shot has dialogue or a synced effect, prefer a generator with native audio. As of Oct 2026, Veo 3.1, Kling 3.0, Seedance 2.5, Runway Gen-4.5 and LTX-2.5 return sound together with the image."
+        },
+        {
+          "titulo": "Reference",
+          "sub": "same character",
+          "icone": "cadeado",
+          "detalhe": "If the shot needs the same Dona Lia as the previous shot, count how many reference images the generator accepts and whether it accepts first and last frame. Lesson 5 goes deeper."
+        },
+        {
+          "titulo": "License",
+          "sub": "closed or open",
+          "icone": "camadas",
+          "forte": true,
+          "detalhe": "Closed = you use it through the platform and follow its terms. Open = the weights run on your machine, but each license has limits (Apache 2.0 is free; LTX's community license has a revenue cap). Lesson 7 covers this."
+        },
+        {
+          "titulo": "Access",
+          "sub": "where and how much",
+          "icone": "usuario",
+          "detalhe": "Where you already have an account, how much it costs per second, and whether your machine can run the open model. Prices and plans change fast: check the tool's page on the day."
+        }
+      ],
+      "legenda": "Answer all five for the shot, not for the whole film: different shots can go to different generators."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The generators as of Oct 2026 (table updated on 10/19/2026)",
+      "sub": "Only what has a dated source. Anything not confirmed appears as \"reported.\" Tap each one.",
+      "passos": [
+        {
+          "titulo": "Veo 3.1",
+          "sub": "Google · closed",
+          "texto": [
+            "Native audio, with dialogue and effects. Accepts up to 3 reference images (the \"Ingredients\" feature), first-to-last frame transition, and scene extension.",
+            "Duration per clip: the numbers going around come from third parties and were not confirmed on an official page. Veo 4 has not been announced."
+          ],
+          "exemplo": {
+            "rot": "Source",
+            "texto": "Google developers blog, Veo 3.1 launch (Oct 2025)."
+          }
+        },
+        {
+          "titulo": "Kling 3.0 and 3.0 Omni",
+          "sub": "Kuaishou · closed",
+          "texto": [
+            "Released in February 2026: up to 15 s per generation, native audio in several languages, and dialogue with more than one character.",
+            "Omni controls duration, angle, and movement shot by shot. The character \"elements\" and the cut limit per generation are reported by third parties, without official confirmation."
+          ],
+          "exemplo": {
+            "rot": "Source",
+            "texto": "Kling AI announcement (02/05/2026); Adobe blog on Firefly (04/15/2026)."
+          }
+        },
+        {
+          "titulo": "Seedance 2.5",
+          "sub": "ByteDance · closed",
+          "texto": [
+            "Up to 30 s with audio generated in the same pass. Accepts up to 30 images, 10 videos, and 10 audios as references.",
+            "It replaced 2.0. Version 2.0 caused controversy with the US film studios' association for generating real actors and characters: a reminder that references have an ethical limit (course 2)."
+          ],
+          "exemplo": {
+            "rot": "Source",
+            "texto": "The Decoder (08/01/2026)."
+          }
+        },
+        {
+          "titulo": "Runway Gen-4.5 and Aleph 2.0",
+          "sub": "Runway · closed",
+          "texto": [
+            "Gen-4.5 gained native audio, multiple shots in one generation, and videos up to 1 minute in December 2025.",
+            "Aleph 2.0 edits a video that already exists by text: remove or add an object, swap the background, change the light. The release date of Aleph 2.0 is reported, not confirmed."
+          ],
+          "exemplo": {
+            "rot": "Source",
+            "texto": "TechCrunch (12/11/2025)."
+          }
+        },
+        {
+          "titulo": "Luma Ray3.14",
+          "sub": "Luma · closed",
+          "texto": [
+            "Ray3.14 (January 2026) generates in native 1080p, faster and cheaper than the previous one.",
+            "Ray3 Modify changes footage based on a character image and start and end frames. Native audio in Ray: not confirmed."
+          ],
+          "exemplo": {
+            "rot": "Source",
+            "texto": "Business Wire (01/26/2026); TechCrunch (12/18/2025)."
+          }
+        },
+        {
+          "titulo": "Wan 2.2",
+          "sub": "Alibaba · open",
+          "texto": [
+            "The last Wan with open weights, under Apache 2.0. Versions 2.6, 2.7, and 3.0 exist only as a closed service.",
+            "The 5B version runs on 8 GB VRAM cards with ComfyUI's memory offloading, according to the official documentation. Details in lesson 7."
+          ],
+          "exemplo": {
+            "rot": "Source",
+            "texto": "ComfyUI documentation (checked on 10/19/2026)."
+          }
+        },
+        {
+          "titulo": "LTX-2.3 and LTX-2.5",
+          "sub": "Lightricks · open",
+          "texto": [
+            "Open weights with video and audio. LTX-2.5 brings several shots in one generation. The LTX-2.x community license allows commercial use at no cost below US$ 10 million in revenue per year.",
+            "The ComfyUI documentation calls for a card with 32 GB or more of VRAM and 100 GB of free disk space."
+          ],
+          "exemplo": {
+            "rot": "Source",
+            "texto": "LTX-2.5 page on Hugging Face and LTX documentation (checked on 10/19/2026)."
+          }
+        },
+        {
+          "titulo": "Sora 2: a case study",
+          "sub": "OpenAI · shut down",
+          "texto": [
+            "The app closed on 04/26/2026 and the API on 09/24/2026. Anyone who kept their script, references and prompts only inside it lost the way back.",
+            "The lesson applies to any generator: everything that is yours stays in a folder outside the platform, as text. No lesson tells you to use Sora."
+          ],
+          "exemplo": {
+            "rot": "Source",
+            "texto": "OpenAI help center on the Sora shutdown (2026)."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The table as text, to keep in your folder",
+      "sub": "Copy it into the project folder. When you check again, change the date and what changed.",
+      "blocos": [
+        {
+          "rot": "geradores-out-2026.txt",
+          "icone": "arquivo",
+          "conteudo": "Generator table · updated on 10/19/2026\nmodel | owner | native audio | references | length per generation | open?\nVeo 3.1 | Google | yes | up to 3 images; first and last frame | not confirmed | closed\nKling 3.0 / 3.0 Omni | Kuaishou | yes, several languages | per-shot control (Omni) | up to 15 s | closed\nSeedance 2.5 | ByteDance | yes, in the same pass | up to 30 images, 10 videos, 10 audio clips | up to 30 s | closed\nRunway Gen-4.5 | Runway | yes | first frame; Aleph 2.0 edits video | up to 1 min with several shots | closed\nLuma Ray3.14 | Luma | not confirmed | Ray3 Modify: start and end frames | not confirmed | closed\nWan 2.2 | Alibaba | not confirmed | first and last frame in ComfyUI | not confirmed | open, Apache 2.0\nLTX-2.3 / LTX-2.5 | Lightricks | yes | first and last frame; several shots (2.5) | not confirmed | open, LTX-2.x community license\nSora 2 | OpenAI | — | — | — | shut down in 2026 (case study)"
+        },
+        {
+          "rot": "escolha.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Shot: <number and description of the shot from your shot list>\nNeeds: <duration, sound/dialogue, reference the shot asks for>\nGenerator: <the one you chose>\nVersion: <name and version (out/2026)>\nWhy: <which question it answers>\nBackup: <second option, with version (out/2026)>\nOpen path: <open model that could do the shot, or \"none on my machine\">\nChecked on: <date you checked the tool's page>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your choice",
+      "sub": "Paste your escolha.txt (or upload the file). The page checks the eight fields and looks in the file for the date of this lesson's table, \"(out/2026)\". First try it with the example that passes and the example with an error.",
+      "arquivo": "escolha.txt",
+      "rot": "Paste your escolha.txt here (one line per field):",
+      "modelo": "Shot: ...\nNeeds: ...\nGenerator: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 2,
+          "campos": [
+            "Shot",
+            "Needs",
+            "Generator",
+            "Version",
+            "Why",
+            "Backup",
+            "Open path",
+            "Checked on"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "the version with the month and year, like (out/2026)",
+              "termos": [
+                "out/2026 / out. 2026 / out 2026 / outubro de 2026 / outubro 2026 / oct/2026 / oct. 2026 / oct 2026 / october 2026 / octubre de 2026 / octubre 2026"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: choice with {n} fields",
+      "exemplo": "Shot: 4 · close-up, low angle, dolly in, 4 s: the oven door opens and the steam rises\nNeeds: 4 s, creaking and hissing sound, no dialogue, the same look as shot 3\nGenerator: Veo 3.1\nVersion: Veo 3.1 (Oct/2026)\nWhy: returns the sound together and accepts a reference image to keep the look\nBackup: Kling 3.0 (Oct/2026), up to 15 s with native audio\nOpen path: Wan 2.2 5B in ComfyUI, if the graphics card has 8 GB of VRAM\nChecked on: 10/19/2026",
+      "exemplo_errado": "Shot: 4 · close-up of the oven opening\nNeeds: 4 s with sound\nGenerator: Veo 3.1\nVersion: Veo 3.1\nWhy: it's the most famous\nChecked on:"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Optional: check in the terminal",
+      "sub": "Only for people who already use a terminal. Download the course from GitHub and run it in its folder: the rules are the same as on the page. For your file, replace <code>--exemplo</code> with its name (<code>escolha.txt</code>); it exits 0 when it passes.",
+      "blocos": [
+        {
+          "rot": "Terminal (in the course folder)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py geradores --exemplo; echo \"saída: $?\"\npython3 conferir.py geradores --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Captured output (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py geradores --exemplo; echo \"saída: $?\"\nOK: escolha com 8 campos\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Example with an error (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py geradores --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Reserva: com a descrição (pelo menos 2 letras).\n - Falta a linha Caminho aberto: com a descrição (pelo menos 2 letras).\n - Falta a linha Consultado em: com a descrição (pelo menos 2 letras).\n - Falta citar a versão com o mês e o ano, como (out/2026).\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Use the shot list or storyboard you made in course 0. If you didn't make one, use shot 4 from \"The first batch\".",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Choice · one shot from your scene",
+          "min": "20 min",
+          "texto": "Take the hardest shot in your shot list (the one with dialogue, or the one that needs the same character). Answer the five questions and fill in the escolha.txt using the template. Open the page of the tool you chose and note the date you checked it. Paste it into \"Check your choice\" and use \"Download the file\" to save it in the project folder.",
+          "pronto": "the page answers <code>OK: choice with 8 fields</code> and the escolha.txt is in the project folder, next to geradores-out-2026.txt."
+        },
+        {
+          "id": "e2",
+          "titulo": "Portability · the folder outside the platform",
+          "min": "10 min",
+          "texto": "Check that the project folder has, in text, everything you would need to redo the scene in another generator: storyboard, character sheet, look, and the escolha.txt. Anything that only exists inside a platform, copy it to the folder now.",
+          "pronto": "the project folder has storyboard.txt, ficha.txt, look.txt and escolha.txt, and all four open in a plain text editor, with no account on any platform."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "Which of these questions comes before choosing the generator for a shot?",
+          "opcoes": [
+            "Which generator is first in this week's ranking.",
+            "Which generator other creators in your niche are using.",
+            "What the shot needs: duration, dialogue, reference and license.",
+            "Which generator has the nicest, fastest interface."
+          ],
+          "certa": 2,
+          "explica": "Rankings and trends change every few months. What the shot needs is stable: if it has dialogue, it needs native audio; if it repeats a character, it needs a reference. Different shots can go to different generators.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "What does the Sora case teach someone who generates video with AI?",
+          "opcoes": [
+            "Keep the script, references and prompts in text, outside the platform.",
+            "Use only open generators, because closed ones always end up going offline someday.",
+            "Avoid any generator released by a big tech company.",
+            "Generate everything at once while the tool is still online."
+          ],
+          "certa": 0,
+          "explica": "The app shut down on 04/26/2026 and the API on 09/24/2026. People who had everything inside it lost their way back. Closed doesn't mean forbidden; the safeguard is the portable folder, which lets you switch generators without losing your work.",
+          "ref": "passos"
+        },
+        {
+          "p": "In the table, why does Veo 3.1's duration per clip appear as \"not confirmed\"?",
+          "opcoes": [
+            "Because Veo 3.1 has no duration limit per generation, on any plan.",
+            "Because the number circulates on third-party sites, not on an official page.",
+            "Because the duration changes depending on the language used in the prompt.",
+            "Because Google forbids publishing clip durations."
+          ],
+          "certa": 1,
+          "explica": "The rule of the course is to state as fact only what has a dated source. A number that only shows up on aggregators goes in as \"reported\" or \"not confirmed\", and you check it on the tool's page that day.",
+          "ref": "passos"
+        },
+        {
+          "p": "You want to run the video on your own machine and sell the result to a small client. What should you check first?",
+          "opcoes": [
+            "Whether the model has the most downloads this month.",
+            "Whether the model generates in 4K, because clients demand high resolution.",
+            "Whether the model is the same one the big studios use.",
+            "The license of the weights and how much VRAM the model needs."
+          ],
+          "certa": 3,
+          "explica": "\"Open\" doesn't mean \"free for everything\": Wan 2.2 is Apache 2.0, LTX-2.x has a community license with a revenue cap, and some weights are for non-commercial use only. And without enough VRAM the model won't even run.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "The shot decides",
+          "texto": "Duration, sound and dialogue, reference, license and access. Answer per shot."
+        },
+        {
+          "t": "A version has a date",
+          "texto": "Every version goes with \"(Oct/2026)\" and the date you checked it. What has no source is \"reported\"."
+        },
+        {
+          "t": "Portable folder",
+          "texto": "Script, character sheet, look and prompts in text, outside the platform. Sora showed why."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Veo 3.1: launch and features (Google developers blog)",
+          "href": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"
+        },
+        {
+          "t": "Seedance 2.5: 30 s with audio (The Decoder)",
+          "href": "https://the-decoder.com/bytedances-seedance-2-5-generates-30-second-video-clips-with-built-in-audio/"
+        },
+        {
+          "t": "Runway Gen-4.5 with native audio and multiple shots (TechCrunch)",
+          "href": "https://techcrunch.com/2025/12/11/runway-releases-its-first-world-model-adds-native-audio-to-latest-video-model"
+        },
+        {
+          "t": "LTX-2.5 on Hugging Face (weights and license)",
+          "href": "https://huggingface.co/Lightricks/LTX-2.5"
+        },
+        {
+          "t": "Announcement of Sora's shutdown (9to5Google, 03/24/2026)",
+          "href": "https://9to5google.com/2026/03/24/openai-shutting-down-sora-video-generation-app-but-without-explaining-why/"
+        },
+        {
+          "t": "Course 0 · Directing: the shot list this course uses",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/aulas/decupagem/"
+        }
+      ]
+    }
+  ]
+}

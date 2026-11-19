@@ -1,0 +1,310 @@
+{
+  "slug": "imagem-chave",
+  "num": 3,
+  "menu": "Key image",
+  "titulo": "Key image first: cinematic still and lookbook",
+  "titulo_curto": "Key image and lookbook",
+  "minutos": 18,
+  "lead": "Before you animate, get the picture right. An image takes seconds, so you can test the look many times and take only the approved frame into video. The lookbook keeps the recipe for that look in a base prompt that goes into every still of the scene unchanged.",
+  "objetivo": "build the scene's lookbook and generate the stills for the key shots before any video, using the same base prompt.",
+  "competencias": [
+    "montar-lookbook",
+    "gerar-imagem-chave",
+    "manter-look-entre-planos"
+  ],
+  "aprende": [
+    {
+      "t": "Why the key image comes before the video"
+    },
+    {
+      "t": "The ingredients of a look, described without a director's name"
+    },
+    {
+      "t": "A base prompt that repeats in every still"
+    },
+    {
+      "t": "Image generators in Oct 2026, closed and open"
+    }
+  ],
+  "hero_alt": "A printed photograph pinned to a clothesline inside a dark room, showing the inside of a bakery at dawn with the oven lit and steam rising.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From storyboard to approved frame",
+      "sub": "Five steps, in this order. Click each one.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Key shots",
+          "sub": "3 from the shot list",
+          "icone": "lista",
+          "detalhe": "Choose the shots that define the scene: usually the first, the turning point, and the last. In the batch: 1 (dark street), 4 (oven opening), and 8 (iron door)."
+        },
+        {
+          "titulo": "Lookbook",
+          "sub": "the recipe",
+          "icone": "camadas",
+          "forte": true,
+          "detalhe": "Palette, lens, light, texture, and aspect ratio, written once. They become the base prompt."
+        },
+        {
+          "titulo": "Base prompt",
+          "sub": "the same in all",
+          "icone": "copiar",
+          "detalhe": "The look text, identical in every still. Only the subject and the action of each shot change."
+        },
+        {
+          "titulo": "Still",
+          "sub": "several tries",
+          "icone": "video",
+          "detalhe": "Generate a few versions of each key shot. Compare them side by side: the look has to be the same in all three."
+        },
+        {
+          "titulo": "Approved",
+          "sub": "becomes the 1st frame",
+          "icone": "check",
+          "detalhe": "The chosen still goes into the folder with the shot number. In lesson 4, it is the first frame of the video."
+        }
+      ],
+      "legenda": "If the look changes from one still to another, the problem is in the base prompt, not in the generator: adjust the recipe and generate again."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Lookbook and image generators",
+      "sub": "The example follows \"The first batch\".",
+      "passos": [
+        {
+          "titulo": "Why the image comes first",
+          "sub": "cheap and controllable",
+          "texto": [
+            "Getting the look wrong in a video costs a whole generation. In an image, you change the light, the lens, and the palette in minutes and compare them side by side.",
+            "The approved frame is the anchor of the scene: it carries the character, the place, the palette, and the light. Everything that comes after inherits from it."
+          ]
+        },
+        {
+          "titulo": "The ingredients of the look",
+          "sub": "no director names",
+          "texto": [
+            "Palette (two or three dominant colors), lens (wide-angle, normal, or tele), light (from the look card in course 0), texture (film grain, contrast), and aspect ratio of the frame.",
+            "Describe the ingredient, don't name a director or a film: \"in the style of so-and-so\" imitates a real person's work and changes depending on how the generator understands the name."
+          ],
+          "exemplo": {
+            "rot": "Batch look",
+            "texto": "night blue on the street, tile white, orange only in the fire; 35 mm; low-key with side light from the oven; fine grain; 16:9"
+          }
+        },
+        {
+          "titulo": "Base prompt",
+          "sub": "the look in one line",
+          "texto": [
+            "Put the ingredients together in one line that goes into every still the same way. Leave a marked space for what changes from shot to shot: the subject and the action.",
+            "If the generator accepts a style reference image, use the first approved still as the reference for the others (lesson 5 goes deeper)."
+          ]
+        },
+        {
+          "titulo": "Image generators (Oct/2026)",
+          "sub": "dated examples",
+          "texto": [
+            "Open: FLUX.2 [klein] (Jan/2026). The 4B is Apache 2.0 and runs on about 8 GB of VRAM; the 9B has a non-commercial license. It generates, edits, and accepts multiple reference images, according to the official repository.",
+            "Closed: Midjourney V8.1 came out on 04/30/2026, according to its documentation. GPT Image 2 and Nano Banana Pro are cited by third-party sites as strong in 2026, with no official confirmation checked here."
+          ],
+          "exemplo": {
+            "rot": "Source",
+            "texto": "Official FLUX.2 repository on GitHub (checked on 10/19/2026)."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The lookbook that the page checks and the request for the AI assistant to build the base prompt.",
+      "blocos": [
+        {
+          "rot": "lookbook.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Palette: <2 or 3 dominant colors and where they appear>\nLens: <wide-angle, 35 mm, 50 mm, tele; shallow or deep focus>\nLight: <your look card from course 0>\nTexture: <grain, contrast, sharpness>\nAspect ratio: <16:9, 9:16, 2.39:1...>\nBase prompt: <everything above in one line, with [SUBJECT AND ACTION] in place of what changes>\nKey shots: <numbers of the shots that become stills>"
+        },
+        {
+          "rot": "Request to the AI assistant (base prompt)",
+          "icone": "chat",
+          "conteudo": "You are a cinematographer. With the look card and the character sheet below, write a cinematic image base prompt, in one line, to repeat in every still of the scene.\nRules:\n- describe palette, lens, light, texture, and aspect ratio with concrete words;\n- do not name a director, film, photographer, or brand;\n- leave the [SUBJECT AND ACTION] placeholder where what changes from shot to shot goes.\nLook card:\n<paste the look.txt here>\nCharacter sheet:\n<paste the ficha.txt here>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your lookbook",
+      "sub": "Paste the lookbook.txt (or upload the file). Test first with the two examples.",
+      "arquivo": "lookbook.txt",
+      "rot": "Paste your lookbook.txt here (one line per ingredient):",
+      "modelo": "Palette: ...\nLens: ...\nLight: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 3,
+          "campos": [
+            "Palette",
+            "Lens",
+            "Light",
+            "Texture",
+            "Aspect ratio",
+            "Base prompt",
+            "Key shots"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "the aspect ratio of the frame (e.g., 16:9)",
+              "termos": [
+                "16:9 / 9:16 / 2.39:1 / 2,39:1 / 1.85:1 / 1,85:1 / 4:3 / 1:1 / 4:5"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: lookbook with {n} fields",
+      "exemplo": "Palette: night blue on the street, white tile, orange only in the oven fire\nLens: 35 mm, shallow focus on the close-ups\nLight: low-key, side light from the oven, steam in the beam; cold, dark street\nTexture: fine film grain, soft contrast\nAspect ratio: 16:9\nBase prompt: cinema photograph in a neighborhood bakery at 4:50 a.m., 35 mm, low-key with side light from the oven, white tile, night-blue street through the window, fine film grain, 16:9, [SUBJECT AND ACTION]\nKey shots: 1 (dark street), 4 (oven opening), 8 (iron door)",
+      "exemplo_errado": "Palette: warm\nLens: cinematic\nLight: style of a famous director\nBase prompt: beautiful bakery, cinematic, 8k"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Optional: check in the terminal",
+      "sub": "Only for people who already use a terminal. Download the course from GitHub and run it in its folder: the rules are the same as on the page. For your own file, swap <code>--exemplo</code> for its name (<code>lookbook.txt</code>); it exits 0 when it passes.",
+      "blocos": [
+        {
+          "rot": "Terminal (in the course folder)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py imagem-chave --exemplo; echo \"saída: $?\"\npython3 conferir.py imagem-chave --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Captured output (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py imagem-chave --exemplo; echo \"saída: $?\"\nOK: lookbook com 7 campos\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Example with an error (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py imagem-chave --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Textura: com a descrição (pelo menos 3 letras).\n - Falta a linha Proporção: com a descrição (pelo menos 3 letras).\n - Falta a linha Planos-chave: com a descrição (pelo menos 3 letras).\n - Falta citar a proporção do quadro (ex.: 16:9).\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Use the look.txt and the ficha.txt from course 0, or the first-batch recipe, as a starting point.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Lookbook · the recipe for your scene",
+          "min": "20 min",
+          "texto": "Fill in the lookbook.txt using the template, with no director, film, or brand names. Pick three key shots from your shot list. Paste it into \"Check your lookbook\" and download the file to the project folder.",
+          "pronto": "the page answers <code>OK: lookbook with 7 fields</code> and the lookbook.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "Stills · three key shots",
+          "min": "30 min",
+          "texto": "In whatever image generator you have (open or closed), generate the three key shots with the same base prompt, changing only the [SUBJECT AND ACTION]. Save the approved one for each with the shot number: plano-01, plano-04, plano-08.",
+          "pronto": "the project folder has the three image files with the shot number in the name, and the prompt for each one starts with the same Base prompt from the lookbook.txt."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "Why generate the key image before the video?",
+          "opcoes": [
+            "Because video generators only accept starting from an image.",
+            "Because testing the look on an image is fast, and the approved frame becomes an anchor.",
+            "Because the generated image always comes out at a higher resolution than the video generated afterward.",
+            "Because video generated from plain text comes out without audio."
+          ],
+          "certa": 1,
+          "explica": "An image takes seconds: you can make mistakes and fix light, lens, and palette several times. The approved frame carries the look and, in lesson 4, becomes the first frame of the video. Video from text also exists, and it also has audio.",
+          "ref": "passos"
+        },
+        {
+          "p": "Which line describes a look without depending on a person's name?",
+          "opcoes": [
+            "\"In the style of a famous director of symmetrical films.\"",
+            "\"Like the cinematography of that sci-fi movie everyone knows.\"",
+            "\"Night blue and white, 35 mm, low-key, fine grain, 16:9.\"",
+            "\"Just like this week's most-watched clip.\""
+          ],
+          "certa": 2,
+          "explica": "A described ingredient works in any generator and doesn't imitate anyone's work. A director's or film's name depends on how each generator understands the name, and it copies a signature that isn't yours.",
+          "ref": "passos"
+        },
+        {
+          "p": "The three stills came out with different colors. Where do you tweak first?",
+          "opcoes": [
+            "In the base prompt: some ingredient of the look is vague or missing.",
+            "In the resolution: larger stills come out with steadier color.",
+            "In the generator: switch tools for each still until the colors match.",
+            "In the edit: fixing the color afterward always solves the difference."
+          ],
+          "certa": 0,
+          "explica": "If the base prompt is identical and concrete, the look tends to repeat. A vague palette (\"warm\") lets each generation pick for itself. Color correction in post exists (course 2), but it won't save a still with different light.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "You want to generate stills on your own machine and use them in paid work. Which option from the lesson fits?",
+          "opcoes": [
+            "FLUX.2 [klein] 9B, because it's the biggest in the klein family.",
+            "Any open model, because open always allows commercial use.",
+            "A closed generator, because only closed allows paid work.",
+            "FLUX.2 [klein] 4B, which is Apache 2.0 and runs on about 8 GB."
+          ],
+          "certa": 3,
+          "explica": "In the klein family, the 4B is Apache 2.0 and the 9B has a non-commercial license. \"Open\" says the weights are available, not what you're allowed to do with them: read each one's license.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "Photo before film",
+          "texto": "Nail the look on the still; the approved one becomes the first frame of the video."
+        },
+        {
+          "t": "Ingredients, not names",
+          "texto": "Palette, lens, light, texture and aspect ratio, with no director or film named."
+        },
+        {
+          "t": "One base prompt",
+          "texto": "Same in every still; only the subject and the action change."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "FLUX.2: official repository (models, licenses, VRAM)",
+          "href": "https://github.com/black-forest-labs/flux2"
+        },
+        {
+          "t": "Course 0 · Composition and depth in the frame",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/aulas/composicao/"
+        },
+        {
+          "t": "Course 2 · Production: color, grain and finishing in post",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+        }
+      ]
+    }
+  ]
+}

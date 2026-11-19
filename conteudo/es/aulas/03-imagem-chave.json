@@ -1,0 +1,310 @@
+{
+  "slug": "imagem-chave",
+  "num": 3,
+  "menu": "Imagen clave",
+  "titulo": "Imagen clave primero: still cinematográfico y lookbook",
+  "titulo_curto": "Imagen clave y lookbook",
+  "minutos": 18,
+  "lead": "Antes de animar, acierta con la foto. Una imagen sale en segundos, así que pruebas el look varias veces y solo llevas al video el cuadro aprobado. El lookbook guarda la receta de ese look en un prompt base que entra igual en todos los stills de la escena.",
+  "objetivo": "armar el lookbook de la escena y generar los stills de los planos clave antes de cualquier video, con el mismo prompt base.",
+  "competencias": [
+    "montar-lookbook",
+    "gerar-imagem-chave",
+    "manter-look-entre-planos"
+  ],
+  "aprende": [
+    {
+      "t": "Por qué la imagen clave va antes del video"
+    },
+    {
+      "t": "Los ingredientes de un look descritos sin nombre de director"
+    },
+    {
+      "t": "Un prompt base que se repite en todos los stills"
+    },
+    {
+      "t": "Generadores de imagen en oct/2026, cerrados y abiertos"
+    }
+  ],
+  "hero_alt": "Una fotografía impresa colgada de un tendedero dentro de un cuarto oscuro, que muestra el interior de una panadería de madrugada con el horno encendido y vapor.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Del storyboard al cuadro aprobado",
+      "sub": "Cinco pasos, en este orden. Haz clic en cada uno.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Planos clave",
+          "sub": "3 del desglose de planos",
+          "icone": "lista",
+          "detalhe": "Elige los planos que definen la escena: por lo general el primero, el del giro y el último. En la hornada: 1 (calle oscura), 4 (horno abriéndose) y 8 (puerta de hierro)."
+        },
+        {
+          "titulo": "Lookbook",
+          "sub": "la receta",
+          "icone": "camadas",
+          "forte": true,
+          "detalhe": "Paleta, lente, luz, textura y proporción, escritos una sola vez. Se convierten en el prompt base."
+        },
+        {
+          "titulo": "Prompt base",
+          "sub": "igual en todos",
+          "icone": "copiar",
+          "detalhe": "El texto del look, idéntico en todos los stills. Solo cambian el sujeto y la acción de cada plano."
+        },
+        {
+          "titulo": "Still",
+          "sub": "varios intentos",
+          "icone": "video",
+          "detalhe": "Genera algunas versiones de cada plano clave. Compáralas lado a lado: el look tiene que ser el mismo en los tres."
+        },
+        {
+          "titulo": "Aprobado",
+          "sub": "pasa a ser el primer fotograma",
+          "icone": "check",
+          "detalhe": "El still elegido va a la carpeta con el número del plano. En la clase 4, es el primer fotograma del video."
+        }
+      ],
+      "legenda": "Si el look cambia de un still a otro, el problema está en el prompt base, no en el generador: ajusta la receta y genera de nuevo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Lookbook y generadores de imagen",
+      "sub": "El ejemplo sigue \"La primera hornada\".",
+      "passos": [
+        {
+          "titulo": "Por qué primero la imagen",
+          "sub": "barato y controlable",
+          "texto": [
+            "Equivocarte con el look en un video cuesta una generación entera. En una imagen, cambias la luz, la lente y la paleta en minutos y comparas lado a lado.",
+            "El fotograma aprobado es el ancla de la escena: lleva personaje, lugar, paleta y luz. Lo que venga después lo hereda."
+          ]
+        },
+        {
+          "titulo": "Los ingredientes del look",
+          "sub": "sin nombre de director",
+          "texto": [
+            "Paleta (dos o tres colores dominantes), lente (gran angular, normal o teleobjetivo), luz (de la tarjeta de look del curso 0), textura (grano de película, contraste) y proporción del cuadro.",
+            "Describe el ingrediente, no cites a un director ni una película: \"estilo de fulano\" imita el trabajo de una persona real y cambia según cómo el generador entienda el nombre."
+          ],
+          "exemplo": {
+            "rot": "Look de la hornada",
+            "texto": "azul noche en la calle, blanco del azulejo, naranja solo en el fuego; 35 mm; low-key con luz lateral del horno; grano fino; 16:9"
+          }
+        },
+        {
+          "titulo": "Prompt base",
+          "sub": "el look en una línea",
+          "texto": [
+            "Junta los ingredientes en una línea que entra igual en todos los stills. Deja un espacio marcado para lo que cambia de plano a plano: el sujeto y la acción.",
+            "Si el generador acepta una imagen de referencia de estilo, usa el primer still aprobado como referencia de los demás (la clase 5 lo profundiza)."
+          ]
+        },
+        {
+          "titulo": "Generadores de imagen (oct/2026)",
+          "sub": "ejemplos con fecha",
+          "texto": [
+            "Abierto: FLUX.2 [klein] (ene/2026). El 4B es Apache 2.0 y corre con unos 8 GB de VRAM; el 9B tiene licencia no comercial. Genera, edita y acepta varias imágenes de referencia, según el repositorio oficial.",
+            "Cerrados: Midjourney V8.1 salió el 30/04/2026, según su documentación. GPT Image 2 y Nano Banana Pro son citados por sitios de terceros como fuertes en 2026, sin confirmación oficial verificada aquí."
+          ],
+          "exemplo": {
+            "rot": "Fuente",
+            "texto": "Repositorio oficial de FLUX.2 en GitHub (consultado el 19/10/2026)."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "El lookbook que la página verifica y el pedido para que el asistente de IA arme el prompt base.",
+      "blocos": [
+        {
+          "rot": "lookbook.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Paleta: <2 o 3 colores dominantes y dónde aparecen>\nLente: <gran angular, 35 mm, 50 mm, tele; foco superficial o profundo>\nLuz: <tu tarjeta de look del curso 0>\nTextura: <grano, contraste, nitidez>\nProporción: <16:9, 9:16, 2.39:1...>\nPrompt base: <todo lo anterior en una línea, con [SUJETO Y ACCIÓN] en lugar de lo que cambia>\nPlanos clave: <números de los planos que pasan a ser still>"
+        },
+        {
+          "rot": "Pedido al asistente de IA (prompt base)",
+          "icone": "chat",
+          "conteudo": "Eres director de fotografía. Con la tarjeta de look y la ficha de abajo, escribe un prompt base de imagen cinematográfica, en una línea, para repetir en todos los stills de la escena.\nReglas:\n- describe paleta, lente, luz, textura y proporción con palabras concretas;\n- no cites director, película, fotógrafo ni marca;\n- deja el marcador [SUJETO Y ACCIÓN] donde entra lo que cambia de plano a plano.\nTarjeta de look:\n<pega aquí el look.txt>\nFicha:\n<pega aquí el ficha.txt>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Verifica tu lookbook",
+      "sub": "Pega el lookbook.txt (o carga el archivo). Prueba antes con los dos ejemplos.",
+      "arquivo": "lookbook.txt",
+      "rot": "Pega aquí tu lookbook.txt (una línea por ingrediente):",
+      "modelo": "Paleta: ...\nLente: ...\nLuz: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 3,
+          "campos": [
+            "Paleta",
+            "Lente",
+            "Luz",
+            "Textura",
+            "Proporción",
+            "Prompt base",
+            "Planos clave"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "la proporción del encuadre (ej.: 16:9)",
+              "termos": [
+                "16:9 / 9:16 / 2.39:1 / 2,39:1 / 1.85:1 / 1,85:1 / 4:3 / 1:1 / 4:5"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: lookbook con {n} campos",
+      "exemplo": "Paleta: azul noche en la calle, blanco del azulejo, naranja solo en el fuego del horno\nLente: 35 mm, foco poco profundo en los primeros planos\nLuz: low-key, luz lateral del horno, vapor en el haz; calle fría y oscura\nTextura: grano fino de película, contraste suave\nProporción: 16:9\nPrompt base: fotografía de cine en una panadería de barrio a las 4:50, 35 mm, low-key con luz lateral del horno, azulejo blanco, calle azul noche por la vitrina, grano fino de película, 16:9, [SUJETO Y ACCIÓN]\nPlanos clave: 1 (calle oscura), 4 (horno abriéndose), 8 (puerta de hierro)",
+      "exemplo_errado": "Paleta: cálido\nLente: cinematográfica\nLuz: estilo de un director famoso\nPrompt base: panadería bonita, cinematográfica, 8k"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Opcional: revisar en la terminal",
+      "sub": "Solo para quienes ya usan terminal. Descarga el curso de GitHub y ejecútalo en su carpeta: las reglas son las mismas de la página. Para tu archivo, cambia <code>--exemplo</code> por el nombre del tuyo (<code>lookbook.txt</code>); sale 0 cuando pasa.",
+      "blocos": [
+        {
+          "rot": "Terminal (en la carpeta del curso)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py imagem-chave --exemplo; echo \"saída: $?\"\npython3 conferir.py imagem-chave --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Salida capturada (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py imagem-chave --exemplo; echo \"saída: $?\"\nOK: lookbook com 7 campos\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Ejemplo con error (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py imagem-chave --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Textura: com a descrição (pelo menos 3 letras).\n - Falta a linha Proporção: com a descrição (pelo menos 3 letras).\n - Falta a linha Planos-chave: com a descrição (pelo menos 3 letras).\n - Falta citar a proporção do quadro (ex.: 16:9).\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Usa el look.txt y la ficha.txt del curso 0, o la receta de la hornada como punto de partida.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Lookbook · la receta de tu escena",
+          "min": "20 min",
+          "texto": "Completa el lookbook.txt según la plantilla, sin nombre de director, película ni marca. Elige tres planos clave de tu desglose de planos. Pégalo en \"Confira o seu lookbook\" y descarga el archivo a la carpeta del proyecto.",
+          "pronto": "la página responde <code>OK: lookbook con 7 campos</code> y el lookbook.txt está en la carpeta del proyecto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Stills · tres planos clave",
+          "min": "30 min",
+          "texto": "En el generador de imágenes que tengas (abierto o cerrado), genera los tres planos clave con el mismo prompt base, cambiando solo el [SUJETO Y ACCIÓN]. Guarda el aprobado de cada uno con el número del plano: plano-01, plano-04, plano-08.",
+          "pronto": "la carpeta del proyecto tiene los tres archivos de imagen con el número del plano en el nombre, y el prompt de cada uno empieza con el mismo Prompt base del lookbook.txt."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Por qué generar la imagen clave antes del video?",
+          "opcoes": [
+            "Porque los generadores de video solo aceptan empezar desde una imagen.",
+            "Porque probar el look en una imagen es rápido y el fotograma aprobado se vuelve ancla.",
+            "Porque la imagen generada siempre sale en mayor resolución que el video generado después.",
+            "Porque el video generado a partir de texto puro sale sin audio."
+          ],
+          "certa": 1,
+          "explica": "La imagen sale en segundos: puedes equivocarte y corregir luz, lente y paleta varias veces. El fotograma aprobado lleva el look y, en la clase 4, se vuelve el primer fotograma del video. El video a partir de texto también existe y también tiene audio.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Qué línea describe un look sin depender del nombre de una persona?",
+          "opcoes": [
+            "\"Al estilo de un director famoso de películas simétricas.\"",
+            "\"Como la fotografía de aquella película de ciencia ficción que todo el mundo conoce.\"",
+            "\"Azul noche y blanco, 35 mm, low-key, grano fino, 16:9.\"",
+            "\"Igual que el clip más visto de esta semana.\""
+          ],
+          "certa": 2,
+          "explica": "El ingrediente descrito funciona en cualquier generador y no imita el trabajo de nadie. El nombre de un director o de una película depende de cómo cada generador entiende ese nombre y copia una firma que no es tuya.",
+          "ref": "passos"
+        },
+        {
+          "p": "Los tres stills salieron con colores distintos. ¿Dónde tocar primero?",
+          "opcoes": [
+            "En el prompt base: algún ingrediente del look está vago o falta.",
+            "En la resolución: los stills más grandes salen con el color más estable.",
+            "En el generador: cambia de herramienta en cada still hasta que los colores coincidan.",
+            "En el montaje: corregir el color después resuelve la diferencia siempre."
+          ],
+          "certa": 0,
+          "explica": "Si el prompt base es idéntico y concreto, el look tiende a repetirse. Una paleta vaga (\"cálido\") deja que cada generación elija. La corrección de color en la posproducción existe (curso 2), pero no salva un still con luz distinta.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Quieres generar stills en tu máquina y usarlos en un trabajo pagado. ¿Qué opción de la clase lo permite?",
+          "opcoes": [
+            "FLUX.2 [klein] 9B, porque es el más grande de la familia klein.",
+            "Cualquier modelo abierto, porque abierto siempre permite uso comercial.",
+            "Un generador cerrado, porque solo el cerrado permite trabajo pagado.",
+            "FLUX.2 [klein] 4B, que es Apache 2.0 y corre con unos 8 GB."
+          ],
+          "certa": 3,
+          "explica": "En la familia klein, el 4B es Apache 2.0 y el 9B tiene licencia no comercial. \"Abierto\" dice que los pesos están disponibles, no qué puedes hacer con ellos: lee la licencia de cada uno.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "Foto antes de la película",
+          "texto": "Acierta el look en el still; el aprobado se vuelve el primer fotograma del video."
+        },
+        {
+          "t": "Ingredientes, no nombres",
+          "texto": "Paleta, lente, luz, textura y proporción, sin director ni película."
+        },
+        {
+          "t": "Un prompt base",
+          "texto": "Igual en todos los stills; solo cambian el sujeto y la acción."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "FLUX.2: repositorio oficial (modelos, licencias, VRAM)",
+          "href": "https://github.com/black-forest-labs/flux2"
+        },
+        {
+          "t": "Curso 0 · Composición y profundidad en el cuadro",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/es/aulas/composicao/"
+        },
+        {
+          "t": "Curso 2 · Producción: color, grano y acabado en la posproducción",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/es/"
+        }
+      ]
+    }
+  ]
+}

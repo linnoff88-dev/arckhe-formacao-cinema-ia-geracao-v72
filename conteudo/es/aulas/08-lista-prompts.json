@@ -1,0 +1,456 @@
+{
+  "slug": "lista-prompts",
+  "num": 8,
+  "menu": "Lista",
+  "titulo": "Tu generador de prompts: del storyboard a la lista de prompts con un agente",
+  "titulo_curto": "Lista de prompts",
+  "minutos": 20,
+  "lead": "Escribir ocho prompts a mano, con el mismo look y el mismo bloqueo, cansa y deja espacio para el error. Un asistente de IA con reglas claras hace el borrador de toda la lista a partir del storyboard del curso 0. Tú lo revisas, la página lo verifica, y la lista sirve para cualquier generador.",
+  "objetivo": "convertir el storyboard del curso 0 en una lista de prompts, uno por plano, con un asistente de IA, y verificarla en la página.",
+  "competencias": [
+    "montar-pedido-en-capas",
+    "generar-lista-de-prompts",
+    "revisar-salida-del-agente"
+  ],
+  "aprende": [
+    {
+      "t": "Por qué dejar el borrador de la lista a un asistente de IA"
+    },
+    {
+      "t": "El pedido en seis capas: rol, entrada, salida, vocabulario, reglas y límites"
+    },
+    {
+      "t": "Revisar lo que el asistente inventó antes de generar"
+    },
+    {
+      "t": "Juntar todo lo que produjo el curso en un plan con fechas"
+    }
+  ],
+  "hero_alt": "Mesa de producción oscura con una pila de fichas de índice, una hoja de storyboard a lápiz y un notebook cerrado bajo luz fría lateral.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Del storyboard a la lista verificada",
+      "sub": "El asistente hace el borrador; tú decides. Haz clic en cada etapa.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Entrada",
+          "sub": "3 archivos",
+          "icone": "pasta",
+          "detalhe": "storyboard.txt (curso 0, clase 8), lookbook.txt (clase 3) y referencias.txt (clase 5). Todo en texto, en la carpeta del proyecto."
+        },
+        {
+          "titulo": "Pedido",
+          "sub": "6 capas",
+          "icone": "camadas",
+          "forte": true,
+          "detalhe": "Rol, entrada, formato de salida, vocabulario, reglas y límites. Es lo que hace que el asistente devuelva siempre el mismo formato."
+        },
+        {
+          "titulo": "Asistente",
+          "sub": "de tu suscripción",
+          "icone": "chat",
+          "detalhe": "El modelo top de tu suscripción de IA, en el chat que ya usas. No necesitas terminal ni programa."
+        },
+        {
+          "titulo": "Lista",
+          "sub": "prompts.txt",
+          "icone": "lista",
+          "detalhe": "Una línea por plano: número, duración, tamaño, movimiento, prompt y sonido. Encabezado con el prompt base y el bloqueo."
+        },
+        {
+          "titulo": "Verificar",
+          "sub": "página + tú",
+          "icone": "lupa",
+          "detalhe": "La página verifica formato, movimiento, sonido y suma de los segundos. Tú verificas si el asistente inventó personaje, lugar u objeto."
+        },
+        {
+          "titulo": "Generador",
+          "sub": "cualquiera",
+          "icone": "play",
+          "detalhe": "Cada línea se convierte en una generación, en el generador elegido en la clase 1. La lista queda en la carpeta: cambias de generador sin rehacer."
+        }
+      ],
+      "legenda": "El asistente acelera el borrador; la dirección sigue siendo tuya. Cada línea pasa por tus ojos antes de gastar crédito."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Montando tu generador de prompts",
+      "sub": "El ejemplo convierte el storyboard de 30 s de \"La primera hornada\".",
+      "passos": [
+        {
+          "titulo": "Por qué un asistente",
+          "sub": "mismas reglas, siempre",
+          "texto": [
+            "Ocho planos piden ocho prompts con el mismo prompt base y el mismo bloqueo, palabra por palabra. A mano, una coma olvidada cambia el look de un plano.",
+            "Un pedido con reglas fijas hace que el asistente repita lo que tiene que ser igual y cambie solo lo que cambia. Tú cambias el storyboard y reutilizas el pedido."
+          ]
+        },
+        {
+          "titulo": "Las seis capas del pedido",
+          "sub": "rol hasta límites",
+          "texto": [
+            "Rol (quién es), entrada (los archivos pegados), formato de salida (la línea exacta), vocabulario (los términos de cámara del curso 0), reglas (copiar prompt base y bloqueo, sonido en frase separada) y límites (qué hacer cuando falta información).",
+            "La capa de límites es la que más protege: en lugar de inventar, el asistente escribe \"FALTA:\" y lo que faltó."
+          ]
+        },
+        {
+          "titulo": "Revisar la salida",
+          "sub": "lo que la página no ve",
+          "texto": [
+            "La página verifica formato y números. Tú lees buscando lo que no estaba en el storyboard: un personaje de más, un objeto nuevo, una línea de diálogo cambiada.",
+            "¿Encontraste una invención? No corrijas solo la línea: agrega al pedido la regla que faltó, para que no vuelva en el próximo storyboard."
+          ]
+        },
+        {
+          "titulo": "Del archivo al generador",
+          "sub": "portátil",
+          "texto": [
+            "Para generar, pega el prompt base, el bloqueo y la línea del plano, y adjunta las referencias de ese plano. Si el generador pide otra forma de escribir, ajusta la línea, no la lista.",
+            "La lista, el storyboard, el lookbook y las referencias quedan en la carpeta. Si el generador cambia o cierra, te llevas todo a otro."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El pedido en capas y el formato de la lista",
+      "sub": "Pega el pedido en el chat del asistente de IA de tu suscripción, con los tres archivos al final.",
+      "blocos": [
+        {
+          "rot": "Pedido al asistente de IA (generador de prompts)",
+          "icone": "chat",
+          "conteudo": "ROL: Eres asistente de dirección y escribes prompts de video para generadores con audio.\nENTRADA: un storyboard (una línea por plano), un lookbook y una lista de referencias, pegados al final.\nSALIDA: primero las líneas \"Escena:\", \"Prompt base:\" y \"Bloqueo:\"; después una línea por plano, en este formato:\nn | duración | tamaño del plano | movimiento | prompt: <cámara, sujeto, acción, escenario> | sonido: <ambiente, efecto, diálogo como quien dice: texto>\nVOCABULARIO: tamaño, ángulo y movimiento solo con los términos del storyboard (plano general, primer plano, cámara alta, dolly in, cámara fija...).\nREGLAS:\n- copia el Prompt base del lookbook y el Bloqueo de las referencias palabra por palabra;\n- un movimiento por plano, el mismo del storyboard;\n- el sonido en una frase propia, después de \"sonido:\";\n- no menciones director, película, marca ni persona real.\nLÍMITES: no inventes personaje, lugar, objeto ni diálogo que no estén en la entrada. Si falta algo, escribe \"FALTA:\" y lo que faltó.\nStoryboard:\n<pega aquí el storyboard.txt>\nLookbook:\n<pega aquí el lookbook.txt>\nReferencias:\n<pega aquí el referencias.txt>"
+        },
+        {
+          "rot": "prompts.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Escena: <nombre> (<duración> s)\nPrompt base: <del lookbook.txt, palabra por palabra>\nBloqueo: <del referencias.txt, palabra por palabra>\n<n> | <n> s | <tamaño del plano> | <un movimiento> | prompt: <cámara, sujeto, acción, escenario> | sonido: <ambiente, efecto, diálogo>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Verifica tu lista de prompts",
+      "sub": "Pega el prompts.txt que devolvió el asistente y que ya revisaste. Pruébalo antes con los dos ejemplos.",
+      "arquivo": "prompts.txt",
+      "rot": "Pega aquí tu prompts.txt (encabezado y una línea numerada por plano):",
+      "modelo": "Escena: ...\nPrompt base: ...\nBloqueo: ...\n1 | 4 s | plano general | cámara fija | prompt: ... | sonido: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 3,
+          "campos": [
+            "Escena",
+            "Prompt base",
+            "Bloqueo"
+          ]
+        },
+        {
+          "tipo": "planos",
+          "min": 6,
+          "max": 10
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "tamaño del plano",
+              "variar": 3,
+              "termos": [
+                "plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot / plano general / plano de establecimiento / gran plano general",
+                "plano aberto / wide shot / plano abierto",
+                "plano americano / medium wide shot / cowboy shot / medium-long shot / medium long shot",
+                "plano médio / medium shot / plano medio / mid shot",
+                "meio primeiro plano / close médio / medium close-up / plano medio corto",
+                "close / close-up / primeiro plano / plano fechado / closeup / primer plano / plano cerrado",
+                "plano detalhe / extreme close-up / macro / plano detalle / detail shot / macro shot"
+              ]
+            },
+            {
+              "rot": "movimiento",
+              "um_so": true,
+              "termos": [
+                "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
+                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly out / pull-out / afastamento lento / alejamiento lento",
+                "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
+                "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
+                "tilt / tilt up / tilt down",
+                "grua / crane / pedestal up / pedestal down / crane shot / grúa",
+                "órbita / orbit / arc shot / orbit shot",
+                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "zoom in / zoom out / crash zoom",
+                "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
+                "whip pan / chicote / swish pan / latigazo",
+                "drone / plano aéreo / aerial shot"
+              ]
+            },
+            {
+              "rot": "la columna prompt",
+              "min": 30,
+              "termos": [
+                "prompt:"
+              ]
+            },
+            {
+              "rot": "la columna sonido",
+              "min": 3,
+              "termos": [
+                "som: / áudio: / sound: / audio: / sonido:"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "duracao",
+          "min": 24,
+          "max": 36
+        }
+      ],
+      "ok": "OK: {n} prompts listos · {s} s",
+      "exemplo": "Escena: La primera hornada (30 s)\nPrompt base: fotografía de cine en una panadería de barrio a las 4:50, 35 mm, low-key con luz lateral del horno, azulejo blanco, calle azul noche por la vitrina, grano fino de película, 16:9\nBloqueo: moño con pañuelo, anteojos, delantal azul marino, pala de madera, madrugada\n1 | 4 s | plano general | cámara fija | prompt: Plano general en cámara alta de una calle de barrio todavía oscura; solo la vitrina de la panadería está encendida. | sonido: viento, un perro a lo lejos\n2 | 4 s | plano abierto | travelling lateral | prompt: Plano abierto: Doña Lia enciende las luces de la panadería y se ata el delantal azul marino. | sonido: interruptor, radio bajita\n3 | 4 s | plano medio | cámara fija | prompt: Plano medio a la altura de los ojos: Doña Lia amasa la masa en el mesón de madera. | sonido: masa golpeando la mesa\n4 | 4 s | primer plano | dolly in | prompt: Primer plano en cámara baja: la puerta de hierro del horno se abre despacio y el vapor sube contra la luz. | sonido: chirrido del horno, siseo del vapor\n5 | 3 s | plano detalle | tilt | prompt: Plano detalle cenital: la pala de madera gastada saca la primera hornada del horno. | sonido: corteza del pan crujiendo\n6 | 3 s | primer plano | cámara fija | prompt: Primer plano a la altura de los ojos: Doña Lia prueba un pedazo de pan y cierra los ojos. | sonido: solo la radio, bajito\n7 | 4 s | plano medio | cámara en mano | prompt: Plano medio por encima del hombro: golpes en la puerta de hierro; Doña Lia mira el reloj y sonríe. | sonido: tres golpes; la panadera dice: ¡Ya voy!\n8 | 4 s | plano abierto | dolly out | prompt: Plano abierto: Doña Lia sube la cortina de hierro y entra el primer cliente. | sonido: cortina de hierro subiendo, campanilla de la puerta",
+      "exemplo_errado": "Escena: La primera hornada\nPrompt base: cinematográfico\n1 | 4 s | plano general | cámara fija | prompt: calle oscura | sonido: viento\n2 | 4 s | plano general | cámara fija | prompt: panadería por dentro, estilo de un director famoso\n3 | 4 s | plano general | dolly in con zoom in | prompt: Doña Lia y su nieto amasan la masa juntos en el mesón. | sonido: radio\n4 | 4 s | plano general | cámara fija | prompt: el horno se abre y el vapor sube contra la luz lateral del horno. | sonido:"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Opcional: revisar en la terminal",
+      "sub": "Solo para quien ya usa terminal. Descarga el curso de GitHub y ejecútalo en su carpeta: las reglas son las mismas de la página. Para tu archivo, cambia <code>--exemplo</code> por su nombre (<code>prompts.txt</code>); sale 0 cuando pasa.",
+      "blocos": [
+        {
+          "rot": "Terminal (en la carpeta del curso)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py lista-prompts --exemplo; echo \"saída: $?\"\npython3 conferir.py lista-prompts --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Salida capturada (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py lista-prompts --exemplo; echo \"saída: $?\"\nOK: 8 prompts listos · 30 s\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Ejemplo con error (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py lista-prompts --errado; echo \"saída: $?\"\nTodavía no. Lo que falta:\n - Falta la línea Bloqueo: con la descripción (al menos 3 letras).\n - Encontré 4 planos numerados; el pedido es de 6 a 10. Empieza cada plano con el número (1 | ...).\n - Plano 1: falta la columna prompt.\n - Plano 2: falta la columna sonido.\n - Plano 3: 2 opciones de movimiento; quédate con una sola.\n - Plano 4: falta la columna sonido.\n - Solo 1 tipo(s) distinto(s) de tamaño de plano en los planos; varía hasta al menos 3.\n - Los planos suman 16 s; el pedido es de 24 a 36 s.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Usa el storyboard del curso 0 y los archivos de las clases 3 y 5. Si no los tienes, usa los de \"La primera hornada\".",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Lista · tu escena en prompts",
+          "min": "30 min",
+          "texto": "Pega el pedido en capas en el chat del asistente de IA de tu suscripción, con el storyboard, el lookbook y las referencias al final. Revisa la respuesta buscando invenciones y \"FALTA:\". Pégala en \"Verifica tu lista de prompts\" y descarga el prompts.txt a la carpeta del proyecto.",
+          "pronto": "la página responde <code>OK: [n] prompts listos · [s] s</code>, con la suma entre 24 y 36 s, y el prompts.txt está en la carpeta del proyecto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Regla nueva · lo que el asistente inventó",
+          "min": "15 min",
+          "texto": "Compara la lista con el storyboard y anota, al final del pedido, una regla por cada invención que corregiste. Guarda el pedido como pedido-prompts.txt para el próximo storyboard.",
+          "pronto": "el pedido-prompts.txt está en la carpeta del proyecto y tiene al menos una regla más que el pedido de la clase, o la anotación \"ninguna invención encontrada\" con la fecha."
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "El mapa del curso",
+      "sub": "Cuatro niveles que llevan del storyboard a la lista de prompts. Haz clic en un ejercicio para ver el \"listo cuando\".",
+      "degraus": [
+        {
+          "aula": "geradores",
+          "icone": "lupa",
+          "quando": "Clase 1",
+          "titulo": "Elige",
+          "sub": "generador por plano",
+          "saida": "escolha.txt y geradores-out-2026.txt.",
+          "passo": "Qué pide cada plano y qué generador lo atiende, con la fecha de la consulta."
+        },
+        {
+          "aula": "imagem-chave",
+          "icone": "sol",
+          "quando": "Clases 2 y 3",
+          "titulo": "Prompt y still",
+          "sub": "anatomía y lookbook",
+          "saida": "prompt.txt, lookbook.txt y los stills.",
+          "passo": "El prompt en siete partes y el look fijado en un prompt base, probado en los stills."
+        },
+        {
+          "aula": "referencia",
+          "icone": "cadeado",
+          "quando": "Clases 4 a 7",
+          "titulo": "Clip y continuidad",
+          "sub": "movimiento y referencia",
+          "saida": "clips verificados, referencias.txt, multishot.txt y maquina.txt.",
+          "passo": "Del still al clip, con el mismo personaje entre planos, en cerrado o en abierto."
+        },
+        {
+          "aula": "lista-prompts",
+          "icone": "lista",
+          "quando": "Clase 8",
+          "titulo": "Lista",
+          "sub": "prompts de la escena",
+          "saida": "prompts.txt verificado.",
+          "passo": "La escena completa en prompts, lista para cualquier generador."
+        }
+      ],
+      "resultado": {
+        "titulo": "Al final del curso",
+        "texto": "Una carpeta con elección, lookbook, stills, clips, referencias y la lista de prompts de tu escena.",
+        "total": "8 entregas"
+      },
+      "rolagem_fim": {
+        "titulo": "El curso completo",
+        "texto": "Cuatro niveles, cada uno con su entrega verificada por la página. La lista de esta clase los reúne a todos."
+      },
+      "legenda": "Orden sugerido: cada nivel usa lo que decidió el anterior."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Genera tu plan con fechas",
+      "sub": "Elige cuándo empiezas y cuánto tiempo tienes por semana. El plan lista los ejercicios de las ocho clases.",
+      "curso": "Generación: imagen y video con IA",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Clase 1 · Elección del generador",
+          "aula": "geradores"
+        },
+        {
+          "titulo": "Clase 2 · Prompt en siete partes",
+          "aula": "prompt"
+        },
+        {
+          "titulo": "Clase 3 · Lookbook y stills",
+          "aula": "imagem-chave"
+        },
+        {
+          "titulo": "Clase 4 · Clip a partir del still",
+          "aula": "movimento"
+        },
+        {
+          "titulo": "Clase 5 · Referencia y bloqueo",
+          "aula": "referencia"
+        },
+        {
+          "titulo": "Clase 6 · Multishot",
+          "aula": "multishot"
+        },
+        {
+          "titulo": "Clase 7 · Ficha de la máquina",
+          "aula": "aberto"
+        },
+        {
+          "titulo": "Clase 8 · Lista de prompts",
+          "aula": "lista-prompts"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Generación: imagen y video con IA",
+        "inicio": "Inicio",
+        "ritmo": "Ritmo",
+        "termino": "Finalización prevista",
+        "ate": "hasta",
+        "pronto": "listo cuando",
+        "semanas": "semanas",
+        "travou": "## Qué se trabó y la regla que creé",
+        "h": "h por semana",
+        "exs": "ejercicios"
+      }
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Qué capa del pedido protege más contra que el asistente invente cosas?",
+          "opcoes": [
+            "El rol, porque define quién es el asistente.",
+            "El vocabulario, porque limita las palabras de cámara.",
+            "El formato de salida, porque fija exactamente la línea que cada plano debe seguir.",
+            "Los límites, que mandan escribir \"FALTA:\" en vez de inventar."
+          ],
+          "certa": 3,
+          "explica": "Si no le dices qué hacer cuando falta información, el asistente rellena el hueco con algo plausible. Con \"FALTA:\", el hueco aparece para que tú decidas.",
+          "ref": "passos"
+        },
+        {
+          "p": "La lista pasó en la página, pero el plano 3 tiene un nieto de Doña Lia que no existe en el storyboard. ¿Qué hacer?",
+          "opcoes": [
+            "Quitar al nieto de la línea y agregar una regla en el pedido.",
+            "Dejarlo, porque la página aceptó la lista.",
+            "Cambiar de asistente de IA y pedir de nuevo.",
+            "Borrar el plano 3 completo de la lista."
+          ],
+          "certa": 0,
+          "explica": "La página verifica formato y números, no el contenido. La invención se corrige en la línea y se vuelve regla en el pedido, para que no vuelva en el próximo storyboard.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Por qué copiar el prompt base y el bloqueo palabra por palabra en todas las líneas?",
+          "opcoes": [
+            "Porque el generador solo acepta prompts del mismo tamaño.",
+            "Porque el mismo texto pide el mismo look y el mismo personaje.",
+            "Porque la página solo verifica líneas iguales entre sí.",
+            "Porque así el asistente gasta menos de tu suscripción."
+          ],
+          "certa": 1,
+          "explica": "Es la continuidad de las clases 3 y 5 llevada a la lista: lo que debe ser igual en todos los planos va igual. Solo la cámara, la acción y el sonido cambian de línea en línea.",
+          "ref": "codigo"
+        },
+        {
+          "p": "El generador que usabas cerró. ¿Qué necesitas rehacer?",
+          "opcoes": [
+            "Todo, a partir del storyboard del curso 0.",
+            "Los stills y las referencias, que quedaron atrapados dentro de la plataforma que cerró.",
+            "Solo las generaciones: la lista, el lookbook y las referencias están en tu carpeta.",
+            "La lista de prompts, porque cada generador tiene su propio formato."
+          ],
+          "certa": 2,
+          "explica": "Por eso todo es archivo de texto e imagen en tu carpeta, fuera de la plataforma: es lo que enseñó el caso Sora. Ajustar la forma de escribir para otro generador es poco comparado con rehacer la escena.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "Pedido en seis capas",
+          "texto": "Rol, entrada, salida, vocabulario, reglas y límites; el pedido se reutiliza."
+        },
+        {
+          "t": "La revisión es tuya",
+          "texto": "La página revisa el formato; tú revisas las invenciones y conviertes cada una en regla."
+        },
+        {
+          "t": "Lista portátil",
+          "texto": "Prompt base, bloqueo y una línea por plano, listos para cualquier generador."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Siguiente: Curso 2 · Producción: del guion a la película terminada",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/es/"
+        },
+        {
+          "t": "Curso 0 · Tu storyboard: la entrada de esta clase",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/es/aulas/storyboard/"
+        }
+      ]
+    }
+  ]
+}

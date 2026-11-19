@@ -1,0 +1,379 @@
+{
+  "slug": "geradores",
+  "num": 1,
+  "menu": "Generadores",
+  "titulo": "El mapa de los generadores en oct/2026 y cómo elegir",
+  "titulo_curto": "Mapa de los generadores",
+  "minutos": 18,
+  "lead": "El generador de video cambia de versión cada pocos meses y a veces desaparece, como Sora. Por eso la elección no empieza por el ranking: empieza por lo que pide tu plano. Duración, diálogo, referencia y licencia deciden; la tabla con fecha solo muestra quién cumple hoy.",
+  "objetivo": "elegir el generador de cada plano según lo que pide (duración, diálogo, referencia, licencia) y registrar la elección con la fecha.",
+  "competencias": [
+    "escolher-gerador",
+    "ler-versao-datada",
+    "manter-portabilidade"
+  ],
+  "aprende": [
+    {
+      "t": "Las cinco preguntas que eligen el generador de un plano"
+    },
+    {
+      "t": "Lo que ofrece cada generador grande en oct/2026, con fuente y fecha"
+    },
+    {
+      "t": "Por qué el caso Sora enseña a guardar todo fuera de la plataforma"
+    },
+    {
+      "t": "Registrar la elección en un archivo que la página verifica"
+    }
+  ],
+  "hero_alt": "Pared de una sala de edición oscura con seis monitores lado a lado, cada uno con una versión distinta de la misma calle con el escaparate de una panadería encendido.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Cinco preguntas antes de elegir",
+      "sub": "El plano decide el generador, no al revés. Haz clic en cada pregunta.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Duración",
+          "sub": "cuántos segundos",
+          "icone": "relogio",
+          "detalhe": "Cuánto dura el plano en tu desglose de planos. Un plano de 4 s cabe en cualquier generador; una secuencia de 25 s en una sola generación limita la elección (en oct/2026, Seedance 2.5 llega a 30 s)."
+        },
+        {
+          "titulo": "Sonido y diálogo",
+          "sub": "¿audio incluido?",
+          "icone": "megafone",
+          "detalhe": "Si el plano tiene diálogo o un efecto sincronizado, prefiere un generador con audio nativo. En oct/2026, Veo 3.1, Kling 3.0, Seedance 2.5, Runway Gen-4.5 y LTX-2.5 devuelven el sonido junto con la imagen."
+        },
+        {
+          "titulo": "Referencia",
+          "sub": "mismo personaje",
+          "icone": "cadeado",
+          "detalhe": "Si el plano necesita a la misma Doña Lia del plano anterior, cuenta cuántas imágenes de referencia acepta el generador y si acepta primer y último fotograma. La clase 5 profundiza."
+        },
+        {
+          "titulo": "Licencia",
+          "sub": "cerrado o abierto",
+          "icone": "camadas",
+          "forte": true,
+          "detalhe": "Cerrado = lo usas a través de la plataforma y sigues sus términos. Abierto = los pesos corren en tu máquina, pero cada licencia tiene límites (Apache 2.0 es libre; la licencia comunitaria de LTX tiene un tope de ingresos). La clase 7 trata este tema."
+        },
+        {
+          "titulo": "Acceso",
+          "sub": "dónde y cuánto",
+          "icone": "usuario",
+          "detalhe": "Dónde ya tienes cuenta, cuánto cuesta por segundo y si tu máquina corre el modelo abierto. El precio y el plan cambian rápido: confírmalos en la página de la herramienta ese día."
+        }
+      ],
+      "legenda": "Responde las cinco para el plano, no para toda la película: planos distintos pueden ir a generadores distintos."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Los generadores en oct/2026 (tabla actualizada el 19/10/2026)",
+      "sub": "Solo lo que tiene fuente con fecha. Lo que no se confirmó aparece como \"reportado\". Toca cada uno.",
+      "passos": [
+        {
+          "titulo": "Veo 3.1",
+          "sub": "Google · cerrado",
+          "texto": [
+            "Audio nativo, con diálogo y efectos. Acepta hasta 3 imágenes de referencia (el recurso \"Ingredients\"), transición de primer a último fotograma y extensión de escena.",
+            "Duración por clip: los números que circulan vienen de terceros y no se confirmaron en una página oficial. Veo 4 no ha sido anunciado."
+          ],
+          "exemplo": {
+            "rot": "Fuente",
+            "texto": "Blog de desarrolladores de Google, lanzamiento de Veo 3.1 (oct/2025)."
+          }
+        },
+        {
+          "titulo": "Kling 3.0 y 3.0 Omni",
+          "sub": "Kuaishou · cerrado",
+          "texto": [
+            "Lanzados en febrero de 2026: hasta 15 s por generación, audio nativo en varios idiomas y diálogo con más de un personaje.",
+            "Omni controla duración, ángulo y movimiento plano a plano. Los \"elements\" de personaje y el límite de cortes por generación son reportados por terceros, sin confirmación oficial."
+          ],
+          "exemplo": {
+            "rot": "Fuente",
+            "texto": "Comunicado de Kling AI (05/02/2026); blog de Adobe sobre Firefly (15/04/2026)."
+          }
+        },
+        {
+          "titulo": "Seedance 2.5",
+          "sub": "ByteDance · cerrado",
+          "texto": [
+            "Hasta 30 s con audio generado en la misma pasada. Acepta hasta 30 imágenes, 10 videos y 10 audios de referencia.",
+            "Sustituyó a la 2.0. La 2.0 generó polémica con la asociación de estudios de cine de EE. UU. por generar actores y personajes reales: un recordatorio de que la referencia tiene un límite ético (curso 2)."
+          ],
+          "exemplo": {
+            "rot": "Fuente",
+            "texto": "The Decoder (01/08/2026)."
+          }
+        },
+        {
+          "titulo": "Runway Gen-4.5 y Aleph 2.0",
+          "sub": "Runway · cerrado",
+          "texto": [
+            "Gen-4.5 incorporó audio nativo, varios planos en una generación y videos de hasta 1 minuto en diciembre de 2025.",
+            "Aleph 2.0 edita un video que ya existe mediante texto: quitar o poner un objeto, cambiar el fondo, modificar la luz. La fecha de lanzamiento de Aleph 2.0 es reportada, no confirmada."
+          ],
+          "exemplo": {
+            "rot": "Fuente",
+            "texto": "TechCrunch (11/12/2025)."
+          }
+        },
+        {
+          "titulo": "Luma Ray3.14",
+          "sub": "Luma · cerrado",
+          "texto": [
+            "Ray3.14 (enero de 2026) genera en 1080p nativo, más rápido y más barato que el anterior.",
+            "Ray3 Modify altera una grabación a partir de una imagen de personaje y de fotogramas inicial y final. Audio nativo en Ray: no confirmado."
+          ],
+          "exemplo": {
+            "rot": "Fuente",
+            "texto": "Business Wire (26/01/2026); TechCrunch (18/12/2025)."
+          }
+        },
+        {
+          "titulo": "Wan 2.2",
+          "sub": "Alibaba · abierto",
+          "texto": [
+            "El último Wan con pesos abiertos, bajo Apache 2.0. Las versiones 2.6, 2.7 y 3.0 solo existen como servicio cerrado.",
+            "La versión 5B corre en tarjetas de 8 GB de VRAM con la descarga de memoria de ComfyUI, según la documentación oficial. Detalles en la clase 7."
+          ],
+          "exemplo": {
+            "rot": "Fuente",
+            "texto": "Documentación de ComfyUI (consultada el 19/10/2026)."
+          }
+        },
+        {
+          "titulo": "LTX-2.3 y LTX-2.5",
+          "sub": "Lightricks · abierto",
+          "texto": [
+            "Pesos abiertos con video y audio. LTX-2.5 trae varios planos en una sola generación. La licencia comunitaria de LTX-2.x permite uso comercial sin costo por debajo de US$ 10 millones de ingresos al año.",
+            "La documentación para ComfyUI pide una tarjeta con 32 GB o más de VRAM y 100 GB de disco libre."
+          ],
+          "exemplo": {
+            "rot": "Fuente",
+            "texto": "Página de LTX-2.5 en Hugging Face y documentación de LTX (consultadas el 19/10/2026)."
+          }
+        },
+        {
+          "titulo": "Sora 2: estudio de caso",
+          "sub": "OpenAI · cerrado",
+          "texto": [
+            "La app cerró el 26/04/2026 y la API el 24/09/2026. Quien guardaba guion, referencias y prompts solo dentro de ella perdió el camino de vuelta.",
+            "La lección vale para cualquier generador: todo lo que es tuyo queda en una carpeta fuera de la plataforma, en texto. Ninguna clase te manda usar Sora."
+          ],
+          "exemplo": {
+            "rot": "Fuente",
+            "texto": "Centro de ayuda de OpenAI sobre el cierre de Sora (2026)."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "La tabla en texto, para guardar en la carpeta",
+      "sub": "Cópiala en la carpeta del proyecto. Cuando la consultes de nuevo, cambia la fecha y lo que cambió.",
+      "blocos": [
+        {
+          "rot": "geradores-out-2026.txt",
+          "icone": "arquivo",
+          "conteudo": "Tabla de generadores · actualizada el 19/10/2026\nmodelo | dueño | audio nativo | referencias | duración por generación | ¿abierto?\nVeo 3.1 | Google | sí | hasta 3 imágenes; primer y último fotograma | no confirmada | cerrado\nKling 3.0 / 3.0 Omni | Kuaishou | sí, varios idiomas | control por plano (Omni) | hasta 15 s | cerrado\nSeedance 2.5 | ByteDance | sí, en la misma pasada | hasta 30 imágenes, 10 videos, 10 audios | hasta 30 s | cerrado\nRunway Gen-4.5 | Runway | sí | primer fotograma; Aleph 2.0 edita video | hasta 1 min con varios planos | cerrado\nLuma Ray3.14 | Luma | no confirmado | Ray3 Modify: fotogramas inicial y final | no confirmada | cerrado\nWan 2.2 | Alibaba | no confirmado | primer y último fotograma en ComfyUI | no confirmada | abierto, Apache 2.0\nLTX-2.3 / LTX-2.5 | Lightricks | sí | primer y último fotograma; varios planos (2.5) | no confirmada | abierto, licencia comunitaria LTX-2.x\nSora 2 | OpenAI | — | — | — | cerrado en 2026 (caso de estudio)"
+        },
+        {
+          "rot": "escolha.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Plano: <número y descripción del plano de tu desglose de planos>\nNecesita: <duración, sonido/diálogo, referencia que pide el plano>\nGenerador: <el elegido>\nVersión: <nombre y versión (out/2026)>\nPor qué: <qué pregunta responde>\nReserva: <segunda opción, con versión (out/2026)>\nCamino abierto: <modelo abierto que haría el plano, o \"ninguno en mi máquina\">\nConsultado el: <fecha en que revisaste la página de la herramienta>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Revisa tu elección",
+      "sub": "Pega el escolha.txt (o carga el archivo). La página revisa los ocho campos y busca en el archivo la fecha de la tabla de esta clase, \"(out/2026)\". Pruébalo antes con el ejemplo que pasa y con el ejemplo con error.",
+      "arquivo": "escolha.txt",
+      "rot": "Pega aquí tu escolha.txt (una línea por campo):",
+      "modelo": "Plano: ...\nNecesita: ...\nGenerador: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 2,
+          "campos": [
+            "Plano",
+            "Necesita",
+            "Generador",
+            "Versión",
+            "Por qué",
+            "Reserva",
+            "Camino abierto",
+            "Consultado el"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "la versión con el mes y el año, como (out/2026)",
+              "termos": [
+                "out/2026 / out. 2026 / out 2026 / outubro de 2026 / outubro 2026 / oct/2026 / oct. 2026 / oct 2026 / october 2026 / octubre de 2026 / octubre 2026"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: elección con {n} campos",
+      "exemplo": "Plano: 4 · close, cámara baja, dolly in, 4 s: la puerta del horno se abre y sube el vapor\nNecesita: 4 s, sonido de chirrido y siseo, sin diálogo, el mismo look del plano 3\nGenerador: Veo 3.1\nVersión: Veo 3.1 (out/2026)\nPor qué: devuelve el sonido junto y acepta imagen de referencia para mantener el look\nReserva: Kling 3.0 (out/2026), hasta 15 s con audio nativo\nCamino abierto: Wan 2.2 5B en ComfyUI, si la tarjeta tiene 8 GB de VRAM\nConsultado el: 19/10/2026",
+      "exemplo_errado": "Plano: 4 · close del horno abriéndose\nNecesita: 4 s con sonido\nGenerador: Veo 3.1\nVersión: Veo 3.1\nPor qué: es el más famoso\nConsultado el:"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Opcional: revisar en la terminal",
+      "sub": "Solo para quien ya usa la terminal. Descarga el curso de GitHub y ejecútalo en su carpeta: las reglas son las mismas de la página. Para tu archivo, cambia <code>--exemplo</code> por su nombre (<code>escolha.txt</code>); sale 0 cuando pasa.",
+      "blocos": [
+        {
+          "rot": "Terminal (en la carpeta del curso)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py geradores --exemplo; echo \"saída: $?\"\npython3 conferir.py geradores --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Salida capturada (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py geradores --exemplo; echo \"saída: $?\"\nOK: escolha com 8 campos\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Ejemplo con error (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py geradores --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Reserva: com a descrição (pelo menos 2 letras).\n - Falta a linha Caminho aberto: com a descrição (pelo menos 2 letras).\n - Falta a linha Consultado em: com a descrição (pelo menos 2 letras).\n - Falta citar a versão com o mês e o ano, como (out/2026).\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Usa el desglose de planos o el storyboard que hiciste en el curso 0. Si no lo hiciste, usa el plano 4 de \"La primera hornada\".",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Elección · un plano de tu escena",
+          "min": "20 min",
+          "texto": "Toma el plano más difícil de tu desglose de planos (el que tiene diálogo, o el que necesita el mismo personaje). Responde las cinco preguntas y completa el escolha.txt por modelo. Abre la página de la herramienta elegida y anota la fecha en que la consultaste. Pega en \"Confira a sua escolha\" y usa \"Baixar o arquivo\" para guardarlo en la carpeta del proyecto.",
+          "pronto": "la página responde <code>OK: elección con 8 campos</code> y el escolha.txt está en la carpeta del proyecto, junto al geradores-out-2026.txt."
+        },
+        {
+          "id": "e2",
+          "titulo": "Portabilidad · la carpeta fuera de la plataforma",
+          "min": "10 min",
+          "texto": "Revisa que la carpeta del proyecto tenga, en texto, todo lo que necesitarías para rehacer la escena en otro generador: storyboard, ficha, look y el escolha.txt. Lo que solo existe dentro de una plataforma, cópialo a la carpeta ahora.",
+          "pronto": "la carpeta del proyecto tiene storyboard.txt, ficha.txt, look.txt y escolha.txt, y los cuatro se abren en un editor de texto común, sin cuenta en ninguna plataforma."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Cuál de estas preguntas va antes de elegir el generador de un plano?",
+          "opcoes": [
+            "Qué generador está en primer lugar en el ranking de esta semana.",
+            "Qué generador están usando los otros creadores de tu nicho.",
+            "Qué pide el plano: duración, diálogo, referencia y licencia.",
+            "Qué generador tiene la interfaz más bonita y más rápida."
+          ],
+          "certa": 2,
+          "explica": "El ranking y la moda cambian cada pocos meses. Lo que pide el plano es estable: si tiene diálogo, necesita audio nativo; si repite personaje, necesita referencia. Planos distintos pueden ir a generadores distintos.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿Qué le enseña el caso Sora a quien genera video con IA?",
+          "opcoes": [
+            "Guardar guion, referencias y prompts en texto, fuera de la plataforma.",
+            "Usar solo generadores abiertos, porque los cerrados siempre terminan saliendo del aire un día.",
+            "Evitar cualquier generador lanzado por una gran empresa de tecnología.",
+            "Generar todo de una vez mientras la herramienta todavía está en el aire."
+          ],
+          "certa": 0,
+          "explica": "La app cerró el 26/04/2026 y la API el 24/09/2026. Quien tenía todo dentro de ella perdió el camino. Cerrado no es prohibido; el cuidado es la carpeta portátil, que te deja cambiar de generador sin perder el trabajo.",
+          "ref": "passos"
+        },
+        {
+          "p": "En la tabla, ¿por qué la duración por clip de Veo 3.1 aparece como \"no confirmada\"?",
+          "opcoes": [
+            "Porque Veo 3.1 no tiene ningún límite de duración por generación, en ningún plan.",
+            "Porque el número circula en sitios de terceros, no en una página oficial.",
+            "Porque la duración cambia según el idioma usado en el prompt.",
+            "Porque Google prohíbe divulgar la duración de los clips."
+          ],
+          "certa": 1,
+          "explica": "La regla del curso es poner como hecho solo lo que tiene fuente con fecha. El número que solo aparece en un agregador entra como \"relatado\" o \"no confirmado\", y tú lo revisas en la página de la herramienta ese día.",
+          "ref": "passos"
+        },
+        {
+          "p": "Quieres correr el video en tu máquina y vender el resultado a un cliente pequeño. ¿Qué revisar primero?",
+          "opcoes": [
+            "Si el modelo tiene el mayor número de descargas del mes.",
+            "Si el modelo genera en 4K, porque el cliente exige alta resolución.",
+            "Si el modelo es el mismo que usan los grandes estudios.",
+            "La licencia de los pesos y cuánta VRAM pide el modelo."
+          ],
+          "certa": 3,
+          "explica": "\"Abierto\" no quiere decir \"libre para todo\": Wan 2.2 es Apache 2.0, el LTX-2.x tiene licencia comunitaria con tope de ingresos y algunos pesos son solo para uso no comercial. Y sin VRAM suficiente el modelo ni corre.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "El plano elige",
+          "texto": "Duración, sonido y diálogo, referencia, licencia y acceso. Responde por plano."
+        },
+        {
+          "t": "La versión tiene fecha",
+          "texto": "Toda versión va con \"(out/2026)\" y la fecha de la consulta. Lo que no tiene fuente es \"relatado\"."
+        },
+        {
+          "t": "Carpeta portátil",
+          "texto": "Guion, ficha, look y prompts en texto, fuera de la plataforma. Sora mostró por qué."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Veo 3.1: lanzamiento y recursos (blog de desarrolladores de Google)",
+          "href": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"
+        },
+        {
+          "t": "Seedance 2.5: 30 s con audio (The Decoder)",
+          "href": "https://the-decoder.com/bytedances-seedance-2-5-generates-30-second-video-clips-with-built-in-audio/"
+        },
+        {
+          "t": "Runway Gen-4.5 con audio nativo y varios planos (TechCrunch)",
+          "href": "https://techcrunch.com/2025/12/11/runway-releases-its-first-world-model-adds-native-audio-to-latest-video-model"
+        },
+        {
+          "t": "LTX-2.5 en Hugging Face (pesos y licencia)",
+          "href": "https://huggingface.co/Lightricks/LTX-2.5"
+        },
+        {
+          "t": "Anuncio del fin de Sora (9to5Google, 24/03/2026)",
+          "href": "https://9to5google.com/2026/03/24/openai-shutting-down-sora-video-generation-app-but-without-explaining-why/"
+        },
+        {
+          "t": "Curso 0 · Dirección: el desglose de planos que usa este curso",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/es/aulas/decupagem/"
+        }
+      ]
+    }
+  ]
+}

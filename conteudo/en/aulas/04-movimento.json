@@ -1,0 +1,298 @@
+{
+  "slug": "movimento",
+  "num": 4,
+  "menu": "Motion",
+  "titulo": "From image to motion: image-to-video and first/last frame",
+  "titulo_curto": "Image to video",
+  "minutos": 19,
+  "lead": "With the approved still, the generator already knows who, where and what light. The prompt now only says what changes: the camera movement, the action and the sound. With first and last frame, you also decide where the shot ends. And before moving on, the page checks the clip.",
+  "objetivo": "animate an approved still with a motion-only prompt and check the clip on the page before moving on.",
+  "competencias": [
+    "animar-imagem",
+    "usar-primeiro-e-ultimo-quadro",
+    "conferir-clipe"
+  ],
+  "aprende": [
+    {
+      "t": "What goes in the prompt when the image already exists"
+    },
+    {
+      "t": "First and last frame: when to use it and where it exists in out/2026"
+    },
+    {
+      "t": "Joining shots using the last frame of the previous one"
+    },
+    {
+      "t": "Check the clip's duration, size and aspect ratio on the page"
+    }
+  ],
+  "hero_alt": "Unbranded cinema camera on a dolly on tracks, on a dark set that recreates a bakery counter with flour.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From still to checked clip",
+      "sub": "Six steps. Click each one.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Still",
+          "sub": "approved in lesson 3",
+          "icone": "check",
+          "detalhe": "The frame you approved, with the shot number in its name. It carries the character, the place, the palette and the light."
+        },
+        {
+          "titulo": "Motion",
+          "sub": "short prompt",
+          "icone": "video",
+          "forte": true,
+          "detalhe": "Only what changes: the camera movement from the shot list, the shot's action and the sound. The scene is already in the image; describing it again can make the generator change what you approved."
+        },
+        {
+          "titulo": "Frames",
+          "sub": "first and last",
+          "icone": "camadas",
+          "detalhe": "First frame = the still. Last frame (optional) = where the shot has to end, for example the peel already out of the oven."
+        },
+        {
+          "titulo": "Duration and sound",
+          "sub": "from the shot list",
+          "icone": "relogio",
+          "detalhe": "The shot's duration in the shot list and the sound column. Ask for a little more than you need: the extra gets trimmed in the edit (course 2)."
+        },
+        {
+          "titulo": "Clip",
+          "sub": "MP4 16:9",
+          "icone": "play",
+          "detalhe": "Download the clip with the shot number: plano-04.mp4. Save it in the project folder, next to the still."
+        },
+        {
+          "titulo": "Check",
+          "sub": "on the page",
+          "icone": "lupa",
+          "detalhe": "The page reads the file's duration, width, height and aspect ratio in your browser, without uploading anything, and answers OK or what's missing."
+        }
+      ],
+      "legenda": "If the clip changes the character or the light, go back to the motion prompt: it's probably describing the scene again."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Animating from the image",
+      "sub": "The example is shot 4 of \"The first batch\": close-up, low camera, dolly in, 4 s.",
+      "passos": [
+        {
+          "titulo": "Motion-only prompt",
+          "sub": "the image already says the rest",
+          "texto": [
+            "In image-to-video mode, the still is the starting point. Write the camera movement, the action that happens and the sound, nothing else.",
+            "If the result comes out static, name the movement and the speed (\"slow dolly in\"). If it comes out chaotic, take out actions: one per shot."
+          ],
+          "exemplo": {
+            "rot": "Motion prompt for shot 4",
+            "texto": "Slow dolly in. The oven door opens and steam rises against the light. Sound: creak of the door and hiss of the steam."
+          }
+        },
+        {
+          "titulo": "First and last frame",
+          "sub": "where it starts, where it ends",
+          "texto": [
+            "With two frames, the generator creates the path between them. It works for action with a set ending: the peel goes in empty and comes out with the bread.",
+            "As of Oct 2026 it exists in Veo 3.1 and in Luma's Ray3 Modify; on the open path, there are official first and last frame templates for Wan 2.2 and LTX-2.5 in ComfyUI (lesson 7)."
+          ],
+          "exemplo": {
+            "rot": "Sources",
+            "texto": "Google Developers Blog (Veo 3.1); TechCrunch, 12/18/2025 (Ray3 Modify); ComfyUI and LTX documentation (checked on 10/19/2026)."
+          }
+        },
+        {
+          "titulo": "Chain clips by the last frame",
+          "sub": "continuity",
+          "texto": [
+            "When the action continues in the next shot, use the last frame of the previous clip as the first frame of the next one. The light and the position of things carry over.",
+            "To grab the last frame: pause the clip at the end and export the frame in your editor. If you use a terminal, the command is in the block below."
+          ]
+        },
+        {
+          "titulo": "Check before moving on",
+          "sub": "what the page measures",
+          "texto": [
+            "Duration within the request, width of at least 1280 pixels, and a 16:9 aspect ratio, the same as the scene. A vertical or square clip in the middle of a 16:9 scene turns into black bars in the edit.",
+            "What the page doesn't measure, you check by eye: is the character the same? is the movement what you asked for? If not, generate again before moving on to the next shot."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The sheet for the animated shot and, for those who use a terminal, the command that grabs the last frame.",
+      "blocos": [
+        {
+          "rot": "movimento.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Shot: <number and line of the shot list>\nFirst frame: <file of the approved still>\nLast frame: <file, or \"none\">\nMotion prompt: <camera movement. action. sound.>\nRequested duration: <seconds>\nGenerator: <name and version (Oct 2026)>\nClip: <plano-NN.mp4>"
+        },
+        {
+          "rot": "Terminal (optional): last frame of a clip",
+          "icone": "terminal",
+          "conteudo": "ffmpeg -v error -y -sseof -0.1 -i plano-03.mp4 -frames:v 1 ultimo-quadro-03.png"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your clip",
+      "sub": "First, the rehearsal: the two examples are clips made from a photo, without a generator. Then choose your own.",
+      "arquivo": "plano-04.mp4",
+      "rot": "Choose the clip for your shot. It is read here in the browser: nothing is uploaded.",
+      "regras": [
+        {
+          "tipo": "video",
+          "min": 3,
+          "max": 15,
+          "proporcao": "16:9",
+          "largura_min": 1280
+        }
+      ],
+      "ok": "OK: {s} s · {w}×{h} · {p}",
+      "video_ok": "assets/clipes/ensaio-plano-04.webm",
+      "video_erro": "assets/clipes/ensaio-erro.webm"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Optional: check in the terminal",
+      "sub": "Only for those who already use a terminal and have ffmpeg installed (<code>ffprobe</code> reads the video). Download the course from GitHub and run it in its folder: the rules are the same as on the page. For your clip, replace <code>--exemplo</code> with its name (<code>plano-04.mp4</code>); it exits 0 when it passes.",
+      "blocos": [
+        {
+          "rot": "Terminal (in the course folder)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py movimento --exemplo; echo \"saída: $?\"\npython3 conferir.py movimento --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Captured output (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py movimento --exemplo; echo \"saída: $?\"\nOK: 6,0 s · 1280×720 · 16:9\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Example with an error (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py movimento --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - O vídeo tem 2,0 s; o pedido é de 3 a 15 s.\n - O vídeo é 720×720 (1:1); o pedido é 16:9.\n - O vídeo tem 720 px de largura; o mínimo é 1280 px.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Generating is done with whatever tool you have. The rehearsal comes first and costs nothing.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Rehearsal · the two example clips",
+          "min": "5 min",
+          "texto": "Under \"Check your clip,\" click \"Example that passes\" and then \"Example with an error.\" Read what the page says about the second one: it's the kind of message you'll see if your clip comes out in the wrong format.",
+          "pronto": "the page answers <code>OK: 6.0 s · 1280×720 · 16:9</code> for the example that passes and, for the example with an error, lists the duration, aspect ratio and width."
+        },
+        {
+          "id": "e2",
+          "titulo": "Clip · a shot from the still",
+          "min": "30 min",
+          "texto": "Choose an approved still from lesson 3. Fill in the movimento.txt, generate the clip in 16:9 in whatever generator you have (closed or open) and download it with the shot number. Choose the file under \"Check your clip.\"",
+          "pronto": "the page answers <code>OK: [s] s · [w]×[h] · 16:9</code> for your clip, with a duration between 3 and 15 s, and the clip and the movimento.txt are in the project folder."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "What should you write in the prompt when the still already exists?",
+          "opcoes": [
+            "The full description of the scene, so the generator doesn't forget anything.",
+            "The camera movement, the action of the shot, and the sound.",
+            "Only the name of the visual style, because the rest comes from the image.",
+            "Nothing: the generator animates the image on its own, with no prompt."
+          ],
+          "certa": 1,
+          "explica": "Character, place and light are already in the image. The prompt says what changes. Describing the scene again can lead the generator to change what you approved in the still.",
+          "ref": "passos"
+        },
+        {
+          "p": "When do the first and last frame help most?",
+          "opcoes": [
+            "When the action has a set ending, like the peel coming out with the bread.",
+            "When the shot is a locked-off camera with no action at all.",
+            "When you want the generator to invent the end of the shot on its own, with no clue at all.",
+            "Only in shots longer than one minute."
+          ],
+          "certa": 0,
+          "explica": "With a start and an end given, the generator creates only the path between them. It's the way to guarantee where the shot ends, which matters when you cut to the next shot.",
+          "ref": "passos"
+        },
+        {
+          "p": "The page said your clip is 9:16, in a scene that is all 16:9. What do you do?",
+          "opcoes": [
+            "Nothing: the edit stretches the vertical clip to 16:9.",
+            "Change the whole scene to 9:16 because of one shot.",
+            "Cut the clip in half to make it horizontal.",
+            "Generate it again asking for 16:9, like the other shots."
+          ],
+          "certa": 3,
+          "explica": "A vertical shot in a horizontal scene ends up with black bars or a crop that loses part of the image. Aspect ratio is a decision for the scene (lookbook); the clip has to follow it.",
+          "ref": "conferidor"
+        },
+        {
+          "p": "What can the page NOT check in your clip?",
+          "opcoes": [
+            "The duration in seconds.",
+            "The width and height in pixels.",
+            "Whether the character is the same as in the still.",
+            "The aspect ratio of the frame."
+          ],
+          "certa": 2,
+          "explica": "The page reads the numbers in the file: duration, size and aspect ratio. Whether the character changed or the movement is what you asked for is up to you: watch the clip before you move on.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "The image already says it",
+          "texto": "The motion prompt carries only what changes: camera, action and sound."
+        },
+        {
+          "t": "Two frames, one path",
+          "texto": "First and last frame guarantee where the shot ends and help you cut to the next one."
+        },
+        {
+          "t": "Check before you move on",
+          "texto": "Duration, 1280 px and 16:9 by the page; character and movement by your own eye."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Wan 2.2 in ComfyUI: official templates, including first and last frame",
+          "href": "https://docs.comfy.org/tutorials/video/wan/wan2_2"
+        },
+        {
+          "t": "Luma Ray3 Modify with start and end frames (TechCrunch)",
+          "href": "https://techcrunch.com/2025/12/18/luma-releases-a-new-ai-model-that-lets-users-generate-a-video-from-a-start-and-end-frame"
+        },
+        {
+          "t": "Course 0 · The camera as a verb: one movement per shot",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/aulas/camera/"
+        }
+      ]
+    }
+  ]
+}

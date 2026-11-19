@@ -1,0 +1,355 @@
+{
+  "slug": "multishot",
+  "num": 6,
+  "menu": "Multishot",
+  "titulo": "Several shots and lines in one generation: multishot and dialogue",
+  "titulo_curto": "Multishot and dialogue",
+  "minutos": 17,
+  "lead": "In 2026, some generators make several shots with cuts in a single generation, keeping the character and light, and they already put the dialogue in the speaker's mouth. This saves you from stitching clips together, but it asks for a more precise script: numbered shots, who says what, and how long each one lasts.",
+  "objetivo": "write a multishot script of up to 15 s with numbered shots, who says what, and the sound of each shot.",
+  "competencias": [
+    "roteirizar-multishot",
+    "escrever-dialogo-para-gerador",
+    "decidir-multishot-ou-plano-a-plano"
+  ],
+  "aprende": [
+    {
+      "t": "What multishot is and which generators do it as of Oct 2026"
+    },
+    {
+      "t": "Writing numbered shots inside a single generation"
+    },
+    {
+      "t": "Dialogue with who says what, in short lines"
+    },
+    {
+      "t": "When it's better to generate shot by shot"
+    }
+  ],
+  "hero_alt": "Editing monitor in a dark room with a grid of six frames from the same scene: a dark street, a lit oven, bread on the counter, and a roll-up iron door.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "One request, several shots",
+      "sub": "The multishot script in five parts. Click each one.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Header",
+          "sub": "scene and generator",
+          "icone": "arquivo",
+          "detalhe": "Scene name, total duration, generator with version (Oct 2026), and the characters who appear. The look comes in through the base prompt from lesson 3."
+        },
+        {
+          "titulo": "Shots",
+          "sub": "numbered",
+          "icone": "lista",
+          "forte": true,
+          "detalhe": "One line per shot, like in the shot list: size, one movement, duration, and what happens. The size changes between neighboring shots."
+        },
+        {
+          "titulo": "Dialogue",
+          "sub": "who says what",
+          "icone": "chat",
+          "detalhe": "Dialogue in the format \"Name says: text\", short. Two people talking at the same time confuse the generator and the audience."
+        },
+        {
+          "titulo": "Sound",
+          "sub": "per shot",
+          "icone": "megafone",
+          "detalhe": "Ambient sound and effect for each shot, in a separate sentence, as in lesson 2."
+        },
+        {
+          "titulo": "Limit",
+          "sub": "seconds",
+          "icone": "relogio",
+          "detalhe": "The sum of the shots fits within the generator's limit. As of Oct 2026: Kling 3.0 up to 15 s, Seedance 2.5 up to 30 s, Runway Gen-4.5 up to 1 min with several shots."
+        }
+      ],
+      "legenda": "If one shot comes out wrong, multishot redoes the whole generation. Shots you want to control one by one stay out of it."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Writing the multishot",
+      "sub": "The example is the end of \"The first batch\": the door, the line, and the first customer.",
+      "passos": [
+        {
+          "titulo": "Who does it as of Oct 2026",
+          "sub": "dated examples",
+          "texto": [
+            "Runway Gen-4.5: several shots and native audio, videos up to 1 min (Dec 2025). Kling 3.0 Omni: per-shot control of duration, angle, and movement. LTX-2.5, open: native multishot, according to the official page.",
+            "Kling with 6 cuts or 30 s per generation shows up only on third-party sites: treat it as reported and check it in the tool."
+          ],
+          "exemplo": {
+            "rot": "Sources",
+            "texto": "TechCrunch, 12/11/2025 (Runway); Adobe blog, 04/15/2026 (Kling Omni); Hugging Face, LTX-2.5 (checked on 10/19/2026)."
+          }
+        },
+        {
+          "titulo": "Shots inside the generation",
+          "sub": "numbered, with seconds",
+          "texto": [
+            "Write it like a short shot list: number, size, one movement, duration, and action. The numbering tells the generator where to cut.",
+            "Keep the lock and the look the same across all shots: inside a single generation the generator tends to hold continuity, but it can't guess what you didn't write."
+          ]
+        },
+        {
+          "titulo": "Dialogue",
+          "sub": "short line of dialogue, with a name",
+          "texto": [
+            "Kling 3.0 launched with dialogue between multiple characters in multiple languages. For any generator, write who is speaking and the text, like in Google's guide: \"The baker says: Coming!\".",
+            "One line of dialogue per shot, and short sentences. A long line doesn't fit in 3 seconds, and the generator speeds it up or cuts it off."
+          ],
+          "exemplo": {
+            "rot": "Shot 4",
+            "texto": "sound: door bell; the customer says: The usual, Dona Lia."
+          }
+        },
+        {
+          "titulo": "Multishot or shot by shot",
+          "sub": "the choice",
+          "texto": [
+            "Multishot works for short, continuous stretches with the same light and the same people, like a conversation.",
+            "Shot by shot (lesson 4) works when each shot needs to be redone on its own, or when the generator you chose doesn't do multishot."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The multishot script that the page checks.",
+      "blocos": [
+        {
+          "rot": "multishot.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Scene: <name> (<total duration> s, one generation)\nGenerator: <name and version (Oct/2026)>, limit of <n> s\nCharacters: <who appears, fictional>\n<n> | <shot size> | <one movement> | <n> s | <what happens> | sound: <ambience and effect>; <who> says: <short text>\n<n> | <shot size> | <one movement> | <n> s | <what happens> | sound: <ambience and effect>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your multishot script",
+      "sub": "Paste the multishot.txt (or upload the file). The page checks the shots, movements, sound, the dialogue in the \"Name says: text\" format, and the sum of the seconds.",
+      "arquivo": "multishot.txt",
+      "rot": "Paste your multishot.txt here (header and one numbered line per shot):",
+      "modelo": "Scene: ...\nGenerator: ...\nCharacters: ...\n1 | close-up | static camera | 3 s | ... | sound: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 3,
+          "campos": [
+            "Scene",
+            "Generator",
+            "Characters"
+          ]
+        },
+        {
+          "tipo": "planos",
+          "min": 2,
+          "max": 6
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "shot size",
+              "variar": 2,
+              "termos": [
+                "plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot / plano general / plano de establecimiento / gran plano general",
+                "plano aberto / wide shot / plano abierto",
+                "plano americano / medium wide shot / cowboy shot / medium-long shot / medium long shot",
+                "plano médio / medium shot / plano medio / mid shot",
+                "meio primeiro plano / close médio / medium close-up / plano medio corto",
+                "close / close-up / primeiro plano / plano fechado / closeup / primer plano / plano cerrado",
+                "plano detalhe / extreme close-up / macro / plano detalle / detail shot / macro shot"
+              ]
+            },
+            {
+              "rot": "movement",
+              "um_so": true,
+              "termos": [
+                "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
+                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly out / pull-out / afastamento lento / alejamiento lento",
+                "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
+                "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
+                "tilt / tilt up / tilt down",
+                "grua / crane / pedestal up / pedestal down / crane shot / grúa",
+                "órbita / orbit / arc shot / orbit shot",
+                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "zoom in / zoom out / crash zoom",
+                "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
+                "whip pan / chicote / swish pan / latigazo",
+                "drone / plano aéreo / aerial shot"
+              ]
+            },
+            {
+              "rot": "the sound column",
+              "min": 3,
+              "termos": [
+                "som: / áudio: / sound: / audio: / sonido:"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "duracao",
+          "min": 6,
+          "max": 15
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "a line of dialogue in the Name says: text format",
+              "termos": [
+                "diz: / dizem: / says: / say: / dice: / dicen:"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} shots in one generation · {s} s",
+      "exemplo": "Scene: The first batch · finale (12 s, one generation)\nGenerator: Kling 3.0 Omni (Oct/2026), limit of 15 s\nCharacters: Dona Lia (fictional); customer, man in a jacket (fictional)\n1 | close-up | static camera | 3 s | Knocks on the iron door; Dona Lia looks at the clock. | sound: three knocks, low radio\n2 | medium shot | handheld camera | 3 s | She crosses the bakery to the door. | sound: footsteps on the floor; Dona Lia says: Coming!\n3 | wide shot | dolly out | 3 s | She lifts the iron door and the customer appears. | sound: iron door rising\n4 | medium shot | static camera | 3 s | The customer smiles and points at the bread. | sound: door bell; the customer says: The usual, Dona Lia.",
+      "exemplo_errado": "Scene: The first batch · finale\nGenerator: Kling 3.0 Omni (Oct/2026)\n1 | close-up | static camera | 5 s | Knocks on the door. | sound: knocks\n2 | close-up | dolly in and zoom in | 6 s | She goes to the door.\n3 | close-up | handheld camera | 8 s | The customer comes in. | sound: bell"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Optional: check in the terminal",
+      "sub": "Only for people who already use a terminal. Download the course from GitHub and run this in its folder: the rules are the same as the page's. For your own file, swap <code>--exemplo</code> for its name (<code>multishot.txt</code>); it exits 0 when it passes.",
+      "blocos": [
+        {
+          "rot": "Terminal (in the course folder)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py multishot --exemplo; echo \"saída: $?\"\npython3 conferir.py multishot --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Captured output (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py multishot --exemplo; echo \"saída: $?\"\nOK: 4 planos numa geração · 12 s\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Example with an error (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py multishot --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Personagens: com a descrição (pelo menos 3 letras).\n - Plano 2: 2 escolhas de movimento; fique com uma só.\n - Plano 2: falta a coluna som.\n - Só 1 tipo(s) diferente(s) de tamanho do plano nos planos; varie para pelo menos 2.\n - Os planos somam 19 s; o pedido é de 6 a 15 s.\n - Falta citar uma fala no formato Nome diz: texto.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "A short stretch of your scene, preferably with a line of dialogue.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Script · one stretch in one generation",
+          "min": "20 min",
+          "texto": "Pick 2 to 6 consecutive shots from your shot list that happen in the same place and with the same light. Write the multishot.txt with at least one line of dialogue in the \"Name says: text\" format, adding up to between 6 and 15 s. Paste it into \"Check your multishot script\" and download the file.",
+          "pronto": "the page answers <code>OK: [n] shots in one generation · [s] s</code> and the multishot.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "Optional · generate and check the clip",
+          "min": "30 min",
+          "texto": "If your generator does multishot, generate the stretch in 16:9 with the script and the base prompt from lesson 3. Check the file in the lesson 4 clip checker.",
+          "pronto": "the lesson 4 checker answers <code>OK: [s] s · [w]×[h] · 16:9</code> for the clip and it is in the project folder next to the multishot.txt."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "What does multishot do in a single generation?",
+          "opcoes": [
+            "It generates several shots with cuts, keeping the character and the light.",
+            "It generates the same shot several times so you can pick the best one.",
+            "It joins clips you already generated into a single video.",
+            "It increases the resolution of a shot you already generated."
+          ],
+          "certa": 0,
+          "explica": "Multishot is several shots with cuts in one generation. Generating variations of the same shot is something else, and joining finished clips is editing (course 2).",
+          "ref": "diagrama"
+        },
+        {
+          "p": "How do you write a line of dialogue so the generator understands who is speaking?",
+          "opcoes": [
+            "Only the text between quotation marks, without saying who is speaking.",
+            "The text in capital letters, so the generator gives it emphasis.",
+            "A paragraph explaining what the character feels.",
+            "The name of who speaks and a short line, like \"The baker says: Coming!\"."
+          ],
+          "certa": 3,
+          "explica": "With more than one character in the frame, without the name the generator picks who speaks. The short line fits in the shot; explaining the feeling is the acting's job, not the dialogue's.",
+          "ref": "passos"
+        },
+        {
+          "p": "Your multishot in Kling 3.0 adds up to 22 s. What do you do?",
+          "opcoes": [
+            "Send it as is: the generator speeds up the scene to fit.",
+            "Cut shots or split it into two generations, because the limit is 15 s.",
+            "Switch all the shots to close-ups, because a close-up always takes less time to generate.",
+            "Remove the sound column, which is what weighs on the duration."
+          ],
+          "certa": 1,
+          "explica": "As of Oct 2026, Kling 3.0 generates up to 15 s. Beyond that, split the segment or pick a generator with a higher limit, like Seedance 2.5 (up to 30 s).",
+          "ref": "diagrama"
+        },
+        {
+          "p": "When should you generate shot by shot instead of multishot?",
+          "opcoes": [
+            "When the scene is a short conversation in the same place.",
+            "When all the shots have the same light and the same people.",
+            "When you need to redo one shot without touching the others.",
+            "When the whole scene fits within the generator's limit."
+          ],
+          "certa": 2,
+          "explica": "In multishot, getting one shot wrong means redoing the whole generation. Shot by shot gives you fine control and works in any generator; multishot shines in short, continuous stretches.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "Shot list inside the prompt",
+          "texto": "Numbered shots with size, one movement, duration, action and sound."
+        },
+        {
+          "t": "Dialogue with a name",
+          "texto": "Who speaks and a short line; one line of dialogue per shot."
+        },
+        {
+          "t": "Fits the limit",
+          "texto": "Add up the seconds before you generate. If it doesn't fit, split it."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Kling 3.0: launch with audio and dialogue (announcement, 02/05/2026)",
+          "href": "https://www.utusan.com.my/pr-newswire-en/2026/02/kling-ai-launches-3-0-model-ushering-in-an-era-where-everyone-can-be-a-director/"
+        },
+        {
+          "t": "Adobe Firefly with Kling 3.0 Omni and per-shot control (04/15/2026)",
+          "href": "https://blog.adobe.com/en/publish/2026/04/15/adobe-extends-leadership-video-unleashing-new-ai-powered-creation-firefly-reinventing-color-editors-in-premiere"
+        },
+        {
+          "t": "Course 0 · Shot list with sound and dialogue",
+          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/aulas/decupagem/"
+        }
+      ]
+    }
+  ]
+}
