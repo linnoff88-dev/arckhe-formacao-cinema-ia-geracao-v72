@@ -1,30 +1,30 @@
 {
-  "id": "formacao-cinema-ia-geracao-v72",
+  "id": "formacao-cARCKHÉ-ia-geracao-v72",
   "lang": "en",
-  "url": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/en/",
+  "url": "https://linnoff88-dev.github.io/
   "nome": "Generation: images and video with AI",
-  "sub": "Cinema with AI program · course 1",
+  "sub": "CARCKHÉ with AI program · course 1",
   "volta": {
-    "t": "INEMA Videos area",
-    "href": "https://eventos.inema.pro/videos/"
+    "t": "ARCKHÉ Videos area",
+    "href": "https://eventos.ARCKHÉ.pro/videos/"
   },
   "lado_card": {
     "rot": "After this course",
     "t": "Course 2 · Production",
     "texto": "Sound, editing, color, and ethics: the clips you generate here become a finished short film there.",
     "link": "Open course 2",
-    "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+    "href": "https://linnoff88-dev.github.io/
   },
-  "rodape": "INEMA.CLUB · open and free content · INEMA Learning v7.2 format · Cinema with AI program, course 1 of 6 · <a href=\"https://eventos.inema.pro/videos/\">eventos.inema.pro/videos</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "rodape": "ARCKHÉ AI · open and free content · ARCKHÉ Learning v7.2 format · CARCKHÉ with AI program, course 1 of 6 · <a href=\"https://eventos.ARCKHÉ.pro/videos/\">eventos.ARCKHÉ.pro/videos</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a>",
   "videos": {},
   "inicio": {
-    "kicker": "Cinema with AI program · course 1 of 6 · 8 lessons",
+    "kicker": "CARCKHÉ with AI program · course 1 of 6 · 8 lessons",
     "titulo": "Generation: from storyboard to clip with the Oct/2026 generators",
     "lead": "Which generator to use for each shot, how to write the prompt with sound, why the key image comes before the video, and how to keep the same character across shots. Each lesson ends in a file or a clip that the page itself checks. You generate with whatever tool you have, paid or open.",
     "cta": "Start with lesson 1",
     "cta2": {
       "t": "Review course 0 (Directing)",
-      "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/"
+      "href": "https://linnoff88-dev.github.io/
     },
     "capa_alt": "A dark film set with a cutting monitor showing the inside of a bakery before dawn; in the background, a blurred spotlight.",
     "numeros": [
@@ -73,7 +73,7 @@
           "2 · Production: from script to finished film",
           "3 · Motion by code with an agent",
           "4 · The video factory with agents",
-          "5 · Cinematic websites"
+          "5 · CARCKHÉtic websites"
         ]
       }
     ]

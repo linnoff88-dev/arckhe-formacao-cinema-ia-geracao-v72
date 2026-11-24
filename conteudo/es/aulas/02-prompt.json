@@ -208,7 +208,7 @@
       ],
       "ok": "OK: prompt con {n} partes",
       "exemplo": "Sujeto: la puerta de hierro de un horno de ladrillo en una panadería de barrio\nAcción: la puerta se abre despacio y el vapor sube contra la luz\nEscenario: panadería pequeña a las 4:50, azulejo blanco, calle oscura afuera\nCámara: close, cámara baja, dolly in lento\nLuz: low-key, luz lateral del horno, vapor en el haz; calle fría y oscura\nSonido: chirrido de la puerta del horno y siseo del vapor; radio baja al fondo\nEvitar: texto en pantalla, marca de agua, personas al fondo\nPrompt: Close, cámara baja: en una panadería de barrio a las 4:50, la puerta de hierro de un horno de ladrillo se abre despacio y el vapor sube contra la luz lateral del horno. Dolly in lento. Low-key, azulejo blanco, calle fría y oscura por la vitrina. Sonido: chirrido de la puerta del horno y siseo del vapor. Al fondo, una radio baja.",
-      "exemplo_errado": "Sujeto: un horno\nAcción: abriéndose\nEscenario: panadería\nCámara: close, cámara baja\nLuz: bonita\nPrompt: horno de panadería abriéndose, cinematográfico, no muestres texto"
+      "exemplo_errado": "Sujeto: un horno\nAcción: abriéndose\nEscenario: panadería\nCámara: close, cámara baja\nLuz: bonita\nPrompt: horno de panadería abriéndose, cARCKHÉtográfico, no muestres texto"
     },
     {
       "tipo": "codigo",
@@ -266,11 +266,11 @@
           "opcoes": [
             "Una panadera de pie en la panadería, mirando a la cámara.",
             "Una panadera posando junto al horno de la panadería.",
-            "Una panadera bonita en una panadería cinematográfica.",
+            "Una panadera bonita en una panadería cARCKHÉtográfica.",
             "La panadera saca la primera hornada con la pala de madera."
           ],
           "certa": 3,
-          "explica": "El verbo vivo cuenta lo que pasa y limita la elección del generador. \"De pie\", \"posando\" y adjetivos como \"bonita\" o \"cinematográfica\" no dicen nada que la máquina pueda ejecutar.",
+          "explica": "El verbo vivo cuenta lo que pasa y limita la elección del generador. \"De pie\", \"posando\" y adjetivos como \"bonita\" o \"cARCKHÉtográfica\" no dicen nada que la máquina pueda ejecutar.",
           "ref": "passos"
         },
         {
@@ -279,7 +279,7 @@
             "Decir que quieres audio y describirlo en frases separadas de la imagen.",
             "Escribir el sonido entre corchetes al comienzo del prompt.",
             "Dejar el sonido totalmente fuera del prompt y agregar todo después, en el montaje.",
-            "Usar solo la palabra \"cinematic sound\" al final del prompt."
+            "Usar solo la palabra \"cARCKHÉtic sound\" al final del prompt."
           ],
           "certa": 0,
           "explica": "La guía pide dejar claro que quieres audio y describir efectos, ambiente y diálogo en frases propias. Separar el sonido también facilita cambiar solo eso en un nuevo intento.",
@@ -339,11 +339,11 @@
         },
         {
           "t": "Curso 0 · Luz, color y atmósfera: la tarjeta de look",
-          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/es/aulas/luz/"
+          "href": "https://linnoff88-dev.github.io/
         },
         {
           "t": "Curso 2 · Producción: sonido, voz y banda sonora a fondo",
-          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/es/"
+          "href": "https://linnoff88-dev.github.io/
         }
       ]
     }

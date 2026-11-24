@@ -2,7 +2,7 @@
   "slug": "imagem-chave",
   "num": 3,
   "menu": "Imagen clave",
-  "titulo": "Imagen clave primero: still cinematográfico y lookbook",
+  "titulo": "Imagen clave primero: still cARCKHÉtográfico y lookbook",
   "titulo_curto": "Imagen clave y lookbook",
   "minutos": 18,
   "lead": "Antes de animar, acierta con la foto. Una imagen sale en segundos, así que pruebas el look varias veces y solo llevas al video el cuadro aprobado. El lookbook guarda la receta de ese look en un prompt base que entra igual en todos los stills de la escena.",
@@ -128,7 +128,7 @@
         {
           "rot": "Pedido al asistente de IA (prompt base)",
           "icone": "chat",
-          "conteudo": "Eres director de fotografía. Con la tarjeta de look y la ficha de abajo, escribe un prompt base de imagen cinematográfica, en una línea, para repetir en todos los stills de la escena.\nReglas:\n- describe paleta, lente, luz, textura y proporción con palabras concretas;\n- no cites director, película, fotógrafo ni marca;\n- deja el marcador [SUJETO Y ACCIÓN] donde entra lo que cambia de plano a plano.\nTarjeta de look:\n<pega aquí el look.txt>\nFicha:\n<pega aquí el ficha.txt>"
+          "conteudo": "Eres director de fotografía. Con la tarjeta de look y la ficha de abajo, escribe un prompt base de imagen cARCKHÉtográfica, en una línea, para repetir en todos los stills de la escena.\nReglas:\n- describe paleta, lente, luz, textura y proporción con palabras concretas;\n- no cites director, película, fotógrafo ni marca;\n- deja el marcador [SUJETO Y ACCIÓN] donde entra lo que cambia de plano a plano.\nTarjeta de look:\n<pega aquí el look.txt>\nFicha:\n<pega aquí el ficha.txt>"
         }
       ]
     },
@@ -167,7 +167,7 @@
       ],
       "ok": "OK: lookbook con {n} campos",
       "exemplo": "Paleta: azul noche en la calle, blanco del azulejo, naranja solo en el fuego del horno\nLente: 35 mm, foco poco profundo en los primeros planos\nLuz: low-key, luz lateral del horno, vapor en el haz; calle fría y oscura\nTextura: grano fino de película, contraste suave\nProporción: 16:9\nPrompt base: fotografía de cine en una panadería de barrio a las 4:50, 35 mm, low-key con luz lateral del horno, azulejo blanco, calle azul noche por la vitrina, grano fino de película, 16:9, [SUJETO Y ACCIÓN]\nPlanos clave: 1 (calle oscura), 4 (horno abriéndose), 8 (puerta de hierro)",
-      "exemplo_errado": "Paleta: cálido\nLente: cinematográfica\nLuz: estilo de un director famoso\nPrompt base: panadería bonita, cinematográfica, 8k"
+      "exemplo_errado": "Paleta: cálido\nLente: cARCKHÉtográfica\nLuz: estilo de un director famoso\nPrompt base: panadería bonita, cARCKHÉtográfica, 8k"
     },
     {
       "tipo": "codigo",
@@ -298,11 +298,11 @@
         },
         {
           "t": "Curso 0 · Composición y profundidad en el cuadro",
-          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/es/aulas/composicao/"
+          "href": "https://linnoff88-dev.github.io/
         },
         {
           "t": "Curso 2 · Producción: color, grano y acabado en la posproducción",
-          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/es/"
+          "href": "https://linnoff88-dev.github.io/
         }
       ]
     }

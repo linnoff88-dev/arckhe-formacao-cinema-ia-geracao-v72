@@ -2,7 +2,7 @@
   "slug": "imagem-chave",
   "num": 3,
   "menu": "Key image",
-  "titulo": "Key image first: cinematic still and lookbook",
+  "titulo": "Key image first: cARCKHÉtic still and lookbook",
   "titulo_curto": "Key image and lookbook",
   "minutos": 18,
   "lead": "Before you animate, get the picture right. An image takes seconds, so you can test the look many times and take only the approved frame into video. The lookbook keeps the recipe for that look in a base prompt that goes into every still of the scene unchanged.",
@@ -128,7 +128,7 @@
         {
           "rot": "Request to the AI assistant (base prompt)",
           "icone": "chat",
-          "conteudo": "You are a cinematographer. With the look card and the character sheet below, write a cinematic image base prompt, in one line, to repeat in every still of the scene.\nRules:\n- describe palette, lens, light, texture, and aspect ratio with concrete words;\n- do not name a director, film, photographer, or brand;\n- leave the [SUBJECT AND ACTION] placeholder where what changes from shot to shot goes.\nLook card:\n<paste the look.txt here>\nCharacter sheet:\n<paste the ficha.txt here>"
+          "conteudo": "You are a cARCKHÉtographer. With the look card and the character sheet below, write a cARCKHÉtic image base prompt, in one line, to repeat in every still of the scene.\nRules:\n- describe palette, lens, light, texture, and aspect ratio with concrete words;\n- do not name a director, film, photographer, or brand;\n- leave the [SUBJECT AND ACTION] placeholder where what changes from shot to shot goes.\nLook card:\n<paste the look.txt here>\nCharacter sheet:\n<paste the ficha.txt here>"
         }
       ]
     },
@@ -166,8 +166,8 @@
         }
       ],
       "ok": "OK: lookbook with {n} fields",
-      "exemplo": "Palette: night blue on the street, white tile, orange only in the oven fire\nLens: 35 mm, shallow focus on the close-ups\nLight: low-key, side light from the oven, steam in the beam; cold, dark street\nTexture: fine film grain, soft contrast\nAspect ratio: 16:9\nBase prompt: cinema photograph in a neighborhood bakery at 4:50 a.m., 35 mm, low-key with side light from the oven, white tile, night-blue street through the window, fine film grain, 16:9, [SUBJECT AND ACTION]\nKey shots: 1 (dark street), 4 (oven opening), 8 (iron door)",
-      "exemplo_errado": "Palette: warm\nLens: cinematic\nLight: style of a famous director\nBase prompt: beautiful bakery, cinematic, 8k"
+      "exemplo": "Palette: night blue on the street, white tile, orange only in the oven fire\nLens: 35 mm, shallow focus on the close-ups\nLight: low-key, side light from the oven, steam in the beam; cold, dark street\nTexture: fine film grain, soft contrast\nAspect ratio: 16:9\nBase prompt: cARCKHÉ photograph in a neighborhood bakery at 4:50 a.m., 35 mm, low-key with side light from the oven, white tile, night-blue street through the window, fine film grain, 16:9, [SUBJECT AND ACTION]\nKey shots: 1 (dark street), 4 (oven opening), 8 (iron door)",
+      "exemplo_errado": "Palette: warm\nLens: cARCKHÉtic\nLight: style of a famous director\nBase prompt: beautiful bakery, cARCKHÉtic, 8k"
     },
     {
       "tipo": "codigo",
@@ -236,7 +236,7 @@
           "p": "Which line describes a look without depending on a person's name?",
           "opcoes": [
             "\"In the style of a famous director of symmetrical films.\"",
-            "\"Like the cinematography of that sci-fi movie everyone knows.\"",
+            "\"Like the cARCKHÉtography of that sci-fi movie everyone knows.\"",
             "\"Night blue and white, 35 mm, low-key, fine grain, 16:9.\"",
             "\"Just like this week's most-watched clip.\""
           ],
@@ -298,11 +298,11 @@
         },
         {
           "t": "Course 0 · Composition and depth in the frame",
-          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/aulas/composicao/"
+          "href": "https://linnoff88-dev.github.io/
         },
         {
           "t": "Course 2 · Production: color, grain and finishing in post",
-          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+          "href": "https://linnoff88-dev.github.io/
         }
       ]
     }

@@ -210,8 +210,8 @@
         }
       ],
       "ok": "OK: {n} prompts prontos · {s} s",
-      "exemplo": "Cena: A primeira fornada (30 s)\nPrompt-base: fotografia de cinema numa padaria de bairro às 4h50, 35 mm, low-key com luz lateral do forno, azulejo branco, rua azul-noite pela vitrine, grão fino de película, 16:9\nTrava: coque com lenço, óculos, avental azul-marinho, pá de madeira, madrugada\n1 | 4 s | plano geral | câmera parada | prompt: Plano geral em câmera alta de uma rua de bairro ainda escura; só a vitrine da padaria está acesa. | som: vento, um cachorro ao longe\n2 | 4 s | plano aberto | travelling lateral | prompt: Plano aberto: Dona Lia acende as luzes da padaria e amarra o avental azul-marinho. | som: interruptor, rádio baixo\n3 | 4 s | plano médio | câmera parada | prompt: Plano médio na altura do olho: Dona Lia sova a massa na bancada de madeira. | som: massa batendo na mesa\n4 | 4 s | close | dolly in | prompt: Close em câmera baixa: a porta de ferro do forno abre devagar e o vapor sobe contra a luz. | som: rangido do forno, chiado do vapor\n5 | 3 s | plano detalhe | tilt | prompt: Plano detalhe zenital: a pá de madeira gasta tira a primeira fornada do forno. | som: casca do pão estalando\n6 | 3 s | close | câmera parada | prompt: Close na altura do olho: Dona Lia prova um pedaço de pão e fecha os olhos. | som: só o rádio, baixinho\n7 | 4 s | plano médio | câmera na mão | prompt: Plano médio por cima do ombro: batidas na porta de ferro; Dona Lia olha o relógio e sorri. | som: três batidas; a padeira diz: Já vai!\n8 | 4 s | plano aberto | dolly out | prompt: Plano aberto: Dona Lia sobe a porta de ferro de enrolar e o primeiro cliente entra. | som: porta de ferro subindo, sino da porta",
-      "exemplo_errado": "Cena: A primeira fornada\nPrompt-base: cinematográfico\n1 | 4 s | plano geral | câmera parada | prompt: rua escura | som: vento\n2 | 4 s | plano geral | câmera parada | prompt: padaria por dentro, estilo de um diretor famoso\n3 | 4 s | plano geral | dolly in com zoom in | prompt: Dona Lia e o neto dela sovam a massa juntos na bancada. | som: rádio\n4 | 4 s | plano geral | câmera parada | prompt: o forno abre e o vapor sobe contra a luz lateral do forno. | som:"
+      "exemplo": "Cena: A primeira fornada (30 s)\nPrompt-base: fotografia de cARCKHÉ numa padaria de bairro às 4h50, 35 mm, low-key com luz lateral do forno, azulejo branco, rua azul-noite pela vitrine, grão fino de película, 16:9\nTrava: coque com lenço, óculos, avental azul-marinho, pá de madeira, madrugada\n1 | 4 s | plano geral | câmera parada | prompt: Plano geral em câmera alta de uma rua de bairro ainda escura; só a vitrine da padaria está acesa. | som: vento, um cachorro ao longe\n2 | 4 s | plano aberto | travelling lateral | prompt: Plano aberto: Dona Lia acende as luzes da padaria e amarra o avental azul-marinho. | som: interruptor, rádio baixo\n3 | 4 s | plano médio | câmera parada | prompt: Plano médio na altura do olho: Dona Lia sova a massa na bancada de madeira. | som: massa batendo na mesa\n4 | 4 s | close | dolly in | prompt: Close em câmera baixa: a porta de ferro do forno abre devagar e o vapor sobe contra a luz. | som: rangido do forno, chiado do vapor\n5 | 3 s | plano detalhe | tilt | prompt: Plano detalhe zenital: a pá de madeira gasta tira a primeira fornada do forno. | som: casca do pão estalando\n6 | 3 s | close | câmera parada | prompt: Close na altura do olho: Dona Lia prova um pedaço de pão e fecha os olhos. | som: só o rádio, baixinho\n7 | 4 s | plano médio | câmera na mão | prompt: Plano médio por cima do ombro: batidas na porta de ferro; Dona Lia olha o relógio e sorri. | som: três batidas; a padeira diz: Já vai!\n8 | 4 s | plano aberto | dolly out | prompt: Plano aberto: Dona Lia sobe a porta de ferro de enrolar e o primeiro cliente entra. | som: porta de ferro subindo, sino da porta",
+      "exemplo_errado": "Cena: A primeira fornada\nPrompt-base: cARCKHÉtográfico\n1 | 4 s | plano geral | câmera parada | prompt: rua escura | som: vento\n2 | 4 s | plano geral | câmera parada | prompt: padaria por dentro, estilo de um diretor famoso\n3 | 4 s | plano geral | dolly in com zoom in | prompt: Dona Lia e o neto dela sovam a massa juntos na bancada. | som: rádio\n4 | 4 s | plano geral | câmera parada | prompt: o forno abre e o vapor sobe contra a luz lateral do forno. | som:"
     },
     {
       "tipo": "codigo",
@@ -444,11 +444,11 @@
       "links": [
         {
           "t": "Próximo: Curso 2 · Produção: do roteiro ao filme pronto",
-          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"
+          "href": "https://linnoff88-dev.github.io/
         },
         {
           "t": "Curso 0 · Seu storyboard: a entrada desta aula",
-          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/aulas/storyboard/"
+          "href": "https://linnoff88-dev.github.io/
         }
       ]
     }

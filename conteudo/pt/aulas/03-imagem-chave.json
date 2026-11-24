@@ -2,7 +2,7 @@
   "slug": "imagem-chave",
   "num": 3,
   "menu": "Imagem-chave",
-  "titulo": "Imagem-chave primeiro: still cinematográfico e lookbook",
+  "titulo": "Imagem-chave primeiro: still cARCKHÉtográfico e lookbook",
   "titulo_curto": "Imagem-chave e lookbook",
   "minutos": 18,
   "lead": "Antes de animar, acerte a foto. Uma imagem sai em segundos, então você testa o look várias vezes e só leva para o vídeo o quadro aprovado. O lookbook guarda a receita desse look num prompt-base que entra igual em todos os stills da cena.",
@@ -128,7 +128,7 @@
         {
           "rot": "Pedido ao assistente de IA (prompt-base)",
           "icone": "chat",
-          "conteudo": "Você é diretor de fotografia. Com o cartão de look e a ficha abaixo, escreva um prompt-base de imagem cinematográfica, em uma linha, para repetir em todos os stills da cena.\nRegras:\n- descreva paleta, lente, luz, textura e proporção com palavras concretas;\n- não cite diretor, filme, fotógrafo nem marca;\n- deixe o marcador [SUJEITO E AÇÃO] onde entra o que muda de plano para plano.\nCartão de look:\n<cole aqui o look.txt>\nFicha:\n<cole aqui o ficha.txt>"
+          "conteudo": "Você é diretor de fotografia. Com o cartão de look e a ficha abaixo, escreva um prompt-base de imagem cARCKHÉtográfica, em uma linha, para repetir em todos os stills da cena.\nRegras:\n- descreva paleta, lente, luz, textura e proporção com palavras concretas;\n- não cite diretor, filme, fotógrafo nem marca;\n- deixe o marcador [SUJEITO E AÇÃO] onde entra o que muda de plano para plano.\nCartão de look:\n<cole aqui o look.txt>\nFicha:\n<cole aqui o ficha.txt>"
         }
       ]
     },
@@ -166,8 +166,8 @@
         }
       ],
       "ok": "OK: lookbook com {n} campos",
-      "exemplo": "Paleta: azul-noite na rua, branco do azulejo, laranja só no fogo do forno\nLente: 35 mm, foco raso nos closes\nLuz: low-key, luz lateral do forno, vapor no feixe; rua fria e escura\nTextura: grão fino de película, contraste suave\nProporção: 16:9\nPrompt-base: fotografia de cinema numa padaria de bairro às 4h50, 35 mm, low-key com luz lateral do forno, azulejo branco, rua azul-noite pela vitrine, grão fino de película, 16:9, [SUJEITO E AÇÃO]\nPlanos-chave: 1 (rua escura), 4 (forno abrindo), 8 (porta de ferro)",
-      "exemplo_errado": "Paleta: quente\nLente: cinematográfica\nLuz: estilo de um diretor famoso\nPrompt-base: padaria bonita, cinematográfica, 8k"
+      "exemplo": "Paleta: azul-noite na rua, branco do azulejo, laranja só no fogo do forno\nLente: 35 mm, foco raso nos closes\nLuz: low-key, luz lateral do forno, vapor no feixe; rua fria e escura\nTextura: grão fino de película, contraste suave\nProporção: 16:9\nPrompt-base: fotografia de cARCKHÉ numa padaria de bairro às 4h50, 35 mm, low-key com luz lateral do forno, azulejo branco, rua azul-noite pela vitrine, grão fino de película, 16:9, [SUJEITO E AÇÃO]\nPlanos-chave: 1 (rua escura), 4 (forno abrindo), 8 (porta de ferro)",
+      "exemplo_errado": "Paleta: quente\nLente: cARCKHÉtográfica\nLuz: estilo de um diretor famoso\nPrompt-base: padaria bonita, cARCKHÉtográfica, 8k"
     },
     {
       "tipo": "codigo",
@@ -298,11 +298,11 @@
         },
         {
           "t": "Curso 0 · Composição e profundidade no quadro",
-          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/aulas/composicao/"
+          "href": "https://linnoff88-dev.github.io/
         },
         {
           "t": "Curso 2 · Produção: cor, grão e acabamento na pós",
-          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"
+          "href": "https://linnoff88-dev.github.io/
         }
       ]
     }

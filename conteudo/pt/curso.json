@@ -1,30 +1,30 @@
 {
-  "id": "formacao-cinema-ia-geracao-v72",
+  "id": "formacao-cARCKHÉ-ia-geracao-v72",
   "lang": "pt-BR",
-  "url": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/",
+  "url": "https://linnoff88-dev.github.io/
   "nome": "Geração: imagem e vídeo com IA",
-  "sub": "Formação Cinema com IA · curso 1",
+  "sub": "Formação CARCKHÉ com IA · curso 1",
   "volta": {
-    "t": "Área Vídeos do INEMA",
-    "href": "https://eventos.inema.pro/videos/"
+    "t": "Área Vídeos do ARCKHÉ",
+    "href": "https://eventos.ARCKHÉ.pro/videos/"
   },
   "lado_card": {
     "rot": "Depois deste curso",
     "t": "Curso 2 · Produção",
     "texto": "Som, montagem, cor e ética: os clipes que você gera aqui viram um curta pronto lá.",
     "link": "Abrir o curso 2",
-    "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"
+    "href": "https://linnoff88-dev.github.io/
   },
-  "rodape": "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · Formação Cinema com IA, curso 1 de 6 · <a href=\"https://eventos.inema.pro/videos/\">eventos.inema.pro/videos</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "rodape": "ARCKHÉ AI · conteúdo aberto e gratuito · formato ARCKHÉ Learning v7.2 · Formação CARCKHÉ com IA, curso 1 de 6 · <a href=\"https://eventos.ARCKHÉ.pro/videos/\">eventos.ARCKHÉ.pro/videos</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a>",
   "videos": {},
   "inicio": {
-    "kicker": "Formação Cinema com IA · curso 1 de 6 · 8 aulas",
+    "kicker": "Formação CARCKHÉ com IA · curso 1 de 6 · 8 aulas",
     "titulo": "Geração: do storyboard ao clipe com os geradores de out/2026",
     "lead": "Qual gerador usar em cada plano, como escrever o prompt com som, por que a imagem-chave vem antes do vídeo e como segurar o mesmo personagem entre planos. Cada aula termina num arquivo ou num clipe que a própria página confere. Gerar é com a ferramenta que você tiver, paga ou aberta.",
     "cta": "Começar pela aula 1",
     "cta2": {
       "t": "Rever o curso 0 (Direção)",
-      "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/"
+      "href": "https://linnoff88-dev.github.io/
     },
     "capa_alt": "Set de filmagem escuro com um monitor de corte mostrando o interior de uma padaria de madrugada; ao fundo, um refletor desfocado.",
     "numeros": [
@@ -73,7 +73,7 @@
           "2 · Produção: do roteiro ao filme pronto",
           "3 · Motion por código com agente",
           "4 · A fábrica de vídeo com agentes",
-          "5 · Sites cinematográficos"
+          "5 · Sites cARCKHÉtográficos"
         ]
       }
     ]

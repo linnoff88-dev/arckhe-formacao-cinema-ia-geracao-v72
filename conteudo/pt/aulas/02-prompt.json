@@ -208,7 +208,7 @@
       ],
       "ok": "OK: prompt com {n} partes",
       "exemplo": "Sujeito: a porta de ferro de um forno de lastro numa padaria de bairro\nAção: a porta abre devagar e o vapor sobe contra a luz\nCenário: padaria pequena às 4h50, azulejo branco, rua escura lá fora\nCâmera: close, câmera baixa, dolly in lento\nLuz: low-key, luz lateral do forno, vapor no feixe; rua fria e escura\nSom: rangido da porta do forno e chiado do vapor; rádio baixo ao fundo\nEvitar: texto na tela, marca d'água, pessoas no fundo\nPrompt: Close, câmera baixa: numa padaria de bairro às 4h50, a porta de ferro de um forno de lastro abre devagar e o vapor sobe contra a luz lateral do forno. Dolly in lento. Low-key, azulejo branco, rua fria e escura pela vitrine. Som: rangido da porta do forno e chiado do vapor. Ao fundo, um rádio baixo.",
-      "exemplo_errado": "Sujeito: um forno\nAção: abrindo\nCenário: padaria\nCâmera: close, câmera baixa\nLuz: bonita\nPrompt: forno de padaria abrindo, cinematográfico, não mostre texto"
+      "exemplo_errado": "Sujeito: um forno\nAção: abrindo\nCenário: padaria\nCâmera: close, câmera baixa\nLuz: bonita\nPrompt: forno de padaria abrindo, cARCKHÉtográfico, não mostre texto"
     },
     {
       "tipo": "codigo",
@@ -266,11 +266,11 @@
           "opcoes": [
             "Uma padeira em pé na padaria, olhando para a câmera.",
             "Uma padeira posando ao lado do forno da padaria.",
-            "Uma padeira bonita numa padaria cinematográfica.",
+            "Uma padeira bonita numa padaria cARCKHÉtográfica.",
             "A padeira tira a primeira fornada com a pá de madeira."
           ],
           "certa": 3,
-          "explica": "Verbo vivo conta o que acontece e limita a escolha do gerador. \"Em pé\", \"posando\" e adjetivos como \"bonita\" ou \"cinematográfica\" não dizem nada que a máquina possa executar.",
+          "explica": "Verbo vivo conta o que acontece e limita a escolha do gerador. \"Em pé\", \"posando\" e adjetivos como \"bonita\" ou \"cARCKHÉtográfica\" não dizem nada que a máquina possa executar.",
           "ref": "passos"
         },
         {
@@ -279,7 +279,7 @@
             "Dizer que quer áudio e descrevê-lo em frases separadas da imagem.",
             "Escrever o som entre colchetes no começo do prompt.",
             "Deixar o som totalmente fora do prompt e acrescentar tudo depois, na montagem.",
-            "Usar só a palavra \"cinematic sound\" no fim do prompt."
+            "Usar só a palavra \"cARCKHÉtic sound\" no fim do prompt."
           ],
           "certa": 0,
           "explica": "O guia pede para deixar claro que quer áudio e descrever efeitos, ambiente e fala em frases próprias. Separar o som também facilita trocar só ele numa nova tentativa.",
@@ -339,11 +339,11 @@
         },
         {
           "t": "Curso 0 · Luz, cor e atmosfera: o cartão de look",
-          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/aulas/luz/"
+          "href": "https://linnoff88-dev.github.io/
         },
         {
           "t": "Curso 2 · Produção: som, voz e trilha a fundo",
-          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"
+          "href": "https://linnoff88-dev.github.io/
         }
       ]
     }

@@ -211,7 +211,7 @@
       ],
       "ok": "OK: {n} prompts listos · {s} s",
       "exemplo": "Escena: La primera hornada (30 s)\nPrompt base: fotografía de cine en una panadería de barrio a las 4:50, 35 mm, low-key con luz lateral del horno, azulejo blanco, calle azul noche por la vitrina, grano fino de película, 16:9\nBloqueo: moño con pañuelo, anteojos, delantal azul marino, pala de madera, madrugada\n1 | 4 s | plano general | cámara fija | prompt: Plano general en cámara alta de una calle de barrio todavía oscura; solo la vitrina de la panadería está encendida. | sonido: viento, un perro a lo lejos\n2 | 4 s | plano abierto | travelling lateral | prompt: Plano abierto: Doña Lia enciende las luces de la panadería y se ata el delantal azul marino. | sonido: interruptor, radio bajita\n3 | 4 s | plano medio | cámara fija | prompt: Plano medio a la altura de los ojos: Doña Lia amasa la masa en el mesón de madera. | sonido: masa golpeando la mesa\n4 | 4 s | primer plano | dolly in | prompt: Primer plano en cámara baja: la puerta de hierro del horno se abre despacio y el vapor sube contra la luz. | sonido: chirrido del horno, siseo del vapor\n5 | 3 s | plano detalle | tilt | prompt: Plano detalle cenital: la pala de madera gastada saca la primera hornada del horno. | sonido: corteza del pan crujiendo\n6 | 3 s | primer plano | cámara fija | prompt: Primer plano a la altura de los ojos: Doña Lia prueba un pedazo de pan y cierra los ojos. | sonido: solo la radio, bajito\n7 | 4 s | plano medio | cámara en mano | prompt: Plano medio por encima del hombro: golpes en la puerta de hierro; Doña Lia mira el reloj y sonríe. | sonido: tres golpes; la panadera dice: ¡Ya voy!\n8 | 4 s | plano abierto | dolly out | prompt: Plano abierto: Doña Lia sube la cortina de hierro y entra el primer cliente. | sonido: cortina de hierro subiendo, campanilla de la puerta",
-      "exemplo_errado": "Escena: La primera hornada\nPrompt base: cinematográfico\n1 | 4 s | plano general | cámara fija | prompt: calle oscura | sonido: viento\n2 | 4 s | plano general | cámara fija | prompt: panadería por dentro, estilo de un director famoso\n3 | 4 s | plano general | dolly in con zoom in | prompt: Doña Lia y su nieto amasan la masa juntos en el mesón. | sonido: radio\n4 | 4 s | plano general | cámara fija | prompt: el horno se abre y el vapor sube contra la luz lateral del horno. | sonido:"
+      "exemplo_errado": "Escena: La primera hornada\nPrompt base: cARCKHÉtográfico\n1 | 4 s | plano general | cámara fija | prompt: calle oscura | sonido: viento\n2 | 4 s | plano general | cámara fija | prompt: panadería por dentro, estilo de un director famoso\n3 | 4 s | plano general | dolly in con zoom in | prompt: Doña Lia y su nieto amasan la masa juntos en el mesón. | sonido: radio\n4 | 4 s | plano general | cámara fija | prompt: el horno se abre y el vapor sube contra la luz lateral del horno. | sonido:"
     },
     {
       "tipo": "codigo",
@@ -444,11 +444,11 @@
       "links": [
         {
           "t": "Siguiente: Curso 2 · Producción: del guion a la película terminada",
-          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/es/"
+          "href": "https://linnoff88-dev.github.io/
         },
         {
           "t": "Curso 0 · Tu storyboard: la entrada de esta clase",
-          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/es/aulas/storyboard/"
+          "href": "https://linnoff88-dev.github.io/
         }
       ]
     }

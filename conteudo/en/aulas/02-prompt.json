@@ -208,7 +208,7 @@
       ],
       "ok": "OK: prompt with {n} parts",
       "exemplo": "Subject: the iron door of a deck oven in a neighborhood bakery\nAction: the door slowly opens and steam rises against the light\nSetting: small bakery at 4:50 a.m., white tile, dark street outside\nCamera: close-up, low camera, slow dolly in\nLight: low-key, side light from the oven, steam in the beam; cold, dark street\nSound: creak of the oven door and hiss of steam; low radio in the background\nAvoid: on-screen text, watermark, people in the background\nPrompt: Close-up, low camera: in a neighborhood bakery at 4:50 a.m., the iron door of a deck oven slowly opens and steam rises against the oven's side light. Slow dolly in. Low-key, white tile, cold, dark street through the shop window. Sound: creak of the oven door and hiss of steam. In the background, a low radio.",
-      "exemplo_errado": "Subject: an oven\nAction: opening\nSetting: bakery\nCamera: close-up, low camera\nLight: beautiful\nPrompt: bakery oven opening, cinematic, do not show text"
+      "exemplo_errado": "Subject: an oven\nAction: opening\nSetting: bakery\nCamera: close-up, low camera\nLight: beautiful\nPrompt: bakery oven opening, cARCKHÉtic, do not show text"
     },
     {
       "tipo": "codigo",
@@ -266,11 +266,11 @@
           "opcoes": [
             "A baker standing in the bakery, looking at the camera.",
             "A baker posing next to the bakery oven.",
-            "A good-looking baker in a cinematic bakery.",
+            "A good-looking baker in a cARCKHÉtic bakery.",
             "The baker takes out the first batch with the wooden peel."
           ],
           "certa": 3,
-          "explica": "Active verbs say what happens and narrow the generator's choices. \"Standing,\" \"posing,\" and adjectives like \"beautiful\" or \"cinematic\" say nothing the machine can act on.",
+          "explica": "Active verbs say what happens and narrow the generator's choices. \"Standing,\" \"posing,\" and adjectives like \"beautiful\" or \"cARCKHÉtic\" say nothing the machine can act on.",
           "ref": "passos"
         },
         {
@@ -279,7 +279,7 @@
             "Say you want audio and describe it in sentences separate from the image.",
             "Write the sound in square brackets at the start of the prompt.",
             "Leave sound out of the prompt completely and add everything later, in the edit.",
-            "Use only the words \"cinematic sound\" at the end of the prompt."
+            "Use only the words \"cARCKHÉtic sound\" at the end of the prompt."
           ],
           "certa": 0,
           "explica": "The guide says to make it clear you want audio and to describe effects, ambient sound, and dialogue in their own sentences. Keeping the sound separate also makes it easy to swap just that part on a new attempt.",
@@ -339,11 +339,11 @@
         },
         {
           "t": "Course 0 · Light, color, and atmosphere: the look card",
-          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/aulas/luz/"
+          "href": "https://linnoff88-dev.github.io/
         },
         {
           "t": "Course 2 · Production: sound, voice, and soundtrack in depth",
-          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+          "href": "https://linnoff88-dev.github.io/
         }
       ]
     }
