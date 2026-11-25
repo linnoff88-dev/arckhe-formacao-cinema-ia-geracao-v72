@@ -189,7 +189,7 @@
           },
           {
             "rot": "Ejemplo con error (19/10/2026)",
-            "html": "<pre>$ python3 conferir.py imagem-chave --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Textura: com a descrição (pelo menos 3 letras).\n - Falta a linha Proporção: com a descrição (pelo menos 3 letras).\n - Falta a linha Planos-chave: com a descrição (pelo menos 3 letras).\n - Falta citar a proporção do quadro (ex.: 16:9).\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py imagem-chave --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Textura: com a descriçêo (pelo menos 3 letras).\n - Falta a linha Proporçêo: com a descriçêo (pelo menos 3 letras).\n - Falta a linha Planos-chave: com a descriçêo (pelo menos 3 letras).\n - Falta citar a proporçêo do quadro (ex.: 16:9).\nsaída: 1</pre>"
           }
         ]
       }

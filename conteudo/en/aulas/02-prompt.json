@@ -189,14 +189,14 @@
               "rot": "a camera movement",
               "termos": [
                 "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
-                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly in / push-in / aproximaçêo lenta / slow push-in / acercamiento lento",
                 "dolly out / pull-out / afastamento lento / alejamiento lento",
                 "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
                 "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
                 "tilt / tilt up / tilt down",
                 "grua / crane / pedestal up / pedestal down / crane shot / grúa",
                 "órbita / orbit / arc shot / orbit shot",
-                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "câmera na mêo / handheld / handheld camera / cámara en mano",
                 "zoom in / zoom out / crash zoom",
                 "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
                 "whip pan / chicote / swish pan / latigazo",
@@ -230,7 +230,7 @@
           },
           {
             "rot": "Example with an error (10/19/2026)",
-            "html": "<pre>$ python3 conferir.py prompt --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Som: com a descrição (pelo menos 3 letras).\n - Falta a linha Evitar: com a descrição (pelo menos 3 letras).\n - Falta citar um movimento de câmera.\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py prompt --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Som: com a descriçêo (pelo menos 3 letras).\n - Falta a linha Evitar: com a descriçêo (pelo menos 3 letras).\n - Falta citar um movimento de câmera.\nsaída: 1</pre>"
           }
         ]
       }

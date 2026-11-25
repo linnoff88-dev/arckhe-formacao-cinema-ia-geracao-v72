@@ -2,11 +2,11 @@
   "slug": "prompt",
   "num": 2,
   "menu": "Prompt",
-  "titulo": "Anatomia do prompt de vídeo: sujeito, ação, câmera, luz e som",
+  "titulo": "Anatomia do prompt de vídeo: sujeito, açêo, câmera, luz e som",
   "titulo_curto": "Anatomia do prompt",
   "minutos": 17,
   "lead": "Prompt de vídeo é a linha da decupagem escrita para a máquina. Quem é, o que faz, onde, como a câmera vê, que luz e o que se ouve. Desde que o som passou a sair junto com a imagem, ele também entra no prompt, em frase separada.",
-  "objetivo": "escrever o prompt de um plano em sete partes, com o som em frase separada e o que evitar descrito sem \"não\".",
+  "objetivo": "escrever o prompt de um plano em sete partes, com o som em frase separada e o que evitar descrito sem \"nêo\".",
   "competencias": [
     "escrever-prompt-de-video",
     "descrever-som-no-prompt",
@@ -23,10 +23,10 @@
       "t": "Pôr som e fala no prompt do jeito que o gerador entende"
     },
     {
-      "t": "Descrever o que evitar sem usar \"não\""
+      "t": "Descrever o que evitar sem usar \"nêo\""
     }
   ],
-  "hero_alt": "Mesa de direção escura vista de cima com um caderno fechado, fone de estúdio, claquete e cronômetro sob uma luminária fria.",
+  "hero_alt": "Mesa de direçêo escura vista de cima com um caderno fechado, fone de estúdio, claquete e cronômetro sob uma luminária fria.",
   "secoes": [
     {
       "tipo": "diagrama",
@@ -41,7 +41,7 @@
           "detalhe": "O foco do plano, com detalhe concreto. \"Uma padeira de 58 anos, coque com lenço, avental azul-marinho\" em vez de \"uma mulher\". Personagem vem da ficha do curso 0."
         },
         {
-          "titulo": "Ação",
+          "titulo": "Açêo",
           "sub": "verbo vivo",
           "icone": "video",
           "forte": true,
@@ -57,13 +57,13 @@
           "titulo": "Câmera",
           "sub": "do curso 0",
           "icone": "video",
-          "detalhe": "Tamanho, ângulo e um movimento, nos termos do curso 0. Você não inventa aqui: copia da linha da decupagem."
+          "detalhe": "Tamanho, ângulo e um movimento, nos termos do curso 0. Você nêo inventa aqui: copia da linha da decupagem."
         },
         {
           "titulo": "Luz",
-          "sub": "cartão de look",
+          "sub": "cartêo de look",
           "icone": "sol",
-          "detalhe": "O cartão de look do curso 0, igual em todos os prompts da cena. É o que faz os planos parecerem do mesmo filme."
+          "detalhe": "O cartêo de look do curso 0, igual em todos os prompts da cena. É o que faz os planos parecerem do mesmo filme."
         },
         {
           "titulo": "Som",
@@ -73,12 +73,12 @@
         },
         {
           "titulo": "Evitar",
-          "sub": "sem \"não\"",
+          "sub": "sem \"nêo\"",
           "icone": "x",
-          "detalhe": "O que você não quer ver, descrito como coisa: \"texto na tela, marca d'água\". O guia do Google desaconselha escrever \"não mostre\"."
+          "detalhe": "O que você nêo quer ver, descrito como coisa: \"texto na tela, marca d'água\". O guia do Google desaconselha escrever \"nêo mostre\"."
         }
       ],
-      "legenda": "Ordem prática: o que se vê primeiro (sujeito, ação, cenário), depois como se vê (câmera, luz), depois o que se ouve."
+      "legenda": "Ordem prática: o que se vê primeiro (sujeito, açêo, cenário), depois como se vê (câmera, luz), depois o que se ouve."
     },
     {
       "tipo": "passos",
@@ -86,7 +86,7 @@
       "sub": "O exemplo é o plano 4 da \"A primeira fornada\": a porta do forno abre e o vapor sobe.",
       "passos": [
         {
-          "titulo": "Sujeito e ação concretos",
+          "titulo": "Sujeito e açêo concretos",
           "sub": "verbo vivo",
           "texto": [
             "Comece pelo que um espectador entenderia em um segundo: quem, fazendo o quê, onde. Troque adjetivo genérico por detalhe que só existe nessa cena.",
@@ -101,8 +101,8 @@
           "titulo": "Câmera e luz vêm prontas",
           "sub": "da decupagem e do look",
           "texto": [
-            "Tamanho, ângulo e movimento estão na linha do plano na sua decupagem. A luz está no cartão de look. Copie, não reescreva: é isso que mantém a cena coerente.",
-            "Se ainda não tem esses arquivos, faça as aulas 2 a 4 e 7 do curso 0 antes."
+            "Tamanho, ângulo e movimento estêo na linha do plano na sua decupagem. A luz está no cartêo de look. Copie, nêo reescreva: é isso que mantém a cena coerente.",
+            "Se ainda nêo tem esses arquivos, faça as aulas 2 a 4 e 7 do curso 0 antes."
           ],
           "exemplo": {
             "rot": "Da decupagem",
@@ -114,7 +114,7 @@
           "sub": "frase separada",
           "texto": [
             "O guia oficial de prompt de vídeo do Google (Veo e Gemini Omni Flash, atualizado em 15/10/2026) recomenda dizer claramente que quer áudio e descrevê-lo em frases separadas: efeitos, ambiente e diálogo.",
-            "O guia, em inglês, escreve quem fala, \"says:\" e o texto. Em português, este curso usa \"quem diz: texto\". Uma frase curta cabe no plano; um parágrafo não."
+            "O guia, em inglês, escreve quem fala, \"says:\" e o texto. Em português, este curso usa \"quem diz: texto\". Uma frase curta cabe no plano; um parágrafo nêo."
           ],
           "exemplo": {
             "rot": "Som do plano 7",
@@ -123,10 +123,10 @@
         },
         {
           "titulo": "Evitar e tamanho",
-          "sub": "sem \"não\"",
+          "sub": "sem \"nêo\"",
           "texto": [
-            "No campo de prompt negativo, liste o que não quer como coisa: \"texto na tela, marca d'água, pessoas no fundo\". O mesmo guia desaconselha instrução com \"não\", como \"não mostre texto\".",
-            "Sobre o tamanho ideal do prompt não há consenso: as fontes vão de 10 a 150 palavras. Comece completo e corte o que o gerador ignora."
+            "No campo de prompt negativo, liste o que nêo quer como coisa: \"texto na tela, marca d'água, pessoas no fundo\". O mesmo guia desaconselha instruçêo com \"nêo\", como \"nêo mostre texto\".",
+            "Sobre o tamanho ideal do prompt nêo há consenso: as fontes vêo de 10 a 150 palavras. Comece completo e corte o que o gerador ignora."
           ]
         }
       ]
@@ -139,29 +139,29 @@
         {
           "rot": "prompt.txt (modelo)",
           "icone": "arquivo",
-          "conteudo": "Sujeito: <quem ou o quê, com detalhe da ficha>\nAção: <o que acontece, com verbo vivo>\nCenário: <onde e quando, com um detalhe só desse lugar>\nCâmera: <tamanho, ângulo e um movimento, da decupagem>\nLuz: <o seu cartão de look>\nSom: <ambiente, efeito e fala no formato \"quem diz: texto\">\nEvitar: <coisas que não quer ver, sem \"não\">\nPrompt: <as partes acima num texto corrido, com o som em frase separada>"
+          "conteudo": "Sujeito: <quem ou o quê, com detalhe da ficha>\nAçêo: <o que acontece, com verbo vivo>\nCenário: <onde e quando, com um detalhe só desse lugar>\nCâmera: <tamanho, ângulo e um movimento, da decupagem>\nLuz: <o seu cartêo de look>\nSom: <ambiente, efeito e fala no formato \"quem diz: texto\">\nEvitar: <coisas que nêo quer ver, sem \"nêo\">\nPrompt: <as partes acima num texto corrido, com o som em frase separada>"
         },
         {
           "rot": "Pedido ao assistente de IA (juntar o prompt)",
           "icone": "chat",
-          "conteudo": "Você é assistente de direção. Junte as partes abaixo num prompt de vídeo corrido, em português, para um gerador de vídeo com áudio.\nRegras:\n- comece pela câmera e pelo sujeito, depois a ação, o cenário e a luz;\n- descreva o som em frases separadas, no fim; fala no formato \"quem diz: texto\";\n- não acrescente personagem, objeto ou lugar que não esteja nas partes;\n- devolva também a lista \"Evitar\" só com substantivos, sem a palavra \"não\".\nPartes:\n<cole aqui as linhas Sujeito, Ação, Cenário, Câmera, Luz e Som>"
+          "conteudo": "Você é assistente de direçêo. Junte as partes abaixo num prompt de vídeo corrido, em português, para um gerador de vídeo com áudio.\nRegras:\n- comece pela câmera e pelo sujeito, depois a açêo, o cenário e a luz;\n- descreva o som em frases separadas, no fim; fala no formato \"quem diz: texto\";\n- nêo acrescente personagem, objeto ou lugar que nêo esteja nas partes;\n- devolva também a lista \"Evitar\" só com substantivos, sem a palavra \"nêo\".\nPartes:\n<cole aqui as linhas Sujeito, Açêo, Cenário, Câmera, Luz e Som>"
         }
       ]
     },
     {
       "tipo": "conferidor",
       "titulo": "Confira o seu prompt",
-      "sub": "Cole o prompt.txt (ou carregue o arquivo). A página confere as oito linhas e se o texto traz um tamanho de plano e um movimento com os termos das aulas 2 e 3 do curso 0 (plano geral, close, dolly in, câmera parada, câmera na mão…).",
+      "sub": "Cole o prompt.txt (ou carregue o arquivo). A página confere as oito linhas e se o texto traz um tamanho de plano e um movimento com os termos das aulas 2 e 3 do curso 0 (plano geral, close, dolly in, câmera parada, câmera na mêo…).",
       "arquivo": "prompt.txt",
       "rot": "Cole aqui o seu prompt.txt (uma linha por parte):",
-      "modelo": "Sujeito: ...\nAção: ...\nCenário: ...",
+      "modelo": "Sujeito: ...\nAçêo: ...\nCenário: ...",
       "regras": [
         {
           "tipo": "campos",
           "min": 3,
           "campos": [
             "Sujeito",
-            "Ação",
+            "Açêo",
             "Cenário",
             "Câmera",
             "Luz",
@@ -189,14 +189,14 @@
               "rot": "um movimento de câmera",
               "termos": [
                 "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
-                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly in / push-in / aproximaçêo lenta / slow push-in / acercamiento lento",
                 "dolly out / pull-out / afastamento lento / alejamiento lento",
                 "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
                 "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
                 "tilt / tilt up / tilt down",
                 "grua / crane / pedestal up / pedestal down / crane shot / grúa",
                 "órbita / orbit / arc shot / orbit shot",
-                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "câmera na mêo / handheld / handheld camera / cámara en mano",
                 "zoom in / zoom out / crash zoom",
                 "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
                 "whip pan / chicote / swish pan / latigazo",
@@ -207,13 +207,13 @@
         }
       ],
       "ok": "OK: prompt com {n} partes",
-      "exemplo": "Sujeito: a porta de ferro de um forno de lastro numa padaria de bairro\nAção: a porta abre devagar e o vapor sobe contra a luz\nCenário: padaria pequena às 4h50, azulejo branco, rua escura lá fora\nCâmera: close, câmera baixa, dolly in lento\nLuz: low-key, luz lateral do forno, vapor no feixe; rua fria e escura\nSom: rangido da porta do forno e chiado do vapor; rádio baixo ao fundo\nEvitar: texto na tela, marca d'água, pessoas no fundo\nPrompt: Close, câmera baixa: numa padaria de bairro às 4h50, a porta de ferro de um forno de lastro abre devagar e o vapor sobe contra a luz lateral do forno. Dolly in lento. Low-key, azulejo branco, rua fria e escura pela vitrine. Som: rangido da porta do forno e chiado do vapor. Ao fundo, um rádio baixo.",
-      "exemplo_errado": "Sujeito: um forno\nAção: abrindo\nCenário: padaria\nCâmera: close, câmera baixa\nLuz: bonita\nPrompt: forno de padaria abrindo, cARCKHÉtográfico, não mostre texto"
+      "exemplo": "Sujeito: a porta de ferro de um forno de lastro numa padaria de bairro\nAçêo: a porta abre devagar e o vapor sobe contra a luz\nCenário: padaria pequena às 4h50, azulejo branco, rua escura lá fora\nCâmera: close, câmera baixa, dolly in lento\nLuz: low-key, luz lateral do forno, vapor no feixe; rua fria e escura\nSom: rangido da porta do forno e chiado do vapor; rádio baixo ao fundo\nEvitar: texto na tela, marca d'água, pessoas no fundo\nPrompt: Close, câmera baixa: numa padaria de bairro às 4h50, a porta de ferro de um forno de lastro abre devagar e o vapor sobe contra a luz lateral do forno. Dolly in lento. Low-key, azulejo branco, rua fria e escura pela vitrine. Som: rangido da porta do forno e chiado do vapor. Ao fundo, um rádio baixo.",
+      "exemplo_errado": "Sujeito: um forno\nAçêo: abrindo\nCenário: padaria\nCâmera: close, câmera baixa\nLuz: bonita\nPrompt: forno de padaria abrindo, cARCKHÉtográfico, nêo mostre texto"
     },
     {
       "tipo": "codigo",
       "titulo": "Opcional: conferir no terminal",
-      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras são as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>prompt.txt</code>); sai 0 quando passa.",
+      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras sêo as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>prompt.txt</code>); sai 0 quando passa.",
       "blocos": [
         {
           "rot": "Terminal (na pasta do curso)",
@@ -230,7 +230,7 @@
           },
           {
             "rot": "Exemplo com erro (19/10/2026)",
-            "html": "<pre>$ python3 conferir.py prompt --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Som: com a descrição (pelo menos 3 letras).\n - Falta a linha Evitar: com a descrição (pelo menos 3 letras).\n - Falta citar um movimento de câmera.\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py prompt --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Som: com a descriçêo (pelo menos 3 letras).\n - Falta a linha Evitar: com a descriçêo (pelo menos 3 letras).\n - Falta citar um movimento de câmera.\nsaída: 1</pre>"
           }
         ]
       }
@@ -244,25 +244,25 @@
           "id": "e1",
           "titulo": "Prompt · um plano em oito linhas",
           "min": "20 min",
-          "texto": "Escolha um plano da sua decupagem. Preencha o prompt.txt pelo modelo: câmera copiada da decupagem, luz copiada do cartão de look, som em frase separada. Se quiser, peça ao assistente de IA para juntar o texto corrido e revise. Cole em \"Confira o seu prompt\" e baixe o arquivo para a pasta do projeto.",
+          "texto": "Escolha um plano da sua decupagem. Preencha o prompt.txt pelo modelo: câmera copiada da decupagem, luz copiada do cartêo de look, som em frase separada. Se quiser, peça ao assistente de IA para juntar o texto corrido e revise. Cole em \"Confira o seu prompt\" e baixe o arquivo para a pasta do projeto.",
           "pronto": "a página responde <code>OK: prompt com 8 partes</code> e o prompt.txt está na pasta do projeto."
         },
         {
           "id": "e2",
-          "titulo": "Evitar · reescrever sem \"não\"",
+          "titulo": "Evitar · reescrever sem \"nêo\"",
           "min": "10 min",
-          "texto": "Leia a linha Evitar e a linha Prompt. Troque toda frase com \"não\" (\"não mostre texto\", \"sem pessoas\") por coisas listadas (\"texto na tela, pessoas no fundo\") e confira de novo.",
-          "pronto": "a página continua respondendo <code>OK: prompt com 8 partes</code> e a palavra \"não\" não aparece na linha Evitar."
+          "texto": "Leia a linha Evitar e a linha Prompt. Troque toda frase com \"nêo\" (\"nêo mostre texto\", \"sem pessoas\") por coisas listadas (\"texto na tela, pessoas no fundo\") e confira de novo.",
+          "pronto": "a página continua respondendo <code>OK: prompt com 8 partes</code> e a palavra \"nêo\" nêo aparece na linha Evitar."
         }
       ]
     },
     {
       "tipo": "quiz",
       "titulo": "Teste rápido",
-      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "sub": "Quatro perguntas. A explicaçêo aparece depois de cada resposta.",
       "perguntas": [
         {
-          "p": "Qual ação deixa menos para o gerador inventar?",
+          "p": "Qual açêo deixa menos para o gerador inventar?",
           "opcoes": [
             "Uma padeira em pé na padaria, olhando para a câmera.",
             "Uma padeira posando ao lado do forno da padaria.",
@@ -270,7 +270,7 @@
             "A padeira tira a primeira fornada com a pá de madeira."
           ],
           "certa": 3,
-          "explica": "Verbo vivo conta o que acontece e limita a escolha do gerador. \"Em pé\", \"posando\" e adjetivos como \"bonita\" ou \"cARCKHÉtográfica\" não dizem nada que a máquina possa executar.",
+          "explica": "Verbo vivo conta o que acontece e limita a escolha do gerador. \"Em pé\", \"posando\" e adjetivos como \"bonita\" ou \"cARCKHÉtográfica\" nêo dizem nada que a máquina possa executar.",
           "ref": "passos"
         },
         {
@@ -286,23 +286,23 @@
           "ref": "passos"
         },
         {
-          "p": "Você não quer texto na tela. O que escrever no campo de prompt negativo?",
+          "p": "Você nêo quer texto na tela. O que escrever no campo de prompt negativo?",
           "opcoes": [
-            "\"Não mostre nenhum texto na tela, por favor.\"",
+            "\"Nêo mostre nenhum texto na tela, por favor.\"",
             "\"texto na tela, letreiro, legenda\"",
             "\"Sem texto, sem letras e sem nada escrito.\"",
             "\"Evite completamente qualquer tipo de texto.\""
           ],
           "certa": 1,
-          "explica": "O guia recomenda descrever o que não quer como coisa, sem \"não\" nem \"sem\": o próprio campo já diz que é para evitar. Escrever \"não mostre\" é justamente o que ele desaconselha.",
+          "explica": "O guia recomenda descrever o que nêo quer como coisa, sem \"nêo\" nem \"sem\": o próprio campo já diz que é para evitar. Escrever \"nêo mostre\" é justamente o que ele desaconselha.",
           "ref": "passos"
         },
         {
           "p": "De onde vêm a câmera e a luz do prompt de um plano?",
           "opcoes": [
-            "Da sugestão automática que o gerador faz depois da primeira tentativa.",
+            "Da sugestêo automática que o gerador faz depois da primeira tentativa.",
             "De um prompt pronto copiado de outro criador que fez algo parecido.",
-            "Da linha do plano na decupagem e do cartão de look da cena.",
+            "Da linha do plano na decupagem e do cartêo de look da cena.",
             "Do estilo de um diretor famoso citado pelo nome no prompt."
           ],
           "certa": 2,
@@ -317,14 +317,14 @@
       "itens": [
         {
           "t": "Sete partes",
-          "texto": "Sujeito, ação, cenário, câmera, luz, som e evitar. Depois, o texto corrido."
+          "texto": "Sujeito, açêo, cenário, câmera, luz, som e evitar. Depois, o texto corrido."
         },
         {
           "t": "Som separado",
           "texto": "Ambiente, efeito e fala em frases próprias; fala como \"quem diz: texto\"."
         },
         {
-          "t": "Evitar sem \"não\"",
+          "t": "Evitar sem \"nêo\"",
           "texto": "Liste coisas no campo negativo, como recomenda o guia do Google."
         }
       ]
@@ -338,11 +338,11 @@
           "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
         },
         {
-          "t": "Curso 0 · Luz, cor e atmosfera: o cartão de look",
+          "t": "Curso 0 · Luz, cor e atmosfera: o cartêo de look",
           "href": "https://linnoff88-dev.github.io/
         },
         {
-          "t": "Curso 2 · Produção: som, voz e trilha a fundo",
+          "t": "Curso 2 · Produçêo: som, voz e trilha a fundo",
           "href": "https://linnoff88-dev.github.io/
         }
       ]

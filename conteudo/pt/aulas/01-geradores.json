@@ -5,8 +5,8 @@
   "titulo": "O mapa dos geradores em out/2026 e como escolher",
   "titulo_curto": "Mapa dos geradores",
   "minutos": 18,
-  "lead": "Gerador de vídeo muda de versão a cada poucos meses e às vezes some, como o Sora. Por isso a escolha não começa pelo ranking: começa pelo que o seu plano pede. Duração, fala, referência e licença decidem; a tabela datada só mostra quem atende hoje.",
-  "objetivo": "escolher o gerador de cada plano pelo que ele pede (duração, fala, referência, licença) e registrar a escolha com a data.",
+  "lead": "Gerador de vídeo muda de versêo a cada poucos meses e às vezes some, como o Sora. Por isso a escolha nêo começa pelo ranking: começa pelo que o seu plano pede. Duraçêo, fala, referência e licença decidem; a tabela datada só mostra quem atende hoje.",
+  "objetivo": "escolher o gerador de cada plano pelo que ele pede (duraçêo, fala, referência, licença) e registrar a escolha com a data.",
   "competencias": [
     "escolher-gerador",
     "ler-versao-datada",
@@ -26,19 +26,19 @@
       "t": "Registrar a escolha num arquivo que a página confere"
     }
   ],
-  "hero_alt": "Parede de uma sala de edição escura com seis monitores lado a lado, cada um com uma versão diferente da mesma rua com a vitrine de uma padaria acesa.",
+  "hero_alt": "Parede de uma sala de ediçêo escura com seis monitores lado a lado, cada um com uma versêo diferente da mesma rua com a vitrine de uma padaria acesa.",
   "secoes": [
     {
       "tipo": "diagrama",
       "titulo": "Cinco perguntas antes de escolher",
-      "sub": "O plano decide o gerador, não o contrário. Clique em cada pergunta.",
+      "sub": "O plano decide o gerador, nêo o contrário. Clique em cada pergunta.",
       "estilo": "fluxo",
       "nos": [
         {
-          "titulo": "Duração",
+          "titulo": "Duraçêo",
           "sub": "quantos segundos",
           "icone": "relogio",
-          "detalhe": "Quanto o plano dura na sua decupagem. Um plano de 4 s cabe em qualquer gerador; uma sequência de 25 s numa geração só limita a escolha (em out/2026, o Seedance 2.5 chega a 30 s)."
+          "detalhe": "Quanto o plano dura na sua decupagem. Um plano de 4 s cabe em qualquer gerador; uma sequência de 25 s numa geraçêo só limita a escolha (em out/2026, o Seedance 2.5 chega a 30 s)."
         },
         {
           "titulo": "Som e fala",
@@ -66,19 +66,19 @@
           "detalhe": "Onde você já tem conta, quanto custa por segundo e se a sua máquina roda o modelo aberto. Preço e plano mudam rápido: confira na página da ferramenta no dia."
         }
       ],
-      "legenda": "Responda as cinco para o plano, não para o filme inteiro: planos diferentes podem ir para geradores diferentes."
+      "legenda": "Responda as cinco para o plano, nêo para o filme inteiro: planos diferentes podem ir para geradores diferentes."
     },
     {
       "tipo": "passos",
       "titulo": "Os geradores em out/2026 (tabela atualizada em 19/10/2026)",
-      "sub": "Só o que tem fonte com data. O que não foi confirmado aparece como \"relatado\". Toque em cada um.",
+      "sub": "Só o que tem fonte com data. O que nêo foi confirmado aparece como \"relatado\". Toque em cada um.",
       "passos": [
         {
           "titulo": "Veo 3.1",
           "sub": "Google · fechado",
           "texto": [
-            "Áudio nativo, com diálogo e efeitos. Aceita até 3 imagens de referência (o recurso \"Ingredients\"), transição de primeiro para último quadro e extensão de cena.",
-            "Duração por clipe: os números que circulam vêm de terceiros e não foram confirmados em página oficial. O Veo 4 não foi anunciado."
+            "Áudio nativo, com diálogo e efeitos. Aceita até 3 imagens de referência (o recurso \"Ingredients\"), transiçêo de primeiro para último quadro e extensêo de cena.",
+            "Duraçêo por clipe: os números que circulam vêm de terceiros e nêo foram confirmados em página oficial. O Veo 4 nêo foi anunciado."
           ],
           "exemplo": {
             "rot": "Fonte",
@@ -89,8 +89,8 @@
           "titulo": "Kling 3.0 e 3.0 Omni",
           "sub": "Kuaishou · fechado",
           "texto": [
-            "Lançados em fevereiro de 2026: até 15 s por geração, áudio nativo em vários idiomas e diálogo com mais de um personagem.",
-            "O Omni controla duração, ângulo e movimento plano a plano. Os \"elements\" de personagem e o limite de cortes por geração são relatados por terceiros, sem confirmação oficial."
+            "Lançados em fevereiro de 2026: até 15 s por geraçêo, áudio nativo em vários idiomas e diálogo com mais de um personagem.",
+            "O Omni controla duraçêo, ângulo e movimento plano a plano. Os \"elements\" de personagem e o limite de cortes por geraçêo sêo relatados por terceiros, sem confirmaçêo oficial."
           ],
           "exemplo": {
             "rot": "Fonte",
@@ -102,7 +102,7 @@
           "sub": "ByteDance · fechado",
           "texto": [
             "Até 30 s com áudio gerado no mesmo passe. Aceita até 30 imagens, 10 vídeos e 10 áudios de referência.",
-            "Substituiu o 2.0. O 2.0 teve polêmica com a associação de estúdios de cARCKHÉ dos EUA por gerar atores e personagens reais: lembrete de que referência tem limite ético (curso 2)."
+            "Substituiu o 2.0. O 2.0 teve polêmica com a associaçêo de estúdios de cARCKHÉ dos EUA por gerar atores e personagens reais: lembrete de que referência tem limite ético (curso 2)."
           ],
           "exemplo": {
             "rot": "Fonte",
@@ -113,8 +113,8 @@
           "titulo": "Runway Gen-4.5 e Aleph 2.0",
           "sub": "Runway · fechado",
           "texto": [
-            "O Gen-4.5 ganhou áudio nativo, vários planos numa geração e vídeos de até 1 minuto em dezembro de 2025.",
-            "O Aleph 2.0 edita um vídeo que já existe por texto: tirar ou pôr objeto, trocar fundo, mudar a luz. A data de lançamento do Aleph 2.0 é relatada, não confirmada."
+            "O Gen-4.5 ganhou áudio nativo, vários planos numa geraçêo e vídeos de até 1 minuto em dezembro de 2025.",
+            "O Aleph 2.0 edita um vídeo que já existe por texto: tirar ou pôr objeto, trocar fundo, mudar a luz. A data de lançamento do Aleph 2.0 é relatada, nêo confirmada."
           ],
           "exemplo": {
             "rot": "Fonte",
@@ -126,7 +126,7 @@
           "sub": "Luma · fechado",
           "texto": [
             "O Ray3.14 (janeiro de 2026) gera em 1080p nativo, mais rápido e mais barato que o anterior.",
-            "O Ray3 Modify altera uma filmagem a partir de uma imagem de personagem e de quadros inicial e final. Áudio nativo no Ray: não confirmado."
+            "O Ray3 Modify altera uma filmagem a partir de uma imagem de personagem e de quadros inicial e final. Áudio nativo no Ray: nêo confirmado."
           ],
           "exemplo": {
             "rot": "Fonte",
@@ -138,23 +138,23 @@
           "sub": "Alibaba · aberto",
           "texto": [
             "O último Wan com pesos abertos, sob Apache 2.0. As versões 2.6, 2.7 e 3.0 só existem como serviço fechado.",
-            "A versão 5B roda em placas de 8 GB de VRAM com o descarregamento de memória do ComfyUI, segundo a documentação oficial. Detalhes na aula 7."
+            "A versêo 5B roda em placas de 8 GB de VRAM com o descarregamento de memória do ComfyUI, segundo a documentaçêo oficial. Detalhes na aula 7."
           ],
           "exemplo": {
             "rot": "Fonte",
-            "texto": "Documentação do ComfyUI (consultada em 19/10/2026)."
+            "texto": "Documentaçêo do ComfyUI (consultada em 19/10/2026)."
           }
         },
         {
           "titulo": "LTX-2.3 e LTX-2.5",
           "sub": "Lightricks · aberto",
           "texto": [
-            "Pesos abertos com vídeo e áudio. O LTX-2.5 traz vários planos numa geração. A licença comunitária do LTX-2.x permite uso comercial sem custo abaixo de US$ 10 milhões de receita por ano.",
-            "A documentação para ComfyUI pede placa com 32 GB ou mais de VRAM e 100 GB de disco livre."
+            "Pesos abertos com vídeo e áudio. O LTX-2.5 traz vários planos numa geraçêo. A licença comunitária do LTX-2.x permite uso comercial sem custo abaixo de US$ 10 milhões de receita por ano.",
+            "A documentaçêo para ComfyUI pede placa com 32 GB ou mais de VRAM e 100 GB de disco livre."
           ],
           "exemplo": {
             "rot": "Fonte",
-            "texto": "Página do LTX-2.5 no Hugging Face e documentação do LTX (consultadas em 19/10/2026)."
+            "texto": "Página do LTX-2.5 no Hugging Face e documentaçêo do LTX (consultadas em 19/10/2026)."
           }
         },
         {
@@ -162,7 +162,7 @@
           "sub": "OpenAI · encerrado",
           "texto": [
             "O app fechou em 26/04/2026 e a API em 24/09/2026. Quem guardava roteiro, referências e prompts só dentro dele perdeu o caminho de volta.",
-            "A lição vale para qualquer gerador: tudo o que é seu fica numa pasta fora da plataforma, em texto. Nenhuma aula manda usar o Sora."
+            "A liçêo vale para qualquer gerador: tudo o que é seu fica numa pasta fora da plataforma, em texto. Nenhuma aula manda usar o Sora."
           ],
           "exemplo": {
             "rot": "Fonte",
@@ -179,12 +179,12 @@
         {
           "rot": "geradores-out-2026.txt",
           "icone": "arquivo",
-          "conteudo": "Tabela de geradores · atualizada em 19/10/2026\nmodelo | dono | áudio nativo | referências | duração por geração | aberto?\nVeo 3.1 | Google | sim | até 3 imagens; primeiro e último quadro | não confirmada | fechado\nKling 3.0 / 3.0 Omni | Kuaishou | sim, vários idiomas | controle por plano (Omni) | até 15 s | fechado\nSeedance 2.5 | ByteDance | sim, no mesmo passe | até 30 imagens, 10 vídeos, 10 áudios | até 30 s | fechado\nRunway Gen-4.5 | Runway | sim | primeiro quadro; Aleph 2.0 edita vídeo | até 1 min com vários planos | fechado\nLuma Ray3.14 | Luma | não confirmado | Ray3 Modify: quadros inicial e final | não confirmada | fechado\nWan 2.2 | Alibaba | não confirmado | primeiro e último quadro no ComfyUI | não confirmada | aberto, Apache 2.0\nLTX-2.3 / LTX-2.5 | Lightricks | sim | primeiro e último quadro; vários planos (2.5) | não confirmada | aberto, licença comunitária LTX-2.x\nSora 2 | OpenAI | — | — | — | encerrado em 2026 (estudo de caso)"
+          "conteudo": "Tabela de geradores · atualizada em 19/10/2026\nmodelo | dono | áudio nativo | referências | duraçêo por geraçêo | aberto?\nVeo 3.1 | Google | sim | até 3 imagens; primeiro e último quadro | nêo confirmada | fechado\nKling 3.0 / 3.0 Omni | Kuaishou | sim, vários idiomas | controle por plano (Omni) | até 15 s | fechado\nSeedance 2.5 | ByteDance | sim, no mesmo passe | até 30 imagens, 10 vídeos, 10 áudios | até 30 s | fechado\nRunway Gen-4.5 | Runway | sim | primeiro quadro; Aleph 2.0 edita vídeo | até 1 min com vários planos | fechado\nLuma Ray3.14 | Luma | nêo confirmado | Ray3 Modify: quadros inicial e final | nêo confirmada | fechado\nWan 2.2 | Alibaba | nêo confirmado | primeiro e último quadro no ComfyUI | nêo confirmada | aberto, Apache 2.0\nLTX-2.3 / LTX-2.5 | Lightricks | sim | primeiro e último quadro; vários planos (2.5) | nêo confirmada | aberto, licença comunitária LTX-2.x\nSora 2 | OpenAI | — | — | — | encerrado em 2026 (estudo de caso)"
         },
         {
           "rot": "escolha.txt (modelo)",
           "icone": "arquivo",
-          "conteudo": "Plano: <número e descrição do plano da sua decupagem>\nPrecisa: <duração, som/fala, referência que o plano pede>\nGerador: <o escolhido>\nVersão: <nome e versão (out/2026)>\nPor quê: <qual pergunta ele atende>\nReserva: <segunda opção, com versão (out/2026)>\nCaminho aberto: <modelo aberto que faria o plano, ou \"nenhum na minha máquina\">\nConsultado em: <data em que você conferiu a página da ferramenta>"
+          "conteudo": "Plano: <número e descriçêo do plano da sua decupagem>\nPrecisa: <duraçêo, som/fala, referência que o plano pede>\nGerador: <o escolhido>\nVersêo: <nome e versêo (out/2026)>\nPor quê: <qual pergunta ele atende>\nReserva: <segunda opçêo, com versêo (out/2026)>\nCaminho aberto: <modelo aberto que faria o plano, ou \"nenhum na minha máquina\">\nConsultado em: <data em que você conferiu a página da ferramenta>"
         }
       ]
     },
@@ -203,7 +203,7 @@
             "Plano",
             "Precisa",
             "Gerador",
-            "Versão",
+            "Versêo",
             "Por quê",
             "Reserva",
             "Caminho aberto",
@@ -214,7 +214,7 @@
           "tipo": "termos",
           "grupos": [
             {
-              "rot": "a versão com o mês e o ano, como (out/2026)",
+              "rot": "a versêo com o mês e o ano, como (out/2026)",
               "termos": [
                 "out/2026 / out. 2026 / out 2026 / outubro de 2026 / outubro 2026 / oct/2026 / oct. 2026 / oct 2026 / october 2026 / octubre de 2026 / octubre 2026"
               ]
@@ -223,13 +223,13 @@
         }
       ],
       "ok": "OK: escolha com {n} campos",
-      "exemplo": "Plano: 4 · close, câmera baixa, dolly in, 4 s: a porta do forno abre e o vapor sobe\nPrecisa: 4 s, som de rangido e chiado, sem fala, o mesmo look do plano 3\nGerador: Veo 3.1\nVersão: Veo 3.1 (out/2026)\nPor quê: devolve o som junto e aceita imagem de referência para manter o look\nReserva: Kling 3.0 (out/2026), até 15 s com áudio nativo\nCaminho aberto: Wan 2.2 5B no ComfyUI, se a placa tiver 8 GB de VRAM\nConsultado em: 19/10/2026",
-      "exemplo_errado": "Plano: 4 · close do forno abrindo\nPrecisa: 4 s com som\nGerador: Veo 3.1\nVersão: Veo 3.1\nPor quê: é o mais famoso\nConsultado em:"
+      "exemplo": "Plano: 4 · close, câmera baixa, dolly in, 4 s: a porta do forno abre e o vapor sobe\nPrecisa: 4 s, som de rangido e chiado, sem fala, o mesmo look do plano 3\nGerador: Veo 3.1\nVersêo: Veo 3.1 (out/2026)\nPor quê: devolve o som junto e aceita imagem de referência para manter o look\nReserva: Kling 3.0 (out/2026), até 15 s com áudio nativo\nCaminho aberto: Wan 2.2 5B no ComfyUI, se a placa tiver 8 GB de VRAM\nConsultado em: 19/10/2026",
+      "exemplo_errado": "Plano: 4 · close do forno abrindo\nPrecisa: 4 s com som\nGerador: Veo 3.1\nVersêo: Veo 3.1\nPor quê: é o mais famoso\nConsultado em:"
     },
     {
       "tipo": "codigo",
       "titulo": "Opcional: conferir no terminal",
-      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras são as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>escolha.txt</code>); sai 0 quando passa.",
+      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras sêo as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>escolha.txt</code>); sai 0 quando passa.",
       "blocos": [
         {
           "rot": "Terminal (na pasta do curso)",
@@ -246,7 +246,7 @@
           },
           {
             "rot": "Exemplo com erro (19/10/2026)",
-            "html": "<pre>$ python3 conferir.py geradores --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Reserva: com a descrição (pelo menos 2 letras).\n - Falta a linha Caminho aberto: com a descrição (pelo menos 2 letras).\n - Falta a linha Consultado em: com a descrição (pelo menos 2 letras).\n - Falta citar a versão com o mês e o ano, como (out/2026).\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py geradores --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Reserva: com a descriçêo (pelo menos 2 letras).\n - Falta a linha Caminho aberto: com a descriçêo (pelo menos 2 letras).\n - Falta a linha Consultado em: com a descriçêo (pelo menos 2 letras).\n - Falta citar a versêo com o mês e o ano, como (out/2026).\nsaída: 1</pre>"
           }
         ]
       }
@@ -254,7 +254,7 @@
     {
       "tipo": "pratica",
       "titulo": "Prática",
-      "sub": "Use a decupagem ou o storyboard que você fez no curso 0. Se não fez, use o plano 4 da \"A primeira fornada\".",
+      "sub": "Use a decupagem ou o storyboard que você fez no curso 0. Se nêo fez, use o plano 4 da \"A primeira fornada\".",
       "exercicios": [
         {
           "id": "e1",
@@ -275,14 +275,14 @@
     {
       "tipo": "quiz",
       "titulo": "Teste rápido",
-      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "sub": "Quatro perguntas. A explicaçêo aparece depois de cada resposta.",
       "perguntas": [
         {
           "p": "Qual destas perguntas vem antes de escolher o gerador de um plano?",
           "opcoes": [
             "Qual gerador está em primeiro lugar no ranking desta semana.",
-            "Qual gerador os outros criadores do seu nicho estão usando.",
-            "O que o plano pede: duração, fala, referência e licença.",
+            "Qual gerador os outros criadores do seu nicho estêo usando.",
+            "O que o plano pede: duraçêo, fala, referência e licença.",
             "Qual gerador tem a interface mais bonita e mais rápida."
           ],
           "certa": 2,
@@ -298,31 +298,31 @@
             "Gerar tudo de uma vez enquanto a ferramenta ainda está no ar."
           ],
           "certa": 0,
-          "explica": "O app fechou em 26/04/2026 e a API em 24/09/2026. Quem tinha tudo dentro dele perdeu o caminho. Fechado não é proibido; o cuidado é a pasta portátil, que deixa você trocar de gerador sem perder o trabalho.",
+          "explica": "O app fechou em 26/04/2026 e a API em 24/09/2026. Quem tinha tudo dentro dele perdeu o caminho. Fechado nêo é proibido; o cuidado é a pasta portátil, que deixa você trocar de gerador sem perder o trabalho.",
           "ref": "passos"
         },
         {
-          "p": "Na tabela, por que a duração por clipe do Veo 3.1 aparece como \"não confirmada\"?",
+          "p": "Na tabela, por que a duraçêo por clipe do Veo 3.1 aparece como \"nêo confirmada\"?",
           "opcoes": [
-            "Porque o Veo 3.1 não tem nenhum limite de duração por geração, em nenhum plano.",
-            "Porque o número circula em sites de terceiros, não em página oficial.",
-            "Porque a duração muda conforme o idioma usado no prompt.",
-            "Porque o Google proíbe divulgar a duração dos clipes."
+            "Porque o Veo 3.1 nêo tem nenhum limite de duraçêo por geraçêo, em nenhum plano.",
+            "Porque o número circula em sites de terceiros, nêo em página oficial.",
+            "Porque a duraçêo muda conforme o idioma usado no prompt.",
+            "Porque o Google proíbe divulgar a duraçêo dos clipes."
           ],
           "certa": 1,
-          "explica": "A regra do curso é só pôr como fato o que tem fonte com data. Número que só aparece em agregador entra como \"relatado\" ou \"não confirmado\", e você confere na página da ferramenta no dia.",
+          "explica": "A regra do curso é só pôr como fato o que tem fonte com data. Número que só aparece em agregador entra como \"relatado\" ou \"nêo confirmado\", e você confere na página da ferramenta no dia.",
           "ref": "passos"
         },
         {
           "p": "Você quer rodar o vídeo na sua máquina e vender o resultado para um cliente pequeno. O que conferir primeiro?",
           "opcoes": [
             "Se o modelo tem o maior número de downloads no mês.",
-            "Se o modelo gera em 4K, porque cliente exige alta resolução.",
+            "Se o modelo gera em 4K, porque cliente exige alta resoluçêo.",
             "Se o modelo é o mesmo que os grandes estúdios usam.",
             "A licença dos pesos e quanto de VRAM o modelo pede."
           ],
           "certa": 3,
-          "explica": "\"Aberto\" não quer dizer \"livre para tudo\": Wan 2.2 é Apache 2.0, o LTX-2.x tem licença comunitária com teto de receita e alguns pesos são só para uso não comercial. E sem VRAM suficiente o modelo nem roda.",
+          "explica": "\"Aberto\" nêo quer dizer \"livre para tudo\": Wan 2.2 é Apache 2.0, o LTX-2.x tem licença comunitária com teto de receita e alguns pesos sêo só para uso nêo comercial. E sem VRAM suficiente o modelo nem roda.",
           "ref": "diagrama"
         }
       ]
@@ -333,11 +333,11 @@
       "itens": [
         {
           "t": "O plano escolhe",
-          "texto": "Duração, som e fala, referência, licença e acesso. Responda por plano."
+          "texto": "Duraçêo, som e fala, referência, licença e acesso. Responda por plano."
         },
         {
-          "t": "Versão tem data",
-          "texto": "Toda versão vai com \"(out/2026)\" e a data da consulta. O que não tem fonte é \"relatado\"."
+          "t": "Versêo tem data",
+          "texto": "Toda versêo vai com \"(out/2026)\" e a data da consulta. O que nêo tem fonte é \"relatado\"."
         },
         {
           "t": "Pasta portátil",
@@ -370,7 +370,7 @@
           "href": "https://9to5google.com/2026/03/24/openai-shutting-down-sora-video-generation-app-but-without-explaining-why/"
         },
         {
-          "t": "Curso 0 · Direção: a decupagem que este curso usa",
+          "t": "Curso 0 · Direçêo: a decupagem que este curso usa",
           "href": "https://linnoff88-dev.github.io/
         }
       ]

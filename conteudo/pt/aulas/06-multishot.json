@@ -2,10 +2,10 @@
   "slug": "multishot",
   "num": 6,
   "menu": "Multishot",
-  "titulo": "Vários planos e falas numa geração: multishot e diálogo",
+  "titulo": "Vários planos e falas numa geraçêo: multishot e diálogo",
   "titulo_curto": "Multishot e diálogo",
   "minutos": 17,
-  "lead": "Em 2026, alguns geradores fazem vários planos com cortes numa única geração, mantendo personagem e luz, e já põem a fala na boca de quem fala. Isso economiza emendas, mas cobra um roteiro mais preciso: planos numerados, quem diz o quê e quanto dura cada um.",
+  "lead": "Em 2026, alguns geradores fazem vários planos com cortes numa única geraçêo, mantendo personagem e luz, e já põem a fala na boca de quem fala. Isso economiza emendas, mas cobra um roteiro mais preciso: planos numerados, quem diz o quê e quanto dura cada um.",
   "objetivo": "escrever um roteiro multishot de até 15 s com planos numerados, quem fala o quê e o som de cada plano.",
   "competencias": [
     "roteirizar-multishot",
@@ -17,7 +17,7 @@
       "t": "O que é multishot e quais geradores fazem em out/2026"
     },
     {
-      "t": "Escrever planos numerados dentro de uma geração só"
+      "t": "Escrever planos numerados dentro de uma geraçêo só"
     },
     {
       "t": "Diálogo com quem diz o quê, em fala curta"
@@ -26,7 +26,7 @@
       "t": "Quando é melhor gerar plano a plano"
     }
   ],
-  "hero_alt": "Monitor de corte numa sala escura com uma grade de seis quadros da mesma cena: rua escura, forno aceso, pães na bancada e uma porta de ferro de enrolar.",
+  "hero_alt": "Monitor de corte numa sala escura com uma grade de seis quadros da mesma cena: rua escura, forno aceso, pêes na bancada e uma porta de ferro de enrolar.",
   "secoes": [
     {
       "tipo": "diagrama",
@@ -38,14 +38,14 @@
           "titulo": "Cabeçalho",
           "sub": "cena e gerador",
           "icone": "arquivo",
-          "detalhe": "Nome da cena, duração total, gerador com versão (out/2026) e os personagens que aparecem. O look entra pelo prompt-base da aula 3."
+          "detalhe": "Nome da cena, duraçêo total, gerador com versêo (out/2026) e os personagens que aparecem. O look entra pelo prompt-base da aula 3."
         },
         {
           "titulo": "Planos",
           "sub": "numerados",
           "icone": "lista",
           "forte": true,
-          "detalhe": "Uma linha por plano, como na decupagem: tamanho, um movimento, duração e o que acontece. O tamanho muda entre planos vizinhos."
+          "detalhe": "Uma linha por plano, como na decupagem: tamanho, um movimento, duraçêo e o que acontece. O tamanho muda entre planos vizinhos."
         },
         {
           "titulo": "Fala",
@@ -66,7 +66,7 @@
           "detalhe": "A soma dos planos cabe no limite do gerador. Em out/2026: Kling 3.0 até 15 s, Seedance 2.5 até 30 s, Runway Gen-4.5 até 1 min com vários planos."
         }
       ],
-      "legenda": "Se um plano sair errado, o multishot refaz a geração inteira. Planos que você quer controlar um a um ficam fora dele."
+      "legenda": "Se um plano sair errado, o multishot refaz a geraçêo inteira. Planos que você quer controlar um a um ficam fora dele."
     },
     {
       "tipo": "passos",
@@ -77,8 +77,8 @@
           "titulo": "Quem faz em out/2026",
           "sub": "exemplos datados",
           "texto": [
-            "Runway Gen-4.5: vários planos e áudio nativo, vídeos de até 1 min (dez/2025). Kling 3.0 Omni: controle por plano de duração, ângulo e movimento. LTX-2.5, aberto: multishot nativo, segundo a página oficial.",
-            "Kling com 6 cortes ou 30 s por geração aparece só em sites de terceiros: trate como relatado e confira na ferramenta."
+            "Runway Gen-4.5: vários planos e áudio nativo, vídeos de até 1 min (dez/2025). Kling 3.0 Omni: controle por plano de duraçêo, ângulo e movimento. LTX-2.5, aberto: multishot nativo, segundo a página oficial.",
+            "Kling com 6 cortes ou 30 s por geraçêo aparece só em sites de terceiros: trate como relatado e confira na ferramenta."
           ],
           "exemplo": {
             "rot": "Fontes",
@@ -86,11 +86,11 @@
           }
         },
         {
-          "titulo": "Planos dentro da geração",
+          "titulo": "Planos dentro da geraçêo",
           "sub": "numerados, com segundos",
           "texto": [
-            "Escreva como uma decupagem curta: número, tamanho, um movimento, duração e ação. A numeração diz ao gerador onde cortar.",
-            "Mantenha a trava e o look iguais em todos os planos: dentro de uma geração o gerador tende a segurar a continuidade, mas não adivinha o que você não escreveu."
+            "Escreva como uma decupagem curta: número, tamanho, um movimento, duraçêo e açêo. A numeraçêo diz ao gerador onde cortar.",
+            "Mantenha a trava e o look iguais em todos os planos: dentro de uma geraçêo o gerador tende a segurar a continuidade, mas nêo adivinha o que você nêo escreveu."
           ]
         },
         {
@@ -98,7 +98,7 @@
           "sub": "fala curta, com nome",
           "texto": [
             "O Kling 3.0 foi lançado com diálogo entre vários personagens em vários idiomas. Para qualquer gerador, escreva quem fala e o texto, como no guia do Google: \"A padeira diz: Já vai!\".",
-            "Uma fala por plano e frases curtas. Fala longa não cabe em 3 segundos e o gerador acelera ou corta."
+            "Uma fala por plano e frases curtas. Fala longa nêo cabe em 3 segundos e o gerador acelera ou corta."
           ],
           "exemplo": {
             "rot": "Plano 4",
@@ -110,7 +110,7 @@
           "sub": "a escolha",
           "texto": [
             "Multishot serve para trechos curtos e contínuos, com a mesma luz e as mesmas pessoas, como uma conversa.",
-            "Plano a plano (aula 4) serve quando cada plano precisa ser refeito sozinho, ou quando o gerador escolhido não faz multishot."
+            "Plano a plano (aula 4) serve quando cada plano precisa ser refeito sozinho, ou quando o gerador escolhido nêo faz multishot."
           ]
         }
       ]
@@ -123,7 +123,7 @@
         {
           "rot": "multishot.txt (modelo)",
           "icone": "arquivo",
-          "conteudo": "Cena: <nome> (<duração total> s, uma geração)\nGerador: <nome e versão (out/2026)>, limite de <n> s\nPersonagens: <quem aparece, fictício>\n<n> | <tamanho do plano> | <um movimento> | <n> s | <o que acontece> | som: <ambiente e efeito>; <quem> diz: <texto curto>\n<n> | <tamanho do plano> | <um movimento> | <n> s | <o que acontece> | som: <ambiente e efeito>"
+          "conteudo": "Cena: <nome> (<duraçêo total> s, uma geraçêo)\nGerador: <nome e versêo (out/2026)>, limite de <n> s\nPersonagens: <quem aparece, fictício>\n<n> | <tamanho do plano> | <um movimento> | <n> s | <o que acontece> | som: <ambiente e efeito>; <quem> diz: <texto curto>\n<n> | <tamanho do plano> | <um movimento> | <n> s | <o que acontece> | som: <ambiente e efeito>"
         }
       ]
     },
@@ -170,14 +170,14 @@
               "um_so": true,
               "termos": [
                 "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
-                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly in / push-in / aproximaçêo lenta / slow push-in / acercamiento lento",
                 "dolly out / pull-out / afastamento lento / alejamiento lento",
                 "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
                 "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
                 "tilt / tilt up / tilt down",
                 "grua / crane / pedestal up / pedestal down / crane shot / grúa",
                 "órbita / orbit / arc shot / orbit shot",
-                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "câmera na mêo / handheld / handheld camera / cámara en mano",
                 "zoom in / zoom out / crash zoom",
                 "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
                 "whip pan / chicote / swish pan / latigazo",
@@ -210,14 +210,14 @@
           ]
         }
       ],
-      "ok": "OK: {n} planos numa geração · {s} s",
-      "exemplo": "Cena: A primeira fornada · final (12 s, uma geração)\nGerador: Kling 3.0 Omni (out/2026), limite de 15 s\nPersonagens: Dona Lia (fictícia); cliente, homem de jaqueta (fictício)\n1 | close | câmera parada | 3 s | Batidas na porta de ferro; Dona Lia olha o relógio. | som: três batidas, rádio baixo\n2 | plano médio | câmera na mão | 3 s | Ela atravessa a padaria até a porta. | som: passos no piso; Dona Lia diz: Já vai!\n3 | plano aberto | dolly out | 3 s | Ela sobe a porta de ferro e o cliente aparece. | som: porta de ferro subindo\n4 | plano médio | câmera parada | 3 s | O cliente sorri e aponta o pão. | som: sino da porta; o cliente diz: O de sempre, dona Lia.",
-      "exemplo_errado": "Cena: A primeira fornada · final\nGerador: Kling 3.0 Omni (out/2026)\n1 | close | câmera parada | 5 s | Batidas na porta. | som: batidas\n2 | close | dolly in e zoom in | 6 s | Ela vai até a porta.\n3 | close | câmera na mão | 8 s | O cliente entra. | som: sino"
+      "ok": "OK: {n} planos numa geraçêo · {s} s",
+      "exemplo": "Cena: A primeira fornada · final (12 s, uma geraçêo)\nGerador: Kling 3.0 Omni (out/2026), limite de 15 s\nPersonagens: Dona Lia (fictícia); cliente, homem de jaqueta (fictício)\n1 | close | câmera parada | 3 s | Batidas na porta de ferro; Dona Lia olha o relógio. | som: três batidas, rádio baixo\n2 | plano médio | câmera na mêo | 3 s | Ela atravessa a padaria até a porta. | som: passos no piso; Dona Lia diz: Já vai!\n3 | plano aberto | dolly out | 3 s | Ela sobe a porta de ferro e o cliente aparece. | som: porta de ferro subindo\n4 | plano médio | câmera parada | 3 s | O cliente sorri e aponta o pêo. | som: sino da porta; o cliente diz: O de sempre, dona Lia.",
+      "exemplo_errado": "Cena: A primeira fornada · final\nGerador: Kling 3.0 Omni (out/2026)\n1 | close | câmera parada | 5 s | Batidas na porta. | som: batidas\n2 | close | dolly in e zoom in | 6 s | Ela vai até a porta.\n3 | close | câmera na mêo | 8 s | O cliente entra. | som: sino"
     },
     {
       "tipo": "codigo",
       "titulo": "Opcional: conferir no terminal",
-      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras são as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>multishot.txt</code>); sai 0 quando passa.",
+      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras sêo as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>multishot.txt</code>); sai 0 quando passa.",
       "blocos": [
         {
           "rot": "Terminal (na pasta do curso)",
@@ -230,11 +230,11 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>$ python3 conferir.py multishot --exemplo; echo \"saída: $?\"\nOK: 4 planos numa geração · 12 s\nsaída: 0</pre>"
+            "html": "<pre>$ python3 conferir.py multishot --exemplo; echo \"saída: $?\"\nOK: 4 planos numa geraçêo · 12 s\nsaída: 0</pre>"
           },
           {
             "rot": "Exemplo com erro (19/10/2026)",
-            "html": "<pre>$ python3 conferir.py multishot --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Personagens: com a descrição (pelo menos 3 letras).\n - Plano 2: 2 escolhas de movimento; fique com uma só.\n - Plano 2: falta a coluna som.\n - Só 1 tipo(s) diferente(s) de tamanho do plano nos planos; varie para pelo menos 2.\n - Os planos somam 19 s; o pedido é de 6 a 15 s.\n - Falta citar uma fala no formato Nome diz: texto.\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py multishot --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Personagens: com a descriçêo (pelo menos 3 letras).\n - Plano 2: 2 escolhas de movimento; fique com uma só.\n - Plano 2: falta a coluna som.\n - Só 1 tipo(s) diferente(s) de tamanho do plano nos planos; varie para pelo menos 2.\n - Os planos somam 19 s; o pedido é de 6 a 15 s.\n - Falta citar uma fala no formato Nome diz: texto.\nsaída: 1</pre>"
           }
         ]
       }
@@ -246,10 +246,10 @@
       "exercicios": [
         {
           "id": "e1",
-          "titulo": "Roteiro · um trecho em uma geração",
+          "titulo": "Roteiro · um trecho em uma geraçêo",
           "min": "20 min",
           "texto": "Escolha de 2 a 6 planos seguidos da sua decupagem que acontecem no mesmo lugar e com a mesma luz. Escreva o multishot.txt com pelo menos uma fala no formato \"Nome diz: texto\", somando entre 6 e 15 s. Cole em \"Confira o seu roteiro multishot\" e baixe o arquivo.",
-          "pronto": "a página responde <code>OK: [n] planos numa geração · [s] s</code> e o multishot.txt está na pasta do projeto."
+          "pronto": "a página responde <code>OK: [n] planos numa geraçêo · [s] s</code> e o multishot.txt está na pasta do projeto."
         },
         {
           "id": "e2",
@@ -263,18 +263,18 @@
     {
       "tipo": "quiz",
       "titulo": "Teste rápido",
-      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "sub": "Quatro perguntas. A explicaçêo aparece depois de cada resposta.",
       "perguntas": [
         {
-          "p": "O que o multishot faz numa única geração?",
+          "p": "O que o multishot faz numa única geraçêo?",
           "opcoes": [
             "Gera vários planos com cortes, mantendo personagem e luz.",
             "Gera o mesmo plano várias vezes para você escolher o melhor.",
             "Junta clipes que você já gerou num vídeo só.",
-            "Aumenta a resolução de um plano já gerado."
+            "Aumenta a resoluçêo de um plano já gerado."
           ],
           "certa": 0,
-          "explica": "Multishot é vários planos com cortes numa geração. Gerar variações do mesmo plano é outra coisa, e juntar clipes prontos é montagem (curso 2).",
+          "explica": "Multishot é vários planos com cortes numa geraçêo. Gerar variações do mesmo plano é outra coisa, e juntar clipes prontos é montagem (curso 2).",
           "ref": "diagrama"
         },
         {
@@ -286,7 +286,7 @@
             "O nome de quem diz e uma frase curta, como \"A padeira diz: Já vai!\"."
           ],
           "certa": 3,
-          "explica": "Com mais de um personagem no quadro, sem o nome o gerador escolhe quem fala. A frase curta cabe no plano; explicar o sentimento é trabalho da atuação, não da fala.",
+          "explica": "Com mais de um personagem no quadro, sem o nome o gerador escolhe quem fala. A frase curta cabe no plano; explicar o sentimento é trabalho da atuaçêo, nêo da fala.",
           "ref": "passos"
         },
         {
@@ -295,7 +295,7 @@
             "Mandar assim: o gerador acelera a cena para caber.",
             "Cortar planos ou dividir em duas gerações, porque o limite é 15 s.",
             "Trocar todos os planos por close, porque close sempre leva menos tempo para gerar.",
-            "Tirar a coluna de som, que é o que pesa na duração."
+            "Tirar a coluna de som, que é o que pesa na duraçêo."
           ],
           "certa": 1,
           "explica": "Em out/2026 o Kling 3.0 gera até 15 s. Acima disso, divida o trecho ou escolha um gerador com limite maior, como o Seedance 2.5 (até 30 s).",
@@ -310,7 +310,7 @@
             "Quando a cena inteira cabe no limite do gerador."
           ],
           "certa": 2,
-          "explica": "No multishot, errar um plano é refazer a geração toda. Plano a plano dá controle fino e funciona em qualquer gerador; multishot brilha em trechos curtos e contínuos.",
+          "explica": "No multishot, errar um plano é refazer a geraçêo toda. Plano a plano dá controle fino e funciona em qualquer gerador; multishot brilha em trechos curtos e contínuos.",
           "ref": "passos"
         }
       ]
@@ -321,7 +321,7 @@
       "itens": [
         {
           "t": "Decupagem dentro do prompt",
-          "texto": "Planos numerados com tamanho, um movimento, duração, ação e som."
+          "texto": "Planos numerados com tamanho, um movimento, duraçêo, açêo e som."
         },
         {
           "t": "Fala com nome",
@@ -329,7 +329,7 @@
         },
         {
           "t": "Cabe no limite",
-          "texto": "Some os segundos antes de gerar. Se não cabe, divida."
+          "texto": "Some os segundos antes de gerar. Se nêo cabe, divida."
         }
       ]
     },

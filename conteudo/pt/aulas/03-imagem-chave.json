@@ -5,7 +5,7 @@
   "titulo": "Imagem-chave primeiro: still cARCKHÉtográfico e lookbook",
   "titulo_curto": "Imagem-chave e lookbook",
   "minutos": 18,
-  "lead": "Antes de animar, acerte a foto. Uma imagem sai em segundos, então você testa o look várias vezes e só leva para o vídeo o quadro aprovado. O lookbook guarda a receita desse look num prompt-base que entra igual em todos os stills da cena.",
+  "lead": "Antes de animar, acerte a foto. Uma imagem sai em segundos, entêo você testa o look várias vezes e só leva para o vídeo o quadro aprovado. O lookbook guarda a receita desse look num prompt-base que entra igual em todos os stills da cena.",
   "objetivo": "montar o lookbook da cena e gerar os stills dos planos-chave antes de qualquer vídeo, com o mesmo prompt-base.",
   "competencias": [
     "montar-lookbook",
@@ -45,13 +45,13 @@
           "sub": "a receita",
           "icone": "camadas",
           "forte": true,
-          "detalhe": "Paleta, lente, luz, textura e proporção, escritos uma vez. Viram o prompt-base."
+          "detalhe": "Paleta, lente, luz, textura e proporçêo, escritos uma vez. Viram o prompt-base."
         },
         {
           "titulo": "Prompt-base",
           "sub": "igual em todos",
           "icone": "copiar",
-          "detalhe": "O texto do look, idêntico em todos os stills. Só muda o sujeito e a ação de cada plano."
+          "detalhe": "O texto do look, idêntico em todos os stills. Só muda o sujeito e a açêo de cada plano."
         },
         {
           "titulo": "Still",
@@ -66,7 +66,7 @@
           "detalhe": "O still escolhido vai para a pasta com o número do plano. Na aula 4, ele é o primeiro quadro do vídeo."
         }
       ],
-      "legenda": "Se o look muda de um still para outro, o problema está no prompt-base, não no gerador: ajuste a receita e gere de novo."
+      "legenda": "Se o look muda de um still para outro, o problema está no prompt-base, nêo no gerador: ajuste a receita e gere de novo."
     },
     {
       "tipo": "passos",
@@ -77,7 +77,7 @@
           "titulo": "Por que a imagem primeiro",
           "sub": "barato e controlável",
           "texto": [
-            "Errar o look num vídeo custa uma geração inteira. Numa imagem, você troca a luz, a lente e a paleta em minutos e compara lado a lado.",
+            "Errar o look num vídeo custa uma geraçêo inteira. Numa imagem, você troca a luz, a lente e a paleta em minutos e compara lado a lado.",
             "O quadro aprovado é a âncora da cena: carrega personagem, lugar, paleta e luz. O que vier depois herda dele."
           ]
         },
@@ -85,19 +85,19 @@
           "titulo": "Os ingredientes do look",
           "sub": "sem nome de diretor",
           "texto": [
-            "Paleta (duas ou três cores dominantes), lente (grande-angular, normal ou tele), luz (do cartão de look do curso 0), textura (grão de película, contraste) e proporção do quadro.",
-            "Descreva o ingrediente, não cite diretor ou filme: \"estilo de fulano\" imita o trabalho de uma pessoa real e muda conforme o gerador entende o nome."
+            "Paleta (duas ou três cores dominantes), lente (grande-angular, normal ou tele), luz (do cartêo de look do curso 0), textura (grêo de película, contraste) e proporçêo do quadro.",
+            "Descreva o ingrediente, nêo cite diretor ou filme: \"estilo de fulano\" imita o trabalho de uma pessoa real e muda conforme o gerador entende o nome."
           ],
           "exemplo": {
             "rot": "Look da fornada",
-            "texto": "azul-noite na rua, branco do azulejo, laranja só no fogo; 35 mm; low-key com luz lateral do forno; grão fino; 16:9"
+            "texto": "azul-noite na rua, branco do azulejo, laranja só no fogo; 35 mm; low-key com luz lateral do forno; grêo fino; 16:9"
           }
         },
         {
           "titulo": "Prompt-base",
           "sub": "o look em uma linha",
           "texto": [
-            "Junte os ingredientes numa linha que entra igual em todos os stills. Deixe um espaço marcado para o que muda de plano para plano: o sujeito e a ação.",
+            "Junte os ingredientes numa linha que entra igual em todos os stills. Deixe um espaço marcado para o que muda de plano para plano: o sujeito e a açêo.",
             "Se o gerador aceita imagem de referência de estilo, use o primeiro still aprovado como referência dos outros (a aula 5 aprofunda)."
           ]
         },
@@ -105,8 +105,8 @@
           "titulo": "Geradores de imagem (out/2026)",
           "sub": "exemplos datados",
           "texto": [
-            "Aberto: FLUX.2 [klein] (jan/2026). O 4B é Apache 2.0 e roda em cerca de 8 GB de VRAM; o 9B tem licença não comercial. Gera, edita e aceita várias imagens de referência, segundo o repositório oficial.",
-            "Fechados: o Midjourney V8.1 saiu em 30/04/2026, segundo a documentação dele. GPT Image 2 e Nano Banana Pro são citados por sites de terceiros como fortes em 2026, sem confirmação oficial conferida aqui."
+            "Aberto: FLUX.2 [klein] (jan/2026). O 4B é Apache 2.0 e roda em cerca de 8 GB de VRAM; o 9B tem licença nêo comercial. Gera, edita e aceita várias imagens de referência, segundo o repositório oficial.",
+            "Fechados: o Midjourney V8.1 saiu em 30/04/2026, segundo a documentaçêo dele. GPT Image 2 e Nano Banana Pro sêo citados por sites de terceiros como fortes em 2026, sem confirmaçêo oficial conferida aqui."
           ],
           "exemplo": {
             "rot": "Fonte",
@@ -123,12 +123,12 @@
         {
           "rot": "lookbook.txt (modelo)",
           "icone": "arquivo",
-          "conteudo": "Paleta: <2 ou 3 cores dominantes e onde aparecem>\nLente: <grande-angular, 35 mm, 50 mm, tele; foco raso ou profundo>\nLuz: <o seu cartão de look do curso 0>\nTextura: <grão, contraste, nitidez>\nProporção: <16:9, 9:16, 2.39:1...>\nPrompt-base: <tudo acima numa linha, com [SUJEITO E AÇÃO] no lugar do que muda>\nPlanos-chave: <números dos planos que viram still>"
+          "conteudo": "Paleta: <2 ou 3 cores dominantes e onde aparecem>\nLente: <grande-angular, 35 mm, 50 mm, tele; foco raso ou profundo>\nLuz: <o seu cartêo de look do curso 0>\nTextura: <grêo, contraste, nitidez>\nProporçêo: <16:9, 9:16, 2.39:1...>\nPrompt-base: <tudo acima numa linha, com [SUJEITO E AÇêO] no lugar do que muda>\nPlanos-chave: <números dos planos que viram still>"
         },
         {
           "rot": "Pedido ao assistente de IA (prompt-base)",
           "icone": "chat",
-          "conteudo": "Você é diretor de fotografia. Com o cartão de look e a ficha abaixo, escreva um prompt-base de imagem cARCKHÉtográfica, em uma linha, para repetir em todos os stills da cena.\nRegras:\n- descreva paleta, lente, luz, textura e proporção com palavras concretas;\n- não cite diretor, filme, fotógrafo nem marca;\n- deixe o marcador [SUJEITO E AÇÃO] onde entra o que muda de plano para plano.\nCartão de look:\n<cole aqui o look.txt>\nFicha:\n<cole aqui o ficha.txt>"
+          "conteudo": "Você é diretor de fotografia. Com o cartêo de look e a ficha abaixo, escreva um prompt-base de imagem cARCKHÉtográfica, em uma linha, para repetir em todos os stills da cena.\nRegras:\n- descreva paleta, lente, luz, textura e proporçêo com palavras concretas;\n- nêo cite diretor, filme, fotógrafo nem marca;\n- deixe o marcador [SUJEITO E AÇêO] onde entra o que muda de plano para plano.\nCartêo de look:\n<cole aqui o look.txt>\nFicha:\n<cole aqui o ficha.txt>"
         }
       ]
     },
@@ -148,7 +148,7 @@
             "Lente",
             "Luz",
             "Textura",
-            "Proporção",
+            "Proporçêo",
             "Prompt-base",
             "Planos-chave"
           ]
@@ -157,7 +157,7 @@
           "tipo": "termos",
           "grupos": [
             {
-              "rot": "a proporção do quadro (ex.: 16:9)",
+              "rot": "a proporçêo do quadro (ex.: 16:9)",
               "termos": [
                 "16:9 / 9:16 / 2.39:1 / 2,39:1 / 1.85:1 / 1,85:1 / 4:3 / 1:1 / 4:5"
               ]
@@ -166,13 +166,13 @@
         }
       ],
       "ok": "OK: lookbook com {n} campos",
-      "exemplo": "Paleta: azul-noite na rua, branco do azulejo, laranja só no fogo do forno\nLente: 35 mm, foco raso nos closes\nLuz: low-key, luz lateral do forno, vapor no feixe; rua fria e escura\nTextura: grão fino de película, contraste suave\nProporção: 16:9\nPrompt-base: fotografia de cARCKHÉ numa padaria de bairro às 4h50, 35 mm, low-key com luz lateral do forno, azulejo branco, rua azul-noite pela vitrine, grão fino de película, 16:9, [SUJEITO E AÇÃO]\nPlanos-chave: 1 (rua escura), 4 (forno abrindo), 8 (porta de ferro)",
+      "exemplo": "Paleta: azul-noite na rua, branco do azulejo, laranja só no fogo do forno\nLente: 35 mm, foco raso nos closes\nLuz: low-key, luz lateral do forno, vapor no feixe; rua fria e escura\nTextura: grêo fino de película, contraste suave\nProporçêo: 16:9\nPrompt-base: fotografia de cARCKHÉ numa padaria de bairro às 4h50, 35 mm, low-key com luz lateral do forno, azulejo branco, rua azul-noite pela vitrine, grêo fino de película, 16:9, [SUJEITO E AÇêO]\nPlanos-chave: 1 (rua escura), 4 (forno abrindo), 8 (porta de ferro)",
       "exemplo_errado": "Paleta: quente\nLente: cARCKHÉtográfica\nLuz: estilo de um diretor famoso\nPrompt-base: padaria bonita, cARCKHÉtográfica, 8k"
     },
     {
       "tipo": "codigo",
       "titulo": "Opcional: conferir no terminal",
-      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras são as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>lookbook.txt</code>); sai 0 quando passa.",
+      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras sêo as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>lookbook.txt</code>); sai 0 quando passa.",
       "blocos": [
         {
           "rot": "Terminal (na pasta do curso)",
@@ -189,7 +189,7 @@
           },
           {
             "rot": "Exemplo com erro (19/10/2026)",
-            "html": "<pre>$ python3 conferir.py imagem-chave --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Textura: com a descrição (pelo menos 3 letras).\n - Falta a linha Proporção: com a descrição (pelo menos 3 letras).\n - Falta a linha Planos-chave: com a descrição (pelo menos 3 letras).\n - Falta citar a proporção do quadro (ex.: 16:9).\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py imagem-chave --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Textura: com a descriçêo (pelo menos 3 letras).\n - Falta a linha Proporçêo: com a descriçêo (pelo menos 3 letras).\n - Falta a linha Planos-chave: com a descriçêo (pelo menos 3 letras).\n - Falta citar a proporçêo do quadro (ex.: 16:9).\nsaída: 1</pre>"
           }
         ]
       }
@@ -210,7 +210,7 @@
           "id": "e2",
           "titulo": "Stills · três planos-chave",
           "min": "30 min",
-          "texto": "No gerador de imagem que você tiver (aberto ou fechado), gere os três planos-chave com o mesmo prompt-base, trocando só o [SUJEITO E AÇÃO]. Salve o aprovado de cada um com o número do plano: plano-01, plano-04, plano-08.",
+          "texto": "No gerador de imagem que você tiver (aberto ou fechado), gere os três planos-chave com o mesmo prompt-base, trocando só o [SUJEITO E AÇêO]. Salve o aprovado de cada um com o número do plano: plano-01, plano-04, plano-08.",
           "pronto": "a pasta do projeto tem os três arquivos de imagem com o número do plano no nome, e o prompt de cada um começa pelo mesmo Prompt-base do lookbook.txt."
         }
       ]
@@ -218,14 +218,14 @@
     {
       "tipo": "quiz",
       "titulo": "Teste rápido",
-      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "sub": "Quatro perguntas. A explicaçêo aparece depois de cada resposta.",
       "perguntas": [
         {
           "p": "Por que gerar a imagem-chave antes do vídeo?",
           "opcoes": [
             "Porque os geradores de vídeo só aceitam começar de uma imagem.",
             "Porque testar o look numa imagem é rápido e o quadro aprovado vira âncora.",
-            "Porque a imagem gerada sempre sai em resolução maior do que o vídeo gerado depois.",
+            "Porque a imagem gerada sempre sai em resoluçêo maior do que o vídeo gerado depois.",
             "Porque o vídeo gerado a partir de texto puro sai sem áudio."
           ],
           "certa": 1,
@@ -236,28 +236,28 @@
           "p": "Qual linha descreve um look sem depender de nome de pessoa?",
           "opcoes": [
             "\"No estilo de um diretor famoso de filmes simétricos.\"",
-            "\"Como a fotografia daquele filme de ficção científica que todo mundo conhece.\"",
-            "\"Azul-noite e branco, 35 mm, low-key, grão fino, 16:9.\"",
+            "\"Como a fotografia daquele filme de ficçêo científica que todo mundo conhece.\"",
+            "\"Azul-noite e branco, 35 mm, low-key, grêo fino, 16:9.\"",
             "\"Igual ao clipe mais visto desta semana.\""
           ],
           "certa": 2,
-          "explica": "Ingrediente descrito funciona em qualquer gerador e não imita o trabalho de ninguém. Nome de diretor ou filme depende de como cada gerador entende o nome e copia uma assinatura que não é sua.",
+          "explica": "Ingrediente descrito funciona em qualquer gerador e nêo imita o trabalho de ninguém. Nome de diretor ou filme depende de como cada gerador entende o nome e copia uma assinatura que nêo é sua.",
           "ref": "passos"
         },
         {
           "p": "Os três stills saíram com cores diferentes. Onde mexer primeiro?",
           "opcoes": [
             "No prompt-base: algum ingrediente do look está vago ou faltando.",
-            "Na resolução: stills maiores saem com a cor mais estável.",
+            "Na resoluçêo: stills maiores saem com a cor mais estável.",
             "No gerador: troque de ferramenta a cada still até as cores baterem.",
             "Na montagem: corrigir a cor depois resolve a diferença sempre."
           ],
           "certa": 0,
-          "explica": "Se o prompt-base é idêntico e concreto, o look tende a se repetir. Paleta vaga (\"quente\") deixa cada geração escolher. Correção de cor na pós existe (curso 2), mas não salva still com luz diferente.",
+          "explica": "Se o prompt-base é idêntico e concreto, o look tende a se repetir. Paleta vaga (\"quente\") deixa cada geraçêo escolher. Correçêo de cor na pós existe (curso 2), mas nêo salva still com luz diferente.",
           "ref": "diagrama"
         },
         {
-          "p": "Você quer gerar stills na sua máquina e usar em trabalho pago. Qual opção da aula atende?",
+          "p": "Você quer gerar stills na sua máquina e usar em trabalho pago. Qual opçêo da aula atende?",
           "opcoes": [
             "FLUX.2 [klein] 9B, porque é o maior da família klein.",
             "Qualquer modelo aberto, porque aberto sempre permite uso comercial.",
@@ -265,7 +265,7 @@
             "FLUX.2 [klein] 4B, que é Apache 2.0 e roda em cerca de 8 GB."
           ],
           "certa": 3,
-          "explica": "Na família klein, o 4B é Apache 2.0 e o 9B tem licença não comercial. \"Aberto\" diz que os pesos estão disponíveis, não o que você pode fazer com eles: leia a licença de cada um.",
+          "explica": "Na família klein, o 4B é Apache 2.0 e o 9B tem licença nêo comercial. \"Aberto\" diz que os pesos estêo disponíveis, nêo o que você pode fazer com eles: leia a licença de cada um.",
           "ref": "passos"
         }
       ]
@@ -279,12 +279,12 @@
           "texto": "Acerte o look no still; o aprovado vira o primeiro quadro do vídeo."
         },
         {
-          "t": "Ingredientes, não nomes",
-          "texto": "Paleta, lente, luz, textura e proporção, sem diretor nem filme."
+          "t": "Ingredientes, nêo nomes",
+          "texto": "Paleta, lente, luz, textura e proporçêo, sem diretor nem filme."
         },
         {
           "t": "Um prompt-base",
-          "texto": "Igual em todos os stills; só o sujeito e a ação mudam."
+          "texto": "Igual em todos os stills; só o sujeito e a açêo mudam."
         }
       ]
     },
@@ -297,11 +297,11 @@
           "href": "https://github.com/black-forest-labs/flux2"
         },
         {
-          "t": "Curso 0 · Composição e profundidade no quadro",
+          "t": "Curso 0 · Composiçêo e profundidade no quadro",
           "href": "https://linnoff88-dev.github.io/
         },
         {
-          "t": "Curso 2 · Produção: cor, grão e acabamento na pós",
+          "t": "Curso 2 · Produçêo: cor, grêo e acabamento na pós",
           "href": "https://linnoff88-dev.github.io/
         }
       ]

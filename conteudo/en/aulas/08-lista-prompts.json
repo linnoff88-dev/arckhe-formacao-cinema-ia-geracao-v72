@@ -173,14 +173,14 @@
               "um_so": true,
               "termos": [
                 "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
-                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly in / push-in / aproximaçêo lenta / slow push-in / acercamiento lento",
                 "dolly out / pull-out / afastamento lento / alejamiento lento",
                 "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
                 "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
                 "tilt / tilt up / tilt down",
                 "grua / crane / pedestal up / pedestal down / crane shot / grúa",
                 "órbita / orbit / arc shot / orbit shot",
-                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "câmera na mêo / handheld / handheld camera / cámara en mano",
                 "zoom in / zoom out / crash zoom",
                 "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
                 "whip pan / chicote / swish pan / latigazo",
@@ -233,7 +233,7 @@
           },
           {
             "rot": "Example with an error (10/19/2026)",
-            "html": "<pre>$ python3 conferir.py lista-prompts --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Trava: com a descrição (pelo menos 3 letras).\n - Achei 4 planos numerados; o pedido é de 6 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna prompt.\n - Plano 2: falta a coluna som.\n - Plano 3: 2 escolhas de movimento; fique com uma só.\n - Plano 4: falta a coluna som.\n - Só 1 tipo(s) diferente(s) de tamanho do plano nos planos; varie para pelo menos 3.\n - Os planos somam 16 s; o pedido é de 24 a 36 s.\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py lista-prompts --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Trava: com a descriçêo (pelo menos 3 letras).\n - Achei 4 planos numerados; o pedido é de 6 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna prompt.\n - Plano 2: falta a coluna som.\n - Plano 3: 2 escolhas de movimento; fique com uma só.\n - Plano 4: falta a coluna som.\n - Só 1 tipo(s) diferente(s) de tamanho do plano nos planos; varie para pelo menos 3.\n - Os planos somam 16 s; o pedido é de 24 a 36 s.\nsaída: 1</pre>"
           }
         ]
       }

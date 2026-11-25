@@ -5,8 +5,8 @@
   "titulo": "Consistência por referência: personagem, objeto e estilo entre planos",
   "titulo_curto": "Consistência por referência",
   "minutos": 18,
-  "lead": "Um dos erros mais visíveis em vídeo com IA é o personagem que muda de rosto entre um plano e outro. Os geradores de 2026 aceitam imagens de referência, cada um com um nome e um limite. O método é o mesmo em todos: imagem de referência, descrição travada, look fixo e último quadro herdado.",
-  "objetivo": "ligar cada plano às imagens de referência e à trava de descrição que seguram o mesmo personagem e o mesmo look.",
+  "lead": "Um dos erros mais visíveis em vídeo com IA é o personagem que muda de rosto entre um plano e outro. Os geradores de 2026 aceitam imagens de referência, cada um com um nome e um limite. O método é o mesmo em todos: imagem de referência, descriçêo travada, look fixo e último quadro herdado.",
+  "objetivo": "ligar cada plano às imagens de referência e à trava de descriçêo que seguram o mesmo personagem e o mesmo look.",
   "competencias": [
     "preparar-referencias",
     "travar-descricao",
@@ -63,7 +63,7 @@
           "titulo": "Herança",
           "sub": "último quadro",
           "icone": "seta",
-          "detalhe": "Quando a ação continua, o último quadro do plano anterior entra como primeiro quadro ou referência do próximo (aula 4)."
+          "detalhe": "Quando a açêo continua, o último quadro do plano anterior entra como primeiro quadro ou referência do próximo (aula 4)."
         },
         {
           "titulo": "Conferir",
@@ -91,8 +91,8 @@
           "titulo": "Cada gerador, um nome",
           "sub": "exemplos datados (out/2026)",
           "texto": [
-            "Veo 3.1: até 3 imagens de referência no recurso \"Ingredients\". Seedance 2.5: até 30 imagens, 10 vídeos e 10 áudios. FLUX.2 [klein], aberto: edição com várias imagens de referência, útil para os stills.",
-            "Kling 3.0: os \"elements\" de personagem são relatados por terceiros, sem confirmação oficial. Os botões mudam de nome; o conceito fica."
+            "Veo 3.1: até 3 imagens de referência no recurso \"Ingredients\". Seedance 2.5: até 30 imagens, 10 vídeos e 10 áudios. FLUX.2 [klein], aberto: ediçêo com várias imagens de referência, útil para os stills.",
+            "Kling 3.0: os \"elements\" de personagem sêo relatados por terceiros, sem confirmaçêo oficial. Os botões mudam de nome; o conceito fica."
           ],
           "exemplo": {
             "rot": "Fontes",
@@ -115,7 +115,7 @@
           "titulo": "Até onde a referência vai",
           "sub": "ética",
           "texto": [
-            "Referência é para personagem fictício, para você mesmo ou para quem deu consentimento por escrito. Rosto de ator, de pessoa pública ou de cliente sem autorização, não.",
+            "Referência é para personagem fictício, para você mesmo ou para quem deu consentimento por escrito. Rosto de ator, de pessoa pública ou de cliente sem autorizaçêo, nêo.",
             "O Seedance 2.0 entrou em polêmica com estúdios de cARCKHÉ justamente por gerar atores e personagens reais. Rótulo, direito de imagem e voz ficam no curso 2."
           ]
         }
@@ -187,7 +187,7 @@
     {
       "tipo": "codigo",
       "titulo": "Opcional: conferir no terminal",
-      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras são as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>referencias.txt</code>); sai 0 quando passa.",
+      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras sêo as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>referencias.txt</code>); sai 0 quando passa.",
       "blocos": [
         {
           "rot": "Terminal (na pasta do curso)",
@@ -204,7 +204,7 @@
           },
           {
             "rot": "Exemplo com erro (19/10/2026)",
-            "html": "<pre>$ python3 conferir.py referencia --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Trava: com a descrição (pelo menos 3 letras).\n - Achei 3 planos numerados; o pedido é de 4 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna trava.\n - Plano 2: falta a coluna ref.\n - Plano 3: falta a coluna ref.\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py referencia --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Trava: com a descriçêo (pelo menos 3 letras).\n - Achei 3 planos numerados; o pedido é de 4 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna trava.\n - Plano 2: falta a coluna ref.\n - Plano 3: falta a coluna ref.\nsaída: 1</pre>"
           }
         ]
       }
@@ -226,25 +226,25 @@
           "titulo": "Folha · as três vistas do personagem",
           "min": "25 min",
           "texto": "Use o pedido da folha de personagem no gerador de imagem que você tiver. Separe as três vistas em arquivos com os nomes da sua linha Referências.",
-          "pronto": "os arquivos de frente, perfil e corpo inteiro estão na pasta do projeto com os mesmos nomes citados na linha Referências do referencias.txt."
+          "pronto": "os arquivos de frente, perfil e corpo inteiro estêo na pasta do projeto com os mesmos nomes citados na linha Referências do referencias.txt."
         }
       ]
     },
     {
       "tipo": "quiz",
       "titulo": "Teste rápido",
-      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "sub": "Quatro perguntas. A explicaçêo aparece depois de cada resposta.",
       "perguntas": [
         {
           "p": "Por que repetir \"avental azul-marinho\" palavra por palavra em todos os prompts?",
           "opcoes": [
             "Porque o gerador cobra menos por palavras repetidas.",
-            "Porque a imagem de referência só funciona com descrição em inglês.",
+            "Porque a imagem de referência só funciona com descriçêo em inglês.",
             "Porque palavras diferentes abrem espaço para o gerador variar o figurino.",
-            "Porque o prompt fica mais longo e, com mais palavras, o gerador presta mais atenção."
+            "Porque o prompt fica mais longo e, com mais palavras, o gerador presta mais atençêo."
           ],
           "certa": 2,
-          "explica": "A trava de texto trabalha junto com a imagem: \"avental escuro\" num plano e \"avental azul\" no outro são pedidos diferentes. Mesmas palavras, mesmo pedido.",
+          "explica": "A trava de texto trabalha junto com a imagem: \"avental escuro\" num plano e \"avental azul\" no outro sêo pedidos diferentes. Mesmas palavras, mesmo pedido.",
           "ref": "diagrama"
         },
         {
@@ -253,10 +253,10 @@
             "Até 3 imagens.",
             "Até 9 imagens.",
             "Até 30 imagens.",
-            "Não aceita imagem de referência."
+            "Nêo aceita imagem de referência."
           ],
           "certa": 0,
-          "explica": "Até 3 no Veo 3.1. As 30 imagens são do Seedance 2.5. Número de referência muda de gerador para gerador e de versão para versão: confira com a data.",
+          "explica": "Até 3 no Veo 3.1. As 30 imagens sêo do Seedance 2.5. Número de referência muda de gerador para gerador e de versêo para versêo: confira com a data.",
           "ref": "passos"
         },
         {
@@ -265,10 +265,10 @@
             "Todas as imagens do projeto, para o gerador ter mais contexto.",
             "A imagem da pá, porque é o que aparece no plano.",
             "A imagem do rosto da Dona Lia, porque ela é a protagonista.",
-            "Nenhuma, porque objeto não precisa de continuidade."
+            "Nenhuma, porque objeto nêo precisa de continuidade."
           ],
           "certa": 1,
-          "explica": "Cada plano leva só a referência do que aparece nele. Referências demais confundem e podem pôr no quadro o que não devia estar lá.",
+          "explica": "Cada plano leva só a referência do que aparece nele. Referências demais confundem e podem pôr no quadro o que nêo devia estar lá.",
           "ref": "passos"
         },
         {
@@ -277,10 +277,10 @@
             "Usar, desde que o vídeo seja curto e saia sem a marca do gerador.",
             "Usar, porque o gerador aceitou a imagem sem bloquear.",
             "Usar só no rascunho e trocar depois, se alguém reclamar.",
-            "Não usar sem autorização por escrito da pessoa."
+            "Nêo usar sem autorizaçêo por escrito da pessoa."
           ],
           "certa": 3,
-          "explica": "Referência é para personagem fictício, para você ou para quem autorizou. O gerador aceitar a imagem não autoriza nada. Direito de imagem e rótulo estão no curso 2.",
+          "explica": "Referência é para personagem fictício, para você ou para quem autorizou. O gerador aceitar a imagem nêo autoriza nada. Direito de imagem e rótulo estêo no curso 2.",
           "ref": "passos"
         }
       ]
@@ -316,7 +316,7 @@
           "href": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"
         },
         {
-          "t": "Curso 2 · Produção: ética, rótulo e direito de imagem",
+          "t": "Curso 2 · Produçêo: ética, rótulo e direito de imagem",
           "href": "https://linnoff88-dev.github.io/
         }
       ]

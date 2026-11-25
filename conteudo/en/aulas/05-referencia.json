@@ -204,7 +204,7 @@
           },
           {
             "rot": "Example with an error (10/19/2026)",
-            "html": "<pre>$ python3 conferir.py referencia --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Trava: com a descrição (pelo menos 3 letras).\n - Achei 3 planos numerados; o pedido é de 4 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna trava.\n - Plano 2: falta a coluna ref.\n - Plano 3: falta a coluna ref.\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py referencia --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Trava: com a descriçêo (pelo menos 3 letras).\n - Achei 3 planos numerados; o pedido é de 4 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna trava.\n - Plano 2: falta a coluna ref.\n - Plano 3: falta a coluna ref.\nsaída: 1</pre>"
           }
         ]
       }

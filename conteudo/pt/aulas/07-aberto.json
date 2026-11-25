@@ -5,7 +5,7 @@
   "titulo": "O caminho aberto: ComfyUI com LTX e Wan 2.2, VRAM e licença",
   "titulo_curto": "Caminho aberto",
   "minutos": 18,
-  "lead": "Modelo aberto roda na sua máquina, sem crédito por geração e sem depender de uma plataforma ficar no ar. Em troca, pede placa de vídeo com memória, disco livre e leitura da licença. Esta aula ajuda a decidir se a sua máquina roda e qual modelo e template usar no ComfyUI.",
+  "lead": "Modelo aberto roda na sua máquina, sem crédito por geraçêo e sem depender de uma plataforma ficar no ar. Em troca, pede placa de vídeo com memória, disco livre e leitura da licença. Esta aula ajuda a decidir se a sua máquina roda e qual modelo e template usar no ComfyUI.",
   "objetivo": "decidir se a sua máquina roda vídeo aberto, escolher modelo e licença e registrar o template oficial que vai usar.",
   "competencias": [
     "avaliar-maquina",
@@ -17,16 +17,16 @@
       "t": "O que é o ComfyUI e por que ele usa nós"
     },
     {
-      "t": "Quanto de VRAM e disco cada modelo pede, pela documentação oficial"
+      "t": "Quanto de VRAM e disco cada modelo pede, pela documentaçêo oficial"
     },
     {
-      "t": "Apache 2.0, licença comunitária e não comercial: a diferença"
+      "t": "Apache 2.0, licença comunitária e nêo comercial: a diferença"
     },
     {
       "t": "Os templates oficiais de Wan 2.2 e LTX-2.5"
     }
   ],
-  "hero_alt": "Estação de trabalho escura com um computador de lateral de vidro mostrando uma placa de vídeo grande e um monitor com um editor de nós ligados por linhas.",
+  "hero_alt": "Estaçêo de trabalho escura com um computador de lateral de vidro mostrando uma placa de vídeo grande e um monitor com um editor de nós ligados por linhas.",
   "secoes": [
     {
       "tipo": "diagrama",
@@ -44,7 +44,7 @@
           "titulo": "Modelo",
           "sub": "o que cabe",
           "icone": "camadas",
-          "detalhe": "Wan 2.2 5B cabe em 8 GB de VRAM com o descarregamento de memória do ComfyUI. LTX-2.5 pede 32 GB ou mais e 100 GB de disco, segundo a documentação do LTX."
+          "detalhe": "Wan 2.2 5B cabe em 8 GB de VRAM com o descarregamento de memória do ComfyUI. LTX-2.5 pede 32 GB ou mais e 100 GB de disco, segundo a documentaçêo do LTX."
         },
         {
           "titulo": "Licença",
@@ -66,27 +66,27 @@
           "detalhe": "O resultado é um arquivo como qualquer outro: confira no conferidor de clipe da aula 4."
         }
       ],
-      "legenda": "Se a máquina não roda, nada se perde: o mesmo still, o mesmo prompt e a mesma lista servem para um gerador fechado."
+      "legenda": "Se a máquina nêo roda, nada se perde: o mesmo still, o mesmo prompt e a mesma lista servem para um gerador fechado."
     },
     {
       "tipo": "passos",
       "titulo": "ComfyUI, modelos e licenças",
-      "sub": "Números da documentação oficial, consultada em 19/10/2026.",
+      "sub": "Números da documentaçêo oficial, consultada em 19/10/2026.",
       "passos": [
         {
           "titulo": "O que é o ComfyUI",
           "sub": "nós em vez de botões",
           "texto": [
-            "Programa gratuito, com janela, que monta a geração como caixas ligadas por linhas (nós): carregar modelo, escrever prompt, carregar imagem, gerar, salvar. Cada caixa faz uma coisa.",
-            "Você não precisa montar do zero: os templates oficiais vêm prontos e o botão de baixar modelos busca os arquivos que faltam."
+            "Programa gratuito, com janela, que monta a geraçêo como caixas ligadas por linhas (nós): carregar modelo, escrever prompt, carregar imagem, gerar, salvar. Cada caixa faz uma coisa.",
+            "Você nêo precisa montar do zero: os templates oficiais vêm prontos e o botêo de baixar modelos busca os arquivos que faltam."
           ]
         },
         {
           "titulo": "Quanto a máquina aguenta",
           "sub": "VRAM e disco",
           "texto": [
-            "Wan 2.2 5B (texto e imagem para vídeo): cabe em 8 GB de VRAM com o descarregamento do ComfyUI, segundo a documentação do ComfyUI. O 14B tem templates de imagem para vídeo e de primeiro e último quadro.",
-            "LTX-2.5: a documentação pede placa compatível com CUDA, 32 GB ou mais de VRAM e 100 GB livres; há arquivos menores (INT8) para placas com menos memória."
+            "Wan 2.2 5B (texto e imagem para vídeo): cabe em 8 GB de VRAM com o descarregamento do ComfyUI, segundo a documentaçêo do ComfyUI. O 14B tem templates de imagem para vídeo e de primeiro e último quadro.",
+            "LTX-2.5: a documentaçêo pede placa compatível com CUDA, 32 GB ou mais de VRAM e 100 GB livres; há arquivos menores (INT8) para placas com menos memória."
           ],
           "exemplo": {
             "rot": "Fontes",
@@ -95,18 +95,18 @@
         },
         {
           "titulo": "Ler a licença",
-          "sub": "aberto não é livre para tudo",
+          "sub": "aberto nêo é livre para tudo",
           "texto": [
             "Apache 2.0 (Wan 2.2, FLUX.2 [klein] 4B): uso comercial permitido. Licença comunitária LTX-2.x: comercial sem custo abaixo de US$ 10 milhões de receita por ano; acima, licença paga; repassar ajustes finos pode exigir licença paga.",
-            "Não comercial (FLUX.2 [klein] 9B): pesquisa e uso pessoal. O conteúdo do INEMA é gratuito, mas o seu trabalho pode não ser: confira antes."
+            "Nêo comercial (FLUX.2 [klein] 9B): pesquisa e uso pessoal. O conteúdo do INEMA é gratuito, mas o seu trabalho pode nêo ser: confira antes."
           ]
         },
         {
           "titulo": "Templates e o aviso do LTX",
           "sub": "o prompt reescrito",
           "texto": [
-            "Os templates do LTX-2.5 trazem um \"melhorador de prompt\" (Prompt Enhance) ligado por padrão, que reescreve o seu texto antes de gerar. Para usar exatamente o prompt da aula 2, desligue essa opção.",
-            "O template de primeiro e último quadro do LTX-2.5 dispensa a etapa de ampliação; os de texto e imagem para vídeo usam duas etapas."
+            "Os templates do LTX-2.5 trazem um \"melhorador de prompt\" (Prompt Enhance) ligado por padrêo, que reescreve o seu texto antes de gerar. Para usar exatamente o prompt da aula 2, desligue essa opçêo.",
+            "O template de primeiro e último quadro do LTX-2.5 dispensa a etapa de ampliaçêo; os de texto e imagem para vídeo usam duas etapas."
           ],
           "exemplo": {
             "rot": "Fonte",
@@ -123,7 +123,7 @@
         {
           "rot": "maquina.txt (modelo)",
           "icone": "arquivo",
-          "conteudo": "GPU: <a sua placa de vídeo, ou \"nenhuma compatível\">\nVRAM: <memória dedicada da placa, em GB>\nDisco livre: <GB livres no disco onde vai o ComfyUI>\nModelo: <Wan 2.2 5B, Wan 2.2 14B, LTX-2.5... ou \"nenhum, sigo no fechado\">\nLicença: <Apache 2.0, licença comunitária LTX-2.x, não comercial>\nTemplate: <nome do template oficial que vai abrir>\nUso: <o que vai gerar no aberto e o que fica no fechado>"
+          "conteudo": "GPU: <a sua placa de vídeo, ou \"nenhuma compatível\">\nVRAM: <memória dedicada da placa, em GB>\nDisco livre: <GB livres no disco onde vai o ComfyUI>\nModelo: <Wan 2.2 5B, Wan 2.2 14B, LTX-2.5... ou \"nenhum, sigo no fechado\">\nLicença: <Apache 2.0, licença comunitária LTX-2.x, nêo comercial>\nTemplate: <nome do template oficial que vai abrir>\nUso: <o que vai gerar no aberto e o que fica no fechado>"
         }
       ]
     },
@@ -152,22 +152,22 @@
           "tipo": "termos",
           "grupos": [
             {
-              "rot": "o tipo de licença (Apache 2.0, comunitária ou não comercial)",
+              "rot": "o tipo de licença (Apache 2.0, comunitária ou nêo comercial)",
               "termos": [
-                "apache / licença comunitária / licenca comunitaria / community license / licencia comunitaria / não comercial / nao comercial / non-commercial / noncommercial / no comercial"
+                "apache / licença comunitária / licenca comunitaria / community license / licencia comunitaria / nêo comercial / nao comercial / non-commercial / noncommercial / no comercial"
               ]
             }
           ]
         }
       ],
       "ok": "OK: ficha da máquina com {n} campos",
-      "exemplo": "GPU: placa de vídeo NVIDIA com 12 GB\nVRAM: 12 GB\nDisco livre: 150 GB\nModelo: Wan 2.2 5B, que cabe em 8 GB com o descarregamento do ComfyUI\nLicença: Apache 2.0, uso comercial permitido\nTemplate: Wan 2.2 5B, texto e imagem para vídeo (template oficial do ComfyUI)\nUso: ensaiar os planos 1 e 4 no aberto antes de gerar a versão final no fechado",
-      "exemplo_errado": "GPU: a do notebook\nVRAM: ?\nModelo: LTX-2.5\nLicença: é aberto, então pode tudo\nUso: tudo"
+      "exemplo": "GPU: placa de vídeo NVIDIA com 12 GB\nVRAM: 12 GB\nDisco livre: 150 GB\nModelo: Wan 2.2 5B, que cabe em 8 GB com o descarregamento do ComfyUI\nLicença: Apache 2.0, uso comercial permitido\nTemplate: Wan 2.2 5B, texto e imagem para vídeo (template oficial do ComfyUI)\nUso: ensaiar os planos 1 e 4 no aberto antes de gerar a versêo final no fechado",
+      "exemplo_errado": "GPU: a do notebook\nVRAM: ?\nModelo: LTX-2.5\nLicença: é aberto, entêo pode tudo\nUso: tudo"
     },
     {
       "tipo": "codigo",
       "titulo": "Opcional: conferir no terminal",
-      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras são as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>maquina.txt</code>); sai 0 quando passa.",
+      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras sêo as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>maquina.txt</code>); sai 0 quando passa.",
       "blocos": [
         {
           "rot": "Terminal (na pasta do curso)",
@@ -184,7 +184,7 @@
           },
           {
             "rot": "Exemplo com erro (19/10/2026)",
-            "html": "<pre>$ python3 conferir.py aberto --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha VRAM: com a descrição (pelo menos 2 letras).\n - Falta a linha Disco livre: com a descrição (pelo menos 2 letras).\n - Falta a linha Template: com a descrição (pelo menos 2 letras).\n - Falta citar o tipo de licença (Apache 2.0, comunitária ou não comercial).\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py aberto --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha VRAM: com a descriçêo (pelo menos 2 letras).\n - Falta a linha Disco livre: com a descriçêo (pelo menos 2 letras).\n - Falta a linha Template: com a descriçêo (pelo menos 2 letras).\n - Falta citar o tipo de licença (Apache 2.0, comunitária ou nêo comercial).\nsaída: 1</pre>"
           }
         ]
       }
@@ -192,7 +192,7 @@
     {
       "tipo": "pratica",
       "titulo": "Prática",
-      "sub": "Sem placa compatível, a prática 1 vale do mesmo jeito: registrar \"nenhuma\" também é decisão.",
+      "sub": "Sem placa compatível, a prática 1 vale do mesmo jeito: registrar \"nenhuma\" também é decisêo.",
       "exercicios": [
         {
           "id": "e1",
@@ -213,18 +213,18 @@
     {
       "tipo": "quiz",
       "titulo": "Teste rápido",
-      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "sub": "Quatro perguntas. A explicaçêo aparece depois de cada resposta.",
       "perguntas": [
         {
-          "p": "Sua placa tem 8 GB de VRAM. Pela documentação oficial, qual modelo de vídeo da aula cabe?",
+          "p": "Sua placa tem 8 GB de VRAM. Pela documentaçêo oficial, qual modelo de vídeo da aula cabe?",
           "opcoes": [
-            "LTX-2.5 na versão padrão, com os arquivos em BF16.",
+            "LTX-2.5 na versêo padrêo, com os arquivos em BF16.",
             "Qualquer modelo aberto, porque o ComfyUI reduz tudo.",
             "Wan 2.2 5B, com o descarregamento de memória do ComfyUI.",
             "Nenhum: vídeo aberto só roda em servidor."
           ],
           "certa": 2,
-          "explica": "A documentação do ComfyUI diz que o Wan 2.2 5B cabe em 8 GB com descarregamento. A do LTX pede 32 GB ou mais para a configuração padrão.",
+          "explica": "A documentaçêo do ComfyUI diz que o Wan 2.2 5B cabe em 8 GB com descarregamento. A do LTX pede 32 GB ou mais para a configuraçêo padrêo.",
           "ref": "passos"
         },
         {
@@ -233,10 +233,10 @@
             "Uso comercial sem custo abaixo de US$ 10 milhões de receita anual.",
             "Só uso pessoal, sem nenhum trabalho pago.",
             "Qualquer uso, sem limite nenhum de receita, exatamente como a licença Apache 2.0.",
-            "Só pesquisa acadêmica com autorização prévia."
+            "Só pesquisa acadêmica com autorizaçêo prévia."
           ],
           "certa": 0,
-          "explica": "Abaixo de US$ 10 milhões por ano, uso comercial sem custo; acima, licença paga. É diferente da Apache 2.0 (sem teto) e da não comercial (sem trabalho pago).",
+          "explica": "Abaixo de US$ 10 milhões por ano, uso comercial sem custo; acima, licença paga. É diferente da Apache 2.0 (sem teto) e da nêo comercial (sem trabalho pago).",
           "ref": "passos"
         },
         {
@@ -248,11 +248,11 @@
             "Se a placa de vídeo é a mais nova do mercado."
           ],
           "certa": 1,
-          "explica": "Os templates oficiais trazem o melhorador de prompt ligado por padrão, e ele reescreve o seu texto. Desligue para usar o prompt da aula 2 como está.",
+          "explica": "Os templates oficiais trazem o melhorador de prompt ligado por padrêo, e ele reescreve o seu texto. Desligue para usar o prompt da aula 2 como está.",
           "ref": "passos"
         },
         {
-          "p": "Sua máquina não tem placa compatível. O que acontece com o trabalho do curso?",
+          "p": "Sua máquina nêo tem placa compatível. O que acontece com o trabalho do curso?",
           "opcoes": [
             "Você precisa comprar uma placa de vídeo nova para conseguir terminar o curso.",
             "Você perde os stills e os prompts feitos até aqui.",
@@ -260,7 +260,7 @@
             "Nada se perde: still, prompt e lista servem para um gerador fechado."
           ],
           "certa": 3,
-          "explica": "Tudo o que você fez está em arquivos portáteis. O caminho aberto é uma opção, não um requisito; registrar \"nenhuma\" na ficha também é decisão.",
+          "explica": "Tudo o que você fez está em arquivos portáteis. O caminho aberto é uma opçêo, nêo um requisito; registrar \"nenhuma\" na ficha também é decisêo.",
           "ref": "diagrama"
         }
       ]
@@ -275,7 +275,7 @@
         },
         {
           "t": "Licença lida",
-          "texto": "Apache 2.0, comunitária com teto de receita ou não comercial."
+          "texto": "Apache 2.0, comunitária com teto de receita ou nêo comercial."
         },
         {
           "t": "Template oficial",
@@ -292,11 +292,11 @@
           "href": "https://www.comfy.org/download"
         },
         {
-          "t": "Wan 2.2 no ComfyUI (documentação oficial)",
+          "t": "Wan 2.2 no ComfyUI (documentaçêo oficial)",
           "href": "https://docs.comfy.org/tutorials/video/wan/wan2_2"
         },
         {
-          "t": "LTX no ComfyUI (documentação oficial)",
+          "t": "LTX no ComfyUI (documentaçêo oficial)",
           "href": "https://docs.ltx.io/open-source-model/integration-tools/comfy-ui"
         },
         {

@@ -5,7 +5,7 @@
   "titulo": "Seu gerador de prompts: do storyboard à lista de prompts com um agente",
   "titulo_curto": "Lista de prompts",
   "minutos": 20,
-  "lead": "Escrever oito prompts à mão, com o mesmo look e a mesma trava, cansa e abre espaço para erro. Um assistente de IA com regras claras faz o rascunho da lista inteira a partir do storyboard do curso 0. Você revisa, a página confere, e a lista vai para qualquer gerador.",
+  "lead": "Escrever oito prompts à mêo, com o mesmo look e a mesma trava, cansa e abre espaço para erro. Um assistente de IA com regras claras faz o rascunho da lista inteira a partir do storyboard do curso 0. Você revisa, a página confere, e a lista vai para qualquer gerador.",
   "objetivo": "transformar o storyboard do curso 0 numa lista de prompts, um por plano, com um assistente de IA, e conferir na página.",
   "competencias": [
     "montar-pedido-em-camadas",
@@ -26,7 +26,7 @@
       "t": "Juntar tudo o que o curso produziu num plano com datas"
     }
   ],
-  "hero_alt": "Mesa de produção escura com uma pilha de cartões de índice, uma folha de storyboard a lápis e um notebook fechado sob luz fria lateral.",
+  "hero_alt": "Mesa de produçêo escura com uma pilha de cartões de índice, uma folha de storyboard a lápis e um notebook fechado sob luz fria lateral.",
   "secoes": [
     {
       "tipo": "diagrama",
@@ -51,13 +51,13 @@
           "titulo": "Assistente",
           "sub": "da sua assinatura",
           "icone": "chat",
-          "detalhe": "O modelo topo da sua assinatura de IA, no chat que você já usa. Não precisa de terminal nem de programa."
+          "detalhe": "O modelo topo da sua assinatura de IA, no chat que você já usa. Nêo precisa de terminal nem de programa."
         },
         {
           "titulo": "Lista",
           "sub": "prompts.txt",
           "icone": "lista",
-          "detalhe": "Uma linha por plano: número, duração, tamanho, movimento, prompt e som. Cabeçalho com o prompt-base e a trava."
+          "detalhe": "Uma linha por plano: número, duraçêo, tamanho, movimento, prompt e som. Cabeçalho com o prompt-base e a trava."
         },
         {
           "titulo": "Conferir",
@@ -69,10 +69,10 @@
           "titulo": "Gerador",
           "sub": "qualquer um",
           "icone": "play",
-          "detalhe": "Cada linha vira uma geração, no gerador escolhido na aula 1. A lista fica na pasta: troca de gerador sem refazer."
+          "detalhe": "Cada linha vira uma geraçêo, no gerador escolhido na aula 1. A lista fica na pasta: troca de gerador sem refazer."
         }
       ],
-      "legenda": "O assistente acelera o rascunho; a direção continua sua. Toda linha passa pelos seus olhos antes de gastar crédito."
+      "legenda": "O assistente acelera o rascunho; a direçêo continua sua. Toda linha passa pelos seus olhos antes de gastar crédito."
     },
     {
       "tipo": "passos",
@@ -83,7 +83,7 @@
           "titulo": "Por que um assistente",
           "sub": "mesmas regras, toda vez",
           "texto": [
-            "Oito planos pedem oito prompts com o mesmo prompt-base e a mesma trava, palavra por palavra. À mão, uma vírgula esquecida muda o look de um plano.",
+            "Oito planos pedem oito prompts com o mesmo prompt-base e a mesma trava, palavra por palavra. À mêo, uma vírgula esquecida muda o look de um plano.",
             "Um pedido com regras fixas faz o assistente repetir o que tem de ser igual e mudar só o que muda. Você troca o storyboard e reaproveita o pedido."
           ]
         },
@@ -91,23 +91,23 @@
           "titulo": "As seis camadas do pedido",
           "sub": "papel até limites",
           "texto": [
-            "Papel (quem ele é), entrada (os arquivos colados), formato de saída (a linha exata), vocabulário (os termos de câmera do curso 0), regras (copiar prompt-base e trava, som em frase separada) e limites (o que fazer quando falta informação).",
+            "Papel (quem ele é), entrada (os arquivos colados), formato de saída (a linha exata), vocabulário (os termos de câmera do curso 0), regras (copiar prompt-base e trava, som em frase separada) e limites (o que fazer quando falta informaçêo).",
             "A camada de limites é a que mais protege: em vez de inventar, o assistente escreve \"FALTA:\" e o que faltou."
           ]
         },
         {
           "titulo": "Revisar a saída",
-          "sub": "o que a página não vê",
+          "sub": "o que a página nêo vê",
           "texto": [
-            "A página confere formato e números. Você lê procurando o que não estava no storyboard: um personagem a mais, um objeto novo, uma fala trocada.",
-            "Achou invenção? Não corrija só a linha: acrescente a regra que faltou no pedido, para não voltar no próximo storyboard."
+            "A página confere formato e números. Você lê procurando o que nêo estava no storyboard: um personagem a mais, um objeto novo, uma fala trocada.",
+            "Achou invençêo? Nêo corrija só a linha: acrescente a regra que faltou no pedido, para nêo voltar no próximo storyboard."
           ]
         },
         {
           "titulo": "Do arquivo ao gerador",
           "sub": "portátil",
           "texto": [
-            "Para gerar, cole o prompt-base, a trava e a linha do plano, e anexe as referências daquele plano. Se o gerador pede outro jeito de escrever, ajuste a linha, não a lista.",
+            "Para gerar, cole o prompt-base, a trava e a linha do plano, e anexe as referências daquele plano. Se o gerador pede outro jeito de escrever, ajuste a linha, nêo a lista.",
             "A lista, o storyboard, o lookbook e as referências ficam na pasta. Se o gerador mudar ou fechar, você leva tudo para outro."
           ]
         }
@@ -121,12 +121,12 @@
         {
           "rot": "Pedido ao assistente de IA (gerador de prompts)",
           "icone": "chat",
-          "conteudo": "PAPEL: Você é assistente de direção e escreve prompts de vídeo para geradores com áudio.\nENTRADA: um storyboard (uma linha por plano), um lookbook e uma lista de referências, colados no fim.\nSAÍDA: primeiro as linhas \"Cena:\", \"Prompt-base:\" e \"Trava:\"; depois uma linha por plano, neste formato:\nn | duração | tamanho do plano | movimento | prompt: <câmera, sujeito, ação, cenário> | som: <ambiente, efeito, fala como quem diz: texto>\nVOCABULÁRIO: tamanho, ângulo e movimento só com os termos do storyboard (plano geral, close, câmera alta, dolly in, câmera parada...).\nREGRAS:\n- copie o Prompt-base do lookbook e a Trava das referências palavra por palavra;\n- um movimento por plano, o mesmo do storyboard;\n- som em frase própria, depois de \"som:\";\n- não cite diretor, filme, marca nem pessoa real.\nLIMITES: não invente personagem, lugar, objeto ou fala que não estejam na entrada. Se faltar algo, escreva \"FALTA:\" e o que faltou.\nStoryboard:\n<cole aqui o storyboard.txt>\nLookbook:\n<cole aqui o lookbook.txt>\nReferências:\n<cole aqui o referencias.txt>"
+          "conteudo": "PAPEL: Você é assistente de direçêo e escreve prompts de vídeo para geradores com áudio.\nENTRADA: um storyboard (uma linha por plano), um lookbook e uma lista de referências, colados no fim.\nSAÍDA: primeiro as linhas \"Cena:\", \"Prompt-base:\" e \"Trava:\"; depois uma linha por plano, neste formato:\nn | duraçêo | tamanho do plano | movimento | prompt: <câmera, sujeito, açêo, cenário> | som: <ambiente, efeito, fala como quem diz: texto>\nVOCABULÁRIO: tamanho, ângulo e movimento só com os termos do storyboard (plano geral, close, câmera alta, dolly in, câmera parada...).\nREGRAS:\n- copie o Prompt-base do lookbook e a Trava das referências palavra por palavra;\n- um movimento por plano, o mesmo do storyboard;\n- som em frase própria, depois de \"som:\";\n- nêo cite diretor, filme, marca nem pessoa real.\nLIMITES: nêo invente personagem, lugar, objeto ou fala que nêo estejam na entrada. Se faltar algo, escreva \"FALTA:\" e o que faltou.\nStoryboard:\n<cole aqui o storyboard.txt>\nLookbook:\n<cole aqui o lookbook.txt>\nReferências:\n<cole aqui o referencias.txt>"
         },
         {
           "rot": "prompts.txt (modelo)",
           "icone": "arquivo",
-          "conteudo": "Cena: <nome> (<duração> s)\nPrompt-base: <do lookbook.txt, palavra por palavra>\nTrava: <do referencias.txt, palavra por palavra>\n<n> | <n> s | <tamanho do plano> | <um movimento> | prompt: <câmera, sujeito, ação, cenário> | som: <ambiente, efeito, fala>"
+          "conteudo": "Cena: <nome> (<duraçêo> s)\nPrompt-base: <do lookbook.txt, palavra por palavra>\nTrava: <do referencias.txt, palavra por palavra>\n<n> | <n> s | <tamanho do plano> | <um movimento> | prompt: <câmera, sujeito, açêo, cenário> | som: <ambiente, efeito, fala>"
         }
       ]
     },
@@ -173,14 +173,14 @@
               "um_so": true,
               "termos": [
                 "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
-                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly in / push-in / aproximaçêo lenta / slow push-in / acercamiento lento",
                 "dolly out / pull-out / afastamento lento / alejamiento lento",
                 "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
                 "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
                 "tilt / tilt up / tilt down",
                 "grua / crane / pedestal up / pedestal down / crane shot / grúa",
                 "órbita / orbit / arc shot / orbit shot",
-                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "câmera na mêo / handheld / handheld camera / cámara en mano",
                 "zoom in / zoom out / crash zoom",
                 "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
                 "whip pan / chicote / swish pan / latigazo",
@@ -210,13 +210,13 @@
         }
       ],
       "ok": "OK: {n} prompts prontos · {s} s",
-      "exemplo": "Cena: A primeira fornada (30 s)\nPrompt-base: fotografia de cARCKHÉ numa padaria de bairro às 4h50, 35 mm, low-key com luz lateral do forno, azulejo branco, rua azul-noite pela vitrine, grão fino de película, 16:9\nTrava: coque com lenço, óculos, avental azul-marinho, pá de madeira, madrugada\n1 | 4 s | plano geral | câmera parada | prompt: Plano geral em câmera alta de uma rua de bairro ainda escura; só a vitrine da padaria está acesa. | som: vento, um cachorro ao longe\n2 | 4 s | plano aberto | travelling lateral | prompt: Plano aberto: Dona Lia acende as luzes da padaria e amarra o avental azul-marinho. | som: interruptor, rádio baixo\n3 | 4 s | plano médio | câmera parada | prompt: Plano médio na altura do olho: Dona Lia sova a massa na bancada de madeira. | som: massa batendo na mesa\n4 | 4 s | close | dolly in | prompt: Close em câmera baixa: a porta de ferro do forno abre devagar e o vapor sobe contra a luz. | som: rangido do forno, chiado do vapor\n5 | 3 s | plano detalhe | tilt | prompt: Plano detalhe zenital: a pá de madeira gasta tira a primeira fornada do forno. | som: casca do pão estalando\n6 | 3 s | close | câmera parada | prompt: Close na altura do olho: Dona Lia prova um pedaço de pão e fecha os olhos. | som: só o rádio, baixinho\n7 | 4 s | plano médio | câmera na mão | prompt: Plano médio por cima do ombro: batidas na porta de ferro; Dona Lia olha o relógio e sorri. | som: três batidas; a padeira diz: Já vai!\n8 | 4 s | plano aberto | dolly out | prompt: Plano aberto: Dona Lia sobe a porta de ferro de enrolar e o primeiro cliente entra. | som: porta de ferro subindo, sino da porta",
+      "exemplo": "Cena: A primeira fornada (30 s)\nPrompt-base: fotografia de cARCKHÉ numa padaria de bairro às 4h50, 35 mm, low-key com luz lateral do forno, azulejo branco, rua azul-noite pela vitrine, grêo fino de película, 16:9\nTrava: coque com lenço, óculos, avental azul-marinho, pá de madeira, madrugada\n1 | 4 s | plano geral | câmera parada | prompt: Plano geral em câmera alta de uma rua de bairro ainda escura; só a vitrine da padaria está acesa. | som: vento, um cachorro ao longe\n2 | 4 s | plano aberto | travelling lateral | prompt: Plano aberto: Dona Lia acende as luzes da padaria e amarra o avental azul-marinho. | som: interruptor, rádio baixo\n3 | 4 s | plano médio | câmera parada | prompt: Plano médio na altura do olho: Dona Lia sova a massa na bancada de madeira. | som: massa batendo na mesa\n4 | 4 s | close | dolly in | prompt: Close em câmera baixa: a porta de ferro do forno abre devagar e o vapor sobe contra a luz. | som: rangido do forno, chiado do vapor\n5 | 3 s | plano detalhe | tilt | prompt: Plano detalhe zenital: a pá de madeira gasta tira a primeira fornada do forno. | som: casca do pêo estalando\n6 | 3 s | close | câmera parada | prompt: Close na altura do olho: Dona Lia prova um pedaço de pêo e fecha os olhos. | som: só o rádio, baixinho\n7 | 4 s | plano médio | câmera na mêo | prompt: Plano médio por cima do ombro: batidas na porta de ferro; Dona Lia olha o relógio e sorri. | som: três batidas; a padeira diz: Já vai!\n8 | 4 s | plano aberto | dolly out | prompt: Plano aberto: Dona Lia sobe a porta de ferro de enrolar e o primeiro cliente entra. | som: porta de ferro subindo, sino da porta",
       "exemplo_errado": "Cena: A primeira fornada\nPrompt-base: cARCKHÉtográfico\n1 | 4 s | plano geral | câmera parada | prompt: rua escura | som: vento\n2 | 4 s | plano geral | câmera parada | prompt: padaria por dentro, estilo de um diretor famoso\n3 | 4 s | plano geral | dolly in com zoom in | prompt: Dona Lia e o neto dela sovam a massa juntos na bancada. | som: rádio\n4 | 4 s | plano geral | câmera parada | prompt: o forno abre e o vapor sobe contra a luz lateral do forno. | som:"
     },
     {
       "tipo": "codigo",
       "titulo": "Opcional: conferir no terminal",
-      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras são as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>prompts.txt</code>); sai 0 quando passa.",
+      "sub": "Só para quem já usa terminal. Baixe o curso do GitHub e rode na pasta dele: as regras sêo as mesmas da página. Para o seu arquivo, troque <code>--exemplo</code> pelo nome dele (<code>prompts.txt</code>); sai 0 quando passa.",
       "blocos": [
         {
           "rot": "Terminal (na pasta do curso)",
@@ -233,7 +233,7 @@
           },
           {
             "rot": "Exemplo com erro (19/10/2026)",
-            "html": "<pre>$ python3 conferir.py lista-prompts --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Trava: com a descrição (pelo menos 3 letras).\n - Achei 4 planos numerados; o pedido é de 6 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna prompt.\n - Plano 2: falta a coluna som.\n - Plano 3: 2 escolhas de movimento; fique com uma só.\n - Plano 4: falta a coluna som.\n - Só 1 tipo(s) diferente(s) de tamanho do plano nos planos; varie para pelo menos 3.\n - Os planos somam 16 s; o pedido é de 24 a 36 s.\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py lista-prompts --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Trava: com a descriçêo (pelo menos 3 letras).\n - Achei 4 planos numerados; o pedido é de 6 a 10. Comece cada plano pelo número (1 | ...).\n - Plano 1: falta a coluna prompt.\n - Plano 2: falta a coluna som.\n - Plano 3: 2 escolhas de movimento; fique com uma só.\n - Plano 4: falta a coluna som.\n - Só 1 tipo(s) diferente(s) de tamanho do plano nos planos; varie para pelo menos 3.\n - Os planos somam 16 s; o pedido é de 24 a 36 s.\nsaída: 1</pre>"
           }
         ]
       }
@@ -247,15 +247,15 @@
           "id": "e1",
           "titulo": "Lista · a sua cena em prompts",
           "min": "30 min",
-          "texto": "Cole o pedido em camadas no chat do assistente de IA da sua assinatura, com o storyboard, o lookbook e as referências no fim. Revise a resposta procurando invenção e \"FALTA:\". Cole em \"Confira a sua lista de prompts\" e baixe o prompts.txt para a pasta do projeto.",
+          "texto": "Cole o pedido em camadas no chat do assistente de IA da sua assinatura, com o storyboard, o lookbook e as referências no fim. Revise a resposta procurando invençêo e \"FALTA:\". Cole em \"Confira a sua lista de prompts\" e baixe o prompts.txt para a pasta do projeto.",
           "pronto": "a página responde <code>OK: [n] prompts prontos · [s] s</code>, com a soma entre 24 e 36 s, e o prompts.txt está na pasta do projeto."
         },
         {
           "id": "e2",
           "titulo": "Regra nova · o que o assistente inventou",
           "min": "15 min",
-          "texto": "Compare a lista com o storyboard e anote, no fim do pedido, uma regra para cada invenção que você corrigiu. Guarde o pedido como pedido-prompts.txt para o próximo storyboard.",
-          "pronto": "o pedido-prompts.txt está na pasta do projeto e tem pelo menos uma regra a mais do que o pedido da aula, ou a anotação \"nenhuma invenção encontrada\" com a data."
+          "texto": "Compare a lista com o storyboard e anote, no fim do pedido, uma regra para cada invençêo que você corrigiu. Guarde o pedido como pedido-prompts.txt para o próximo storyboard.",
+          "pronto": "o pedido-prompts.txt está na pasta do projeto e tem pelo menos uma regra a mais do que o pedido da aula, ou a anotaçêo \"nenhuma invençêo encontrada\" com a data."
         }
       ]
     },
@@ -316,7 +316,7 @@
       "tipo": "gerador",
       "titulo": "Gere o seu plano com datas",
       "sub": "Escolha quando começa e quanto tempo tem por semana. O plano lista os exercícios das oito aulas.",
-      "curso": "Geração: imagem e vídeo com IA",
+      "curso": "Geraçêo: imagem e vídeo com IA",
       "horas_padrao": 3,
       "degraus": [
         {
@@ -353,7 +353,7 @@
         }
       ],
       "txt": {
-        "titulo": "Plano — Geração: imagem e vídeo com IA",
+        "titulo": "Plano — Geraçêo: imagem e vídeo com IA",
         "inicio": "Início",
         "ritmo": "Ritmo",
         "termino": "Término previsto",
@@ -368,7 +368,7 @@
     {
       "tipo": "quiz",
       "titulo": "Teste rápido",
-      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "sub": "Quatro perguntas. A explicaçêo aparece depois de cada resposta.",
       "perguntas": [
         {
           "p": "Qual camada do pedido mais protege contra o assistente inventar coisas?",
@@ -379,11 +379,11 @@
             "Os limites, que mandam escrever \"FALTA:\" em vez de inventar."
           ],
           "certa": 3,
-          "explica": "Sem dizer o que fazer quando falta informação, o assistente preenche o buraco com algo plausível. Com \"FALTA:\", o buraco aparece para você decidir.",
+          "explica": "Sem dizer o que fazer quando falta informaçêo, o assistente preenche o buraco com algo plausível. Com \"FALTA:\", o buraco aparece para você decidir.",
           "ref": "passos"
         },
         {
-          "p": "A lista passou na página, mas o plano 3 tem um neto da Dona Lia que não existe no storyboard. O que fazer?",
+          "p": "A lista passou na página, mas o plano 3 tem um neto da Dona Lia que nêo existe no storyboard. O que fazer?",
           "opcoes": [
             "Tirar o neto da linha e acrescentar uma regra no pedido.",
             "Manter, porque a página aceitou a lista.",
@@ -391,7 +391,7 @@
             "Apagar o plano 3 inteiro da lista."
           ],
           "certa": 0,
-          "explica": "A página confere formato e números, não o conteúdo. Invenção se corrige na linha e vira regra no pedido, para não voltar no próximo storyboard.",
+          "explica": "A página confere formato e números, nêo o conteúdo. Invençêo se corrige na linha e vira regra no pedido, para nêo voltar no próximo storyboard.",
           "ref": "passos"
         },
         {
@@ -403,7 +403,7 @@
             "Porque assim o assistente gasta menos da sua assinatura."
           ],
           "certa": 1,
-          "explica": "É a continuidade das aulas 3 e 5 levada para a lista: o que deve ser igual em todos os planos vai igual. Só a câmera, a ação e o som mudam de linha para linha.",
+          "explica": "É a continuidade das aulas 3 e 5 levada para a lista: o que deve ser igual em todos os planos vai igual. Só a câmera, a açêo e o som mudam de linha para linha.",
           "ref": "codigo"
         },
         {
@@ -411,7 +411,7 @@
           "opcoes": [
             "Tudo, a partir do storyboard do curso 0.",
             "Os stills e as referências, que ficaram presos dentro da plataforma que fechou.",
-            "Só as gerações: lista, lookbook e referências estão na sua pasta.",
+            "Só as gerações: lista, lookbook e referências estêo na sua pasta.",
             "A lista de prompts, porque cada gerador tem o seu formato."
           ],
           "certa": 2,
@@ -429,8 +429,8 @@
           "texto": "Papel, entrada, saída, vocabulário, regras e limites; o pedido se reaproveita."
         },
         {
-          "t": "Revisão é sua",
-          "texto": "A página confere formato; você confere invenção e transforma cada uma em regra."
+          "t": "Revisêo é sua",
+          "texto": "A página confere formato; você confere invençêo e transforma cada uma em regra."
         },
         {
           "t": "Lista portátil",
@@ -443,7 +443,7 @@
       "titulo": "Para ir além",
       "links": [
         {
-          "t": "Próximo: Curso 2 · Produção: do roteiro ao filme pronto",
+          "t": "Próximo: Curso 2 · Produçêo: do roteiro ao filme pronto",
           "href": "https://linnoff88-dev.github.io/
         },
         {

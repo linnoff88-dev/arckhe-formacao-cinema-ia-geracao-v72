@@ -246,7 +246,7 @@
           },
           {
             "rot": "Example with an error (10/19/2026)",
-            "html": "<pre>$ python3 conferir.py geradores --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha Reserva: com a descrição (pelo menos 2 letras).\n - Falta a linha Caminho aberto: com a descrição (pelo menos 2 letras).\n - Falta a linha Consultado em: com a descrição (pelo menos 2 letras).\n - Falta citar a versão com o mês e o ano, como (out/2026).\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py geradores --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha Reserva: com a descriçêo (pelo menos 2 letras).\n - Falta a linha Caminho aberto: com a descriçêo (pelo menos 2 letras).\n - Falta a linha Consultado em: com a descriçêo (pelo menos 2 letras).\n - Falta citar a versêo com o mês e o ano, como (out/2026).\nsaída: 1</pre>"
           }
         ]
       }

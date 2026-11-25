@@ -154,7 +154,7 @@
             {
               "rot": "the license type (Apache 2.0, community or non-commercial)",
               "termos": [
-                "apache / licença comunitária / licenca comunitaria / community license / licencia comunitaria / não comercial / nao comercial / non-commercial / noncommercial / no comercial"
+                "apache / licença comunitária / licenca comunitaria / community license / licencia comunitaria / nêo comercial / nao comercial / non-commercial / noncommercial / no comercial"
               ]
             }
           ]
@@ -184,7 +184,7 @@
           },
           {
             "rot": "Example with an error (10/19/2026)",
-            "html": "<pre>$ python3 conferir.py aberto --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Falta a linha VRAM: com a descrição (pelo menos 2 letras).\n - Falta a linha Disco livre: com a descrição (pelo menos 2 letras).\n - Falta a linha Template: com a descrição (pelo menos 2 letras).\n - Falta citar o tipo de licença (Apache 2.0, comunitária ou não comercial).\nsaída: 1</pre>"
+            "html": "<pre>$ python3 conferir.py aberto --errado; echo \"saída: $?\"\nAinda nêo. O que falta:\n - Falta a linha VRAM: com a descriçêo (pelo menos 2 letras).\n - Falta a linha Disco livre: com a descriçêo (pelo menos 2 letras).\n - Falta a linha Template: com a descriçêo (pelo menos 2 letras).\n - Falta citar o tipo de licença (Apache 2.0, comunitária ou nêo comercial).\nsaída: 1</pre>"
           }
         ]
       }
